@@ -1,0 +1,66 @@
+import URLS from "../urls";
+import ApiClient from "../api-client";
+const generalUrl = URLS.PRODUCT_TYPES_URL.GENERAL;
+
+const getPagination = async ({ page = 1, limit = 10, search = "" }) => {
+	const res = await ApiClient.CustomAxios.get(generalUrl, {
+		params: {
+			page,
+			limit,
+			search,
+		},
+	});
+	return res.data;
+};
+const getAll = async () => {
+	const res = await ApiClient.CustomAxios.get(generalUrl, {
+		params: {
+			page: 1,
+			limit: 100,
+		},
+	});
+
+	return res.data.pagination.items;
+};
+
+const create = async ({ translations }) => {
+	const dataToSend = {
+		translations,
+	};
+	const res = await ApiClient.CustomAxios.post(generalUrl, dataToSend);
+	return res.data;
+};
+
+const getById = async (id) => {
+	const url = `${generalUrl}/${id}`;
+
+	const res = await ApiClient.CustomAxios.get(url);
+
+	return res.data;
+};
+
+const update = async (id, { translations }) => {
+	const url = `${generalUrl}/${id}`;
+	const dataToSend = {
+		translations,
+	};
+	const res = await ApiClient.CustomAxios.put(url, dataToSend);
+	return res.data;
+};
+
+const deleteById = async (id) => {
+	const url = `${generalUrl}/${id}`;
+	const res = await ApiClient.CustomAxios.delete(url);
+	return res.data;
+};
+
+const ProductTypesService = {
+	getPagination,
+	create,
+	getById,
+	update,
+	deleteObject: deleteById,
+	getAll
+};
+
+export default ProductTypesService;

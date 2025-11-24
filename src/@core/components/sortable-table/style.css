@@ -1,0 +1,19 @@
+.ag-theme-quartz,
+.ag-theme-quartz-dark,
+.ag-cell-focus{
+    --ag-range-selection-border: none;
+    --ag-range-selection-border-color: none;
+    --ag-range-selection-border-style: none;
+}
+
+.ag-drag-handle{
+    margin: 0 !important;
+}
+
+.ag-header-cell-label{
+    justify-content: center;
+}
+
+/*.ag-theme-quartz .ag-layout-auto-height .ag-center-cols-viewport, .ag-theme-quartz .ag-layout-auto-height .ag-center-cols-container, .ag-theme-quartz .ag-layout-print .ag-center-cols-viewport, .ag-theme-quartz .ag-layout-print .ag-center-cols-container, .ag-theme-quartz-dark .ag-layout-auto-height .ag-center-cols-viewport, .ag-theme-quartz-dark .ag-layout-auto-height .ag-center-cols-container, .ag-theme-quartz-dark .ag-layout-print .ag-center-cols-viewport, .ag-theme-quartz-dark .ag-layout-print .ag-center-cols-container, .ag-theme-quartz-auto-dark .ag-layout-auto-height .ag-center-cols-viewport, .ag-theme-quartz-auto-dark .ag-layout-auto-height .ag-center-cols-container, .ag-theme-quartz-auto-dark .ag-layout-print .ag-center-cols-viewport, .ag-theme-quartz-auto-dark .ag-layout-print .ag-center-cols-container{*/
+/*    min-height: unset !important;*/
+/*}*/

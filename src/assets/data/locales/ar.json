@@ -1,0 +1,1706 @@
+{
+  "sidebar": {
+    "home": "الصفحة الرئيسية",
+    "users": "المستخدمون",
+    "multi-type-menu": "الإعدادات",
+    "countries": "الدول",
+    "payment-methods-menu": " طرق الدفع",
+    "currencies-menu": "العملات",
+    "roles": "الأدوار",
+    "visual-settings": "المحتوى البصري للموقع",
+    "contact-us": "اتصل بنا",
+    "sale-order-menu": "الطلبات",
+    "products-menu": " الكتالوج الخاص بالمنتجات",
+    "products": "المنتجات",
+    "categories-menu": "الفئات",
+    "brands-menu": "العلامات التجارية",
+    "product-types-menu": "أنواع المنتجات",
+    "tags-menu": "الوسوم",
+    "faqs-menu": "الأسئلة الشائعة",
+    "Sliders": "الشرائح",
+    "website-content": "محتويات المتجر",
+    "settings-menu": "الإعدادات",
+    "visit-store": "زيارة المتجر",
+    "website-themes": "الوان المتجر",
+    "marketing": "التسويق",
+    "discounts": "الحسومات",
+    "auto-discounts": "الحسومات العادية",
+    "coupon-discounts": "كوبون الحسومات",
+    "seo": "محسنات محركات البحث",
+    "product-group-menu": "مجموعة المنتجات",
+    "product-attributes": "سمات المنتجات",
+    "error-logs": "سجل الأخطاء",
+    "maintenance": "الصيان",
+    "shippings": "وسائل الشحن",
+    "states": "الولايات/المحافظات",
+    "cities": "المدن",
+    "affiliates": "المسوقيين",
+    "website-ui-settings": "إعدادات واجهة الموقع",
+    "model-compatibility": "توافق النموذج",
+    "payments-settings": "إعدادات الدفع",
+    "store-settings": "إعدادات المتجر",
+    "store-appearance": "مظهر المتجر",
+    "store-admins": "مشرفي المتجر",
+    "store-info": "معلومات",
+    "social-media-links": "روابط التواصل الاجتماعي",
+    "functionality-settings": "إعدادات الوظائف",
+    "admins": "المشرفون",
+    "company": "الشركات",
+    "user-groups": "مجموعات المستخدمين",
+    "registration-requests": "صفحة طلبات التسجيل",
+    "notifications": "الإشعارات",
+    "notifications-events": "أحداث الإشعارات",
+    "broadcast-notifications": "الإشعارات",
+    "product-reviews": "تقييمات المنتجات",
+    "tax": "الضرائب",
+    "mobile-sliders": "شرائح الهاتف المحمول",
+    "desktop-sliders": "شرائح الشاشات الكبيرة",
+    "shipment-products": "منتجات الشحن",
+    "shipment-packages": "حزم الشحن",
+    "shipment-shippers": "شاحني الشحنة",
+    "sale-orders-shipments": "طلبات الشحن",
+    "ebay": "حسابات Ebay",
+    "ebay-policies": "سياسات eBay",
+    "Ebay": "Ebay",
+    "ebay-selling-policy": "سياسة البيع",
+    "ebay-listing": " القوائم",
+    "ebay-orders": "طلبات Ebay",
+    "dhl": "DHL",
+    "sale-orders-requests": "طلبات البيع",
+    "deutsche-sale-orders-requests": "طلبات البيع",
+    "deutsche-sale-orders-shipments": "الشحنات",
+    "deutsche": "Deutsche",
+    "ebay-categories": "الفئات",
+    "pages": "الصفحات",
+    "apps": "التطبيقات",
+    "user-details": "تفاصيل المستخدم",
+    "reports": "التقارير",
+    "date-wise-sales": "المبيعات حسب التاريخ",
+    "country-wise-sales": "المبيعات حسب البلد",
+    "customer-wise-sales": "المبيعات حسب العميل",
+    "item-wise-sales": "المبيعات حسب العنصر",
+    "latest-products-sales": "مبيعات أحدث المنتجات",
+    "sales-details": "تفاصيل المبيعات"
+  },
+  "common": {
+    "home": "الصفحة الرئيسية",
+    "users": "المستخدمين",
+    "countries": "الدول",
+    "awards": "الجوائز",
+    "brands": "العلامات التجارية",
+    "categories": "فئات المنتجات",
+    "contact-us": "اتصل بنا",
+    "currencies": "العملات",
+    "faqs": "الأسئلة الشائعة",
+    "website-links": "روابط المتجر",
+    "payment-methods": "طرق الدفع",
+    "product-types": "أنواع المنتجات",
+    "products": "المنتجات",
+    "sale-orders": "الطلبات",
+    "sliders": "الشرائح",
+    "tags": "العلامات",
+    "visual-settings": "المحتوى البصري للموقع",
+    "roles": "الأدوار",
+    "add-currency": "إضافة عملة جديدة",
+    "currency-subtext": "إضافة عملة جديدة، إذا لم تكن موجودة",
+    "add-role": "إضافة دور جديد",
+    "role-subtext": "إضافة دور جديد، إذا لم يكن موجودًا",
+    "website-themes": "الوان المتجر",
+    "edit-theme-value": "تعديل اللون",
+    "Edit": "تعديل",
+    "submit": "حفظ",
+    "copied": "تم النسخ",
+    "editValue": "انقر للتحرير",
+    "edit-product-page": "تحرير صفحة المنتج",
+    "product-details-page": "صفحة تفاصيل المنتج",
+    "productOutOfStock": "المنتج تقريبًا نفد من المخزون",
+    "notOutOfStock": "لا يوجد شيء نفد من المخزون",
+    "latestOrders": "أحدث الطلبات",
+    "edit-month-goal": "تحرير هدف الشهر",
+    "value": "القيمة",
+    "add-product-page": "إضافة صفحة منتج",
+    "add-brand": "إضافة علامة تجارية",
+    "edit-brand": "تحرير العلامة التجارية",
+    "brand-details": "تفاصيل العلامة التجارية",
+    "add-category": "إضافة فئة",
+    "edit-category": "تحرير الفئة",
+    "category-details": "تفاصيل الفئة",
+    "sale-order-details": "تفاصيل الطلب",
+    "Dashboards": "لوحات التحكم",
+    "Analytics": "تحليلات",
+    "Apps": "تطبيقات",
+    "eCommerce": "التجارة الإلكترونية",
+    "Chat": "الدردشة",
+    "Todo": "قائمة المهام",
+    "Calendar": "التقويم",
+    "Ecommerce": "التجارة الإلكترونية",
+    "Shop": "المتجر",
+    "Wish List": "قائمة الرغبات",
+    "Details": "التفاصيل",
+    "Checkout": "الدفع",
+    "List": "القائمة",
+    "View": "العرض",
+    "Starter Kit": "طقم البداية",
+    "1 Column": "عمود واحد",
+    "2 Columns": "عمودين",
+    "Fixed Navbar": "شريط التنقل الثابت",
+    "Floating Navbar": "شريط التنقل العائم",
+    "Fixed Layout": "تخطيط ثابت",
+    "Static Layout": "تخطيط ثابت",
+    "Dark Layout": "تخطيط داكن",
+    "Light Layout": "تخطيط فاتح",
+    "UI Elements": "عناصر واجهة المستخدم",
+    "Content": "المحتوى",
+    "Grid": "الشبكة",
+    "Typography": "الأسلوب الطباعي",
+    "Text Utilities": "أدوات النص",
+    "Syntax Highlighter": "مظلل الصيغة",
+    "Icons": "الرموز",
+    "Feather": "ريشة",
+    "Card": "البطاقة",
+    "Basic": "أساسي",
+    "Advance": "متقدم",
+    "Statistics": "الإحصائيات",
+    "actions": "الإجراءات",
+    "Table": "الجدول",
+    "Reactstrap Tables": "جداول رد الفعل ",
+    "React Tables": "جداول التفاعل",
+    "DataTable": "جدول البيانات",
+    "Advanced": "متقدم",
+    "Mail Template": "قالب البريد",
+    "Page Layouts": "تخطيط الصفحة",
+    "Collapsed Menu": "القائمة المنهارة",
+    "Layout Boxed": "تخطيط مربع",
+    "Without Menu": "بدون قائمة",
+    "Layout Empty": "تخطيط فارغ",
+    "Layout Blank": "تخطيط فارغ",
+    "Components": "مكونات",
+    "Alerts": "تنبيهات",
+    "Buttons": "أزرار",
+    "Breadcrumbs": "فتات الخبز",
+    "Carousel": "شريط التمرير",
+    "Collapse": "انهيار",
+    "Dropdowns": "قوائم منسدلة",
+    "List Group": "مجموعة القوائم",
+    "Modals": "نماذج",
+    "Pagination": "ترقيم الصفحات",
+    "Navs Component": "مكون الشرائط التنقل",
+    "Navbar": "شريط التنقل",
+    "Tabs Component": "مكون علامات التبويب",
+    "Pills Component": "مكون الأقراص",
+    "Tooltips": "تلميحات",
+    "Popovers": "بوب أوفر",
+    "Badges": "شارات",
+    "Pill Badges": "شارات الأقراص",
+    "Progress": "تقدم",
+    "Media Objects": "كائنات وسائط",
+    "Spinner": "مدور",
+    "Toasts": "تحميصات",
+    "Timeline": "الجدول الزمني",
+    "Extra Components": "مكونات إضافية",
+    "Avatar": "الصورة الرمزية",
+    "Chips": "رقائق",
+    "Divider": "فاصل",
+    "Wizard": "ساحر",
+    "Pages": "الصفحات",
+    "Miscellaneous": "متنوع",
+    "Coming Soon": "قريبًا",
+    "Maintenance": "صيانة",
+    "Extensions": "امتدادات",
+    "Profile": "الملف الشخصي",
+    "Account Settings": "إعدادات الحساب",
+    "FAQ": "أسئلة متكررة",
+    "Knowledge Base": "قاعدة المعرفة",
+    "Search": "بحث",
+    "Invoice": "فاتورة",
+    "Charts & Maps": "الرسوم البيانية والخرائط",
+    "Charts": "الرسوم البيانية",
+    "Apex": "ذروة",
+    "ChartJS": "الرسم البياني شبيبة",
+    "Recharts": "إعادة التخطيط",
+    "Leaflet Maps": "خرائط النشرة",
+    "Sweet Alert": "تنبيه حلو",
+    "React Hot Toasts": "رد فعل الخبز المحمص الساخن",
+    "Sliders": "أشرطة التمرير",
+    "File Uploader": "مرفق الملف",
+    "Editor": "المحرر",
+    "Drag & Drop": "سحب وإسقاط",
+    "Tour": "جولة",
+    "Auto Complete": "إكمال تلقائي",
+    "Clipboard": "الحافظة",
+    "Swiper": "سوايبر",
+    "Tree": "شجرة",
+    "I18n": "I18n",
+    "React Paginate": "رد فعل الصفحات",
+    "Export": "تصدير",
+    "Import": "استيراد",
+    "Export Selected": "تصدير المحدد",
+    "Access Control": "التحكم في الوصول",
+    "Others": "آخرين",
+    "Menu Levels": "مستويات القائمة",
+    "Second Level": "المستوى الثاني",
+    "Second Level 2.1": "المستوى الثاني 2.1",
+    "Second Level 2.2": "المستوى الثاني 2.2",
+    "Third Level 3.1": "المستوى الثالث 3.1",
+    "Third Level 3.2": "المستوى الثالث 3.2",
+    "Disabled Menu": "القائمة معطلة",
+    "Documentation": "وثائق",
+    "Raise Support": "طلب الدعم",
+    "Change Log": "سجل التغييرات",
+    "text": "كعكة السمسم يستقر كب كيك الزنجبيل الدنماركي أنا أحب خبز الزنجبيل. فطيرة التفاح فطيرة العناب تشوبا تشوبس الكعك الحلاوة الطحينية المصاصة. كعكة الشوكولاتة كعكة الشوفان تيراميسو مرزباني السكر البرقوق. دونات، فطيرة حلوة، كعكة الشوفان، دراجي، كعكة الفاكهة، حلوى القطن، قطرات الليمون",
+    "Pricing": "التسعير",
+    "Blog": "المدونة",
+    "Detail": "التفاصيل",
+    "Form Repeater": "تكرار النموذج",
+    "Preview": "معاينة",
+    "Add": "إضافة",
+    "Ratings": "التقييمات",
+    "show": "عرض",
+    "entries": "المدخلات",
+    "search": "بحث",
+    "Prev": "السابق",
+    "Next": "التالي",
+    "BlockUI": "حظر واجهة المستخدم",
+    "Reactstrap": "ريكتستراب",
+    "Welcome": "مرحبًا",
+    "Reset Password": "إعادة تعيين كلمة المرور",
+    "Verify Email": "تحقق من البريد الإلكتروني",
+    "Deactivate Account": "تعطيل الحساب",
+    "Promotional": "ترويجي",
+    "Apps & Pages": "التطبيقات والصفحات",
+    "User Interface": "واجهة المستخدم",
+    "Misc": "متفرقات",
+    "Roles": "الأدوار",
+    "License": "الترخيص",
+    "API Key": "مفتاح واجهة برمجة التطبيقات",
+    "Accordion": "أكورديون",
+    "OffCanvas": "أوف كانفاس",
+    "Permissions": "الأذونات",
+    "Modal Examples": "أمثلة على النمط",
+    "Roles & Permissions": "الأدوار والصلاحيات",
+    "apply": "حفظ",
+    "filters": "الفلاتر",
+    "add-slider-page": "إضافة صفحة شريط التمرير",
+    "edit-slider-page": "تحرير صفحة شريط التمرير",
+    "view-slider-page": "عرض صفحة شريط التمرير",
+    "edit-slider-details": "تحرير تفاصيل شريط التمرير",
+    "back": "رجوع",
+    "title-en": "العنوان بالإنجليزية",
+    "title-ar": "العنوان بالعربية",
+    "description-en": "الوصف بالإنجليزية",
+    "description-ar": "الوصف بالعربية",
+    "link": "رابط",
+    "button-text": "نص الزر",
+    "button-color": "لون الزر",
+    "publish-website": "نشر على المتجر",
+    "discounts": "التخفيضات",
+    "add-discounts": "إضافة تخفيضات",
+    "edit-discount": "تحرير التخفيض",
+    "view-discount": "عرض التخفيض",
+    "coupon-discounts": "تخفيضات الكوبون",
+    "add-coupon-discounts": "إضافة تخفيضات الكوبون",
+    "edit-coupon-discounts": "تحرير تخفيضات الكوبون",
+    "view-coupon-discounts": "عرض تخفيضات الكوبون",
+    "Login": "تسجيل الدخول",
+    "seo-page": "تحسين محركات البحث",
+    "invoice": "فاتورة",
+    "date-issued": "تاريخ الإصدار",
+    "invoice-to": "الفاتورة إلى",
+    "name": "الاسم",
+    "address": "العنوان",
+    "phone-number": "رقم الهاتف",
+    "email": "البريد الإلكتروني",
+    "payment-details": "تفاصيل الدفع",
+    "total-due": "المجموع المستحق",
+    "currency": "العملة",
+    "subtotal": "المجموع الفرعي",
+    "coupon-discount": "تخفيض الكوبون",
+    "regular-discount": "تخفيض عادي",
+    "tax": "الضريبة",
+    "total": "المجموع",
+    "product-image": "صورة المنتج",
+    "product-info": "معلومات المنتج",
+    "product-options": "خيارات المنتج",
+    "quantity": "الكمية",
+    "price": "السعر",
+    "attribute-item-main-attributes": "التفاصيل الرئيسية",
+    "attribute-item-options": "تفاصيل الخيارات",
+    "item": "العنصر",
+    "option": "الخيار",
+    "add-option": "إضافة خيار",
+    "add": "إضافة",
+    "create": "إنشاء",
+    "attribute-item-add-title": "إضافة عنصر السمة",
+    "product-main-details": "التفاصيل الرئيسية",
+    "product-relations": "العلاقات",
+    "product-specification": "المواصفات",
+    "product-meta-info": "(Meta Tags) واصفات ميتا",
+    "cost": "التكلفة",
+    "more-info": "مزيد من المعلومات",
+    "publish-to-website": "نشر على المتجر",
+    "info": "معلومات",
+    "meta": "(Meta Tags) واصفات ميتا",
+    "images": "صور",
+    "attributes": "سمات",
+    "delete": "حذف",
+    "no-data": "لا توجد بيانات",
+    "update": "تحديث",
+    "product-group": "مجموعة المنتجات",
+    "product-group-menu": "مجموعة المنتجات",
+    "add-product-group": "إضافة مجموعة المنتجات",
+    "edit-product-group": "تحرير مجموعة المنتجات",
+    "view-product-group": "عرض مجموعة المنتجات",
+    "product-attributes": "سمات المنتج",
+    "error-logs": "سجل الأخطاء",
+    "shippingValue": "قيمة الشحن",
+    "shipping": "الشحن",
+    "shippings": "شحنات",
+    "add-shipping": "إضافة شحنة",
+    "states": "الولايات/المحافظات",
+    "cities": "المدن",
+    "states-details-page": "صفحة تفاصيل الولايات/المحافظات",
+    "countries-details-page": "صفحة تفاصيل البلدان",
+    "address-notes": "ملاحظات العنوان",
+    "filter-clear-button": "إلغاء",
+    "filter-apply-button": "تطبيق",
+    "image-uploader-subLabel": "قم بسحب وإفلات الملفات أو انقر للرفع من ملفاتك",
+    "no-data-table": "لا توجد سجلات لعرضها",
+    "male": "ذكر",
+    "female": "أنثى",
+    "affiliate-details-page": "صفحة تفاصيل المسوق",
+    "affiliates": "المسوقيين",
+    "clear": "حذف",
+    "edit-setting-page": "تحرير الإعدادات البصرية",
+    "website-ui-settings": "إعدادات واجهة الموقع",
+    "model-compatibility": "توافق النموذج",
+    "store-info": "معلومات المتجر",
+    "store-social-links": "روابط وسائل التواصل الاجتماعي للمتجر",
+    "admins": "المشرفون",
+    "company": "الشركات",
+    "user-groups": "مجموعات المستخدمين",
+    "user-group-details-page": "صفحة تفاصيل مجموعة المستخدمين",
+    "notifications": "الإشعارات",
+    "notifications-events": "أحداث الإشعارات",
+    "mobile-sliders": "شرائح الهاتف المحمول",
+    "desktop-sliders": "شرائح الشاشات الكبيرة",
+    "options": "الخيارات",
+    "sku": "الرقم المعرف للمخزون (sku)",
+    "Add Product Variant": "إضافة تنويع لمنتج",
+    "Edit Product Variant": "تعديل تنويع منتج",
+    "Add options and images": "إضافة صور وخيارات",
+    "Edit options and images": "تعديل صور وخيارات",
+    "View Image": "عرض الصورة",
+    "sort": "ترتيب",
+    "process-done": "تمت العملية بنجاح",
+    "countryOfOrigin": "بلد المنشأ",
+    "shipment-products": "منتجات الشحن",
+    "shipment-packages": "حزم الشحن",
+    "shipment-shippers": "شاحني الشحنة",
+    "sale-orders-shipments": "طلبات الشحن",
+    "edit-sale-order-shipment": "تعديل طلب الشحن",
+    "ebay": "متجر eBay",
+    "add-return-policy": "إضافة سياسة الإرجاع",
+    "ebay-return-policy": "سياسة الارجاع لeBay",
+    "get-token": "الحصول على رمز التأكيد",
+    "account-created": "تم انشاء الحساب بنجاح",
+    "ebay-shipping-policy": "سياسة الشحن",
+    "add-selling-policy": "إضافة سياسة بيع",
+    "eBay-selling-policy": "سياسة البيع ل eBay",
+    "ebay-listing": "قوائم eBay",
+    "ebay-listing-products": "قائمة المنتجات",
+    "ebay-sale-orders": "طلبات Ebay",
+    "paymentMethod": "طريقة الدفع",
+    "paymentReferenceId": "معرف مرجع الدفع",
+    "amount": "المبلغ",
+    "date": "تاريخ الدفع",
+    "userName": "اسم الستخدم",
+    "fullName": " الاسم الكامل",
+    "buyerData": "معلومات المشتري",
+    "ebay-order-id": "رقم طلب ebay",
+    "userPostalCode": "الرمز البريدي",
+    "wallet": "المحفظة",
+    "ebay-categories": " فئات Ebay",
+    "shippingTrackingNumberSyncedToEbay": "رقم التتبع تمت مزامنته مع موقع Ebay",
+    "multi-ship-request": "طلب شحنات متعددة" ,
+    "shippingTrackingNumber": "رقم تتبع الشحن" ,
+    "note": " تغيير طريقة الشحن يغير فقط عملية الشحن للطلب ولا تؤثر على السعر بأي شكل من الأشكال",
+    "user-details": "تفاصيل المستخدم",
+    "reports": "التقارير",
+    "date-wise-sales": "المبيعات حسب التاريخ",
+    "country-wise-sales": "المبيعات حسب البلد",
+    "customer-wise-sales": "المبيعات حسب العميل",
+    "item-wise-sales": "المبيعات حسب العنصر",
+    "latest-products-sales": "مبيعات أحدث المنتجات",
+    "sales-details": "تفاصيل المبيعات",
+    "create-ship": "إنشاء شحنة",
+    "expand-all" : "عرض التفاصيل",
+    "resend-invoice-to-user":"إعادة إرسال الفاتورة إلى المستخدم" ,
+    "collapse-all" : " اغلق التفاصيل"
+
+
+  },
+  "action-buttons": {
+    "duplicate_row": "نسخ",
+    "view_profile": "عرض الصفحة الشخصية",
+    "edit": "تعديل",
+    "view_details": "عرض التفاصيل",
+    "view": "عرض",
+    "standard": "قياسي",
+    "added-by-admins": "تمت الإضافة بواسطة المشرفين",
+    "delete": "حذف",
+    "edit-role": "تعديل الدور",
+    "delete-role": "حذف الدور",
+    "duplicate-role": "نسخ الدور",
+    "edit-currency": "تعديل العملة",
+    "delete-currency": "حذف العملة",
+    "duplicate-currency": "نسخ العملة",
+    "active": "نشط",
+    "in-active": "غير نشط",
+    "edit-payment-method": "تعديل طريقة الدفع",
+    "delete-payment-method": "حذف طريقة الدفع",
+    "duplicate-payment-method": "نسخ طريقة الدفع",
+    "edit-visual-setting": "تحرير الإعدادات البصرية",
+    "delete-visual-setting": "حذف الإعدادات البصرية",
+    "duplicate-visual-setting": "تكرار الإعدادات البصرية",
+    "view-visual-setting": "عرض الإعدادات البصرية",
+    "edit-item": "تحرير العنصر",
+    "delete-item": "حذف العنصر",
+    "website-settings": "إعدادات واجهة الموقع",
+    "product-reviews": "تقييمات المنتجات",
+    "shipment_request": "إنشاء طلب شحن",
+    "verify": "تأكيد وشحن"
+  },
+  "forms": {
+    "User": "مستخدم",
+    "Email": "البريد الإلكتروني",
+    "Forms & Tables": "النماذج والجداول",
+    "Form Elements": "عناصر النموذج",
+    "Select": "اختيار",
+    "Switch": "تبديل",
+    "Checkbox": "خانة اختيار",
+    "Radio": "زر اختيار",
+    "Input": "إدخال",
+    "Input Groups": "مجموعات الإدخال",
+    "Number Input": "إدخال الأرقام",
+    "Textarea": "مربع نص",
+    "Date & Time Picker": "اختيار التاريخ والوقت",
+    "Input Mask": "قناع الإدخال",
+    "Form Layout": "تخطيط النموذج",
+    "Form Wizard": "معالج النموذج",
+    "React Hook Form": "نموذج رد الفعل هوك",
+    "Form Validation": "تحقق من صحة النموذج",
+    "Authentication": "المصادقة",
+    "Login v1": "تسجيل الدخول v1",
+    "Login v2": "تسجيل الدخول v2",
+    "Register v1": "التسجيل v1",
+    "Register v2": "التسجيل v2",
+    "Forgot Password v1": "نسيت كلمة المرور v1",
+    "Forgot Password v2": "نسيت كلمة المرور v2",
+    "Reset Password v1": "إعادة تعيين كلمة المرور v1",
+    "Reset Password v2": "إعادة تعيين كلمة المرور v2",
+    "Error": "خطأ",
+    "Not Authorized": "غير مصرح به",
+    "field-required": "هذا الحقل مطلوب",
+    "number-field-typeError": "يرجى إدخال رقم صحيح",
+    "nameEn": "الاسم بالإنجليزية",
+    "nameAr": "الاسم بالعربية",
+    "descriptionEn": "الوصف بالإنجليزية",
+    "descriptionAr": "الوصف بالعربية",
+    "shortDescriptionAr": "الوصف القصبر بالعربية",
+    "shortDescriptionEn": "الوصف  القصير بالإنجليزية",
+    "image": "صورة",
+    "current-image": "الصورة الحالية",
+    "feature-image": "الصورة المميزة",
+    "publish": "نشر",
+    "update": "تحديث",
+    "name": "الاسم",
+    "description": "الوصف",
+    "meta-description": "Meta Description",
+    "meta-keywords": "Meta Keywords",
+    "meta-descriptionAr": "(Meta Description)  الوصف باللغة العربية",
+    "meta-keywordsAr": "(Meta Keywords) لكلمات المفتاحية باللغة العربية",
+    "meta-descriptionEn": "(Meta Description) الوصف باللغة الإنكليزية",
+    "meta-keywordsEn": "(Meta Keywords) الكلمات المفتاحية باللغة الانكليزية",
+    "save": "حفظ",
+    "outOfStock": "Out Of Stock",
+    "invalid-billing-number": "يجب عليك إضافة 14 حرفًا",
+    "Send": "ارسال",
+    "shipment-created-successfully": "تم انشاء الشحنة بنجاح",
+    "create-ship": " إنشاء شحنة"
+  },
+  "home": {
+    "brands": "العلامات التجارية",
+    "categories": "الفئات",
+    "products": "المنتجات",
+    "users": "المستخدمين",
+    "income": "الدخل",
+    "products-chart": "استكشف مجموعتنا الواسعة من المنتجات في مختلف الفئات",
+    "income-chart": "عزز رفاهيتك المالية بتدفق دخل ثابت",
+    "visitors": "الزوار",
+    "month-goal": "هدف الشهر",
+    "total-paid-orders": "إجمالي الطلبات المدفوعة (بالعملة الافتراضية)",
+    "orders-count": "عدد الطلبات",
+    "month-summary": "ملخص الشهر"
+  },
+  "table": {
+    "add-btn": "إضافة",
+    "add-img": "إضافة صورة",
+    "add-slider": "إضافة صورة/فيديو",
+    "clear": "إلغاء",
+    "paginate": "الكيانات من",
+    "total": "الإجمالي",
+    "headers": {
+      "created-at": "تاريخ الإنشاء",
+      "name": "الاسم",
+      "description": "الوصف"
+    }
+  },
+  "product-group": {
+    "common": {
+      "product-attributes": "خصائص المنتج"
+    },
+    "all-page": {
+      "add-card-button": "إضافة مجموعة جديدة",
+      "add-card-description": "أدخل مجموعة منتج جديدة"
+    },
+    "add-page": {
+      "text-header": "إضافة مجموعة منتج",
+      "text-sub-header": "أدخل مجموعة منتج جديدة"
+    },
+    "edit-page": {
+      "text-header": "تعديل مجموعة منتج",
+      "text-sub-header": "تعديل مجموعة منتج"
+    },
+    "forms": {
+      "text-attributes-label": "الخصائص"
+    }
+  },
+  "product-attribute": {
+    "common": {
+      "add-option": "إضافة خيار جديد",
+      "option": "خيار",
+      "add-attribute": "إضافة خاصية جديدة",
+      "attributes": "الخصائص"
+    },
+    "add-page": {
+      "text-header": "إضافة خاصية جديدة"
+    },
+    "forms": {
+      "main-details": "التفاصيل الرئيسية",
+      "option-details": "تفاصيل الخيار",
+      "price-type": "نوع السعر",
+      "price": "السعر",
+      "option": "الخيار",
+      "required": "مطلوب",
+      "default": "افتراضي"
+    }
+  },
+  "product": {
+    "common": {
+      "info": "معلومات",
+      "meta": "Meta",
+      "images": "صور المنتج",
+      "attributes": "الخيارات",
+      "categories": "الفئات",
+      "brand": "العلامة التجارية",
+      "slug": "رابط المنتج",
+      "price": "السعر",
+      "cost": "التكلفة",
+      "sku": "(SKU) رمز المخزون",
+      "mpn": "(MPN) رقم جزء الشركة المصنعة ",
+      "gtin": "(GTIN) رقم العنصر التجاري العالمي ",
+      "image": "صورة المنتج",
+      "product-group": "مجموعة المنتجات",
+      "metaKeywordEn": "(Meta Keywords) الكلمات المفتاحية باللغة الانكليزية",
+      "metaKeywordAr": "(Meta Keywords) لكلمات المفتاحية باللغة العربية",
+      "metaDescriptionEn": "(Meta Description) الوصف باللغة الإنكليزية",
+      "metaDescriptionAr": "(Meta Description)  الوصف باللغة العربية",
+      "publish": "نشر على المتجر",
+      "add-image": "إضافة صورة",
+      "extra-info": "معلومات إضافية",
+      "add-attribute": "إضافة سمة جديدة",
+      "add-option": "إضافة خيار جديد",
+      "add.header": "إضافة منتج",
+      "add.sub-header": "إضافة تفاصيل المنتج",
+      "add-info": "إضافة معلومات إضافية",
+      "add-meta": "(Meta Tags) إضافة وصفات ميتا",
+      "outOfStock": "غير متوفر في المخزن",
+      "product-variants": "تنويعات المنتج",
+      "sort-options": "ترتيب خيارات المنتج",
+      "variant-des": "ضمن هذه النافذة يمكنك تحديد التفاصيل الإضافية لتنويعات هذا المنتج",
+      "options-images": "خيارات الصور",
+      "featured": "مميز"
+    },
+    "forms": {
+      "image": "صورة المنتج",
+      "publish": "نشر على المتجر",
+      "current-image": "الصورة الحالية",
+      "product-images": "الصور",
+      "feature-image": "الصورة المميزة"
+    },
+    "table": {
+      "product-image": "صورة المنتج",
+      "product-info": "معلومات المنتج",
+      "more-info": "مزيد من المعلومات",
+      "price": "السعر",
+      "quantity": "المخزون",
+      "publish": "نشر على الموقع",
+      "sku":"sku"
+    },
+    "tabs": {
+      "view": {
+        "header": "عرض المنتج",
+        "sub-header": "اطلع على تفاصيل المنتج"
+      },
+      "meta": {
+        "header": "(Meta Tags) واصفات ميتا",
+        "sub-header": "تساعدك واصفات ميتا (Meta Tags)  من ظهور متجرك ضمن النتائج الأولى على محركات البحث"
+      },
+      "extra-info": {
+        "header": "صفحة المعلومات الإضافية",
+        "sub-header": ""
+      }
+    }
+  },
+  "filter": {
+    "forms": {
+      "user": "مستخدم",
+      "status": "الحالة",
+      "publish": "نشر على المتجر",
+      "country": "البلد",
+      "paymentProvideCode": "مزود الدفع",
+      "itemProduct": "المنتج",
+      "fromDate": "من التاريخ",
+      "toDate": "إلى التاريخ",
+      "sort": "تصنيف"
+    }
+  },
+  "currencies": {
+    "sub-header": "قم بإدارة إعدادات العملات لمتجرك.",
+    "common": {
+      "add-currency": "إضافة عملة",
+      "edit-currency": "تعديل العملة",
+      "countries-sublabel": "*سيكون هذه العملة هي العملة الافتراضية للبلدان المحددة",
+      "equals": "يساوي"
+    },
+    "forms": {
+      "nameEn": "الاسم بالإنجليزية",
+      "nameAr": "الاسم بالعربية",
+      "code": "كود العملة",
+      "symbol": "رمز العملة",
+      "defaultExchangeRate": "سعر الصرف مقابل العملة الافتراضية",
+      "countries": "البلدان",
+      "active": "متاحة للاستخدام"
+    }
+  },
+  "roles": {
+    "sub-header": "تحكم بصلاحيات وأدوار مسؤولي المتجر بكل سهولة وأمان",
+    "card-header": "Roles Count",
+    "common": {
+      "add-role": "إضافة دور",
+      "edit-role": "تعديل الدور",
+      "role-permissions": "صلاحيات الدور"
+    },
+    "forms": {
+      "role-name": "اسم الدور"
+    }
+  },
+  "payment-method": {
+    "sub-header": "قم بتعديل معلومات وتفاصيل وأيقونات وسائل الدفع  المتاحة ضمن متجرك",
+    "common": {
+      "edit-payment": "تعديل طريقة الدفع",
+      "current-image": "الصورة الحالية"
+    },
+    "list": {},
+    "forms": {
+      "nameEn": "الاسم بالإنجليزية",
+      "nameAr": "الاسم بالعربية",
+      "image": "الصورة",
+      "publish": "نشر على الموقع"
+    }
+  },
+  "visual-settings": {
+    "sub-header": "قم بتغيير وتعديل المحتوى البصري لمتجرك بكل سهولة.",
+    "edit-header": "Edit Setting",
+    "edit-subHeader": "Edit the details of the setting",
+    "forms": {
+      "titleEn": "English Title",
+      "titleAr": "Arabic Title",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "image": "Image",
+      "current-image": "Current Image"
+    }
+  },
+  "sale-order": {
+    "table": {
+      "user-info": "معلومات المستخدم",
+      "status": "الحالة",
+      "address": "العنوان",
+      "total-price": "السعر الإجمالي",
+      "created-at": "تاريخ الإنشاء",
+      "update-status": "هل أنت متأكد أنك تريد تحديث الحالة؟",
+      "ebayOrderId": "رقم طلب ebay",
+      "select": "اختر",
+      "productId": "عدد المنتجات",
+      "ActionColumn": "الخيارات"
+    },
+    "invoice": {
+      "subtotal-discount": "إجمالي الخصومات"
+    }
+  },
+  "users": {
+    "common": {
+      "add-user": "إضافة مستخدم",
+      "edit-user": "تعديل مستخدم",
+      "current-avatar": "الصورة الحالية",
+      "company-info": "معلومات الشركة"
+    },
+    "table": {
+      "full-name": "الاسم الكامل",
+      "phone-number": "رقم الهاتف",
+      "gender": "الجنس",
+      "user-type": "نوع المستخدم",
+      "blocked": "حظر المستخدم",
+      "status": "الحالة",
+      "update-status": "هل أنت متأكد أنك تريد تحديث الحالة؟"
+    },
+    "forms": {
+      "fullName": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "phoneNumber": "رقم الهاتف",
+      "gender": "الجنس",
+      "country": "البلد",
+      "dateOfBirth": "تاريخ الميلاد",
+      "roleGroup": "الدور",
+      "avatar": "الصورة الشخصية",
+      "cancel-button": "إلغاء"
+    },
+    "profile": {
+      "details": "التفاصيل",
+      "fullName": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "phoneNumber": "رقم الهاتف",
+      "country": "البلد",
+      "defaultCurrency": "العملة الافتراضية",
+      "gender": "الجنس",
+      "createdAt": "تاريخ الإنشاء",
+      "dateOfBirth": "تاريخ الميلاد",
+      "userGroup": "مجموعة المستخدم",
+      "companyName": "اسم الشركة",
+      "companyLogo": "شعار الشركة",
+      "companyCommercialRecord": "السجل التجاري للشركة",
+      "viewCommercialRecord": "عرض السجل التجاري",
+      "tabs": {
+        "addresses": "العناوين",
+        "orders": "الطلبات",
+        "company-details": "تفاصيل الشركة"
+      },
+      "addresses": {
+        "table": {
+          "primary": "عنوان رئيسي",
+          "location": "المنطقة",
+          "notes": "ملاحظات"
+        }
+      }
+    }
+  },
+  "contact-us": {
+    "table": {
+      "first-name": "الاسم الأول",
+      "last-name": "الاسم الأخير",
+      "email": "البريد الإلكتروني",
+      "phone-number": "رقم الهاتف",
+      "message": "الرسالة",
+      "status": "الحالة"
+    },
+    "common": {
+      "status-read": "مقروء",
+      "status-unread": "غير مقروء",
+      "contact-details": "تفاصيل الاتصال",
+      "edit-status": "تعديل الحالة",
+      "fullName": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "phoneNumber": "رقم الهاتف",
+      "message": "الرسالة",
+      "status": "الحالة"
+    }
+  },
+  "tags": {
+    "table": {
+      "image": "صورة",
+      "title": "عنوان",
+      "description": "وصف",
+      "publish": "نشر على المتجر",
+      "featured": "مميز"
+    },
+    "forms": {
+      "titleEn": "العنوان بالإنجليزية",
+      "titleAr": "العنوان بالعربية",
+      "descriptionEn": "الوصف بالإنجليزية",
+      "descriptionAr": "الوصف بالعربية",
+      "products": "المنتجات",
+      "image": "الصورة",
+      "backgroundColor": "لون الخلفية",
+      "publish": "نشر على المتجر",
+      "featured": "مميز"
+    },
+    "common": {
+      "add-tag": "إضافة وسم جديد",
+      "edit-tag": "تعديل الوسم",
+      "tag-details": "تفاصيل الوسم",
+      "current-image": "الصورة الحالية"
+    }
+  },
+  "categories": {
+    "table": {
+      "image": "الصورة",
+      "name": "الاسم",
+      "description": "الوصف",
+      "publish": "نشر على المتجر",
+      "featured": "مميز"
+    },
+    "common": {
+      "add-category": "إضافة فئة",
+      "edit-category": "تعديل الفئة",
+      "category-details": "تفاصيل الفئة",
+      "current-image": "الصورة الحالية"
+    },
+    "forms": {
+      "nameEn": "العنوان بالإنجليزية",
+      "nameAr": "العنوان بالعربية",
+      "descriptionEn": "الوصف بالإنجليزية",
+      "descriptionAr": "الوصف بالعربية",
+      "parent": "الفئة الأعلى",
+      "image": "الصورة",
+      "publish": "نشر على المتجر",
+      "featured": "مميز",
+      "guide": "الدليل"
+
+    }
+  },
+  "brands": {
+    "table": {
+      "image": "صورة",
+      "name": "اسم",
+      "description": "وصف",
+      "publish": "نشر على المتجر",
+      "featured": "مميز"
+    },
+    "common": {
+      "add-brand": "إضافة علامة تجارية",
+      "edit-brand": "تعديل العلامة التجارية",
+      "brand-details": "تفاصيل العلامة التجارية",
+      "current-image": "الصورة الحالية"
+    },
+    "forms": {
+      "nameEn": "العنوان بالإنجليزية",
+      "nameAr": "العنوان بالعربية",
+      "descriptionEn": "الوصف بالإنجليزية",
+      "descriptionAr": "الوصف بالعربية",
+      "parent": "الفئة الأعلى",
+      "image": "الصورة",
+      "publish": "نشر على الموقع",
+      "featured": "مميز"
+    }
+  },
+  "discount": {
+    "table": {
+      "name": "الاسم",
+      "value": "القيمة",
+      "start-date": "تاريخ البدء",
+      "expiry-date": "تاريخ الانتهاء",
+      "active": "تفعيل",
+      "couponCode": "كود الكوبون"
+    },
+    "common": {
+      "add-discount": "إضافة خصم",
+      "edit-discount": "تعديل الخصم",
+      "discount-details": "تفاصيل الخصم",
+      "current-icon": "الرمز الحالي",
+      "add-coupon-discount": "إضافة كوبون خصم جديد",
+      "edit-coupon-discount": "تعديل كوبون الخصم",
+      "coupon-discount-details": "تفاصيل الكوبون",
+      "active": "نشط"
+    },
+    "forms": {
+      "nameEn": "الاسم بالإنجليزية",
+      "nameAr": "الاسم بالعربية",
+      "type": "النوع",
+      "value": "القيمة",
+      "applicableTo": "مطبق على",
+      "categories": "الفئات",
+      "products": "المنتجات",
+      "startDate": "تاريخ البدء",
+      "expiryDate": "تاريخ الانتهاء",
+      "active": "فعال",
+      "couponCode": "كود الكوبون",
+      "usageLimitPerUser": "أقصى عدد مرات استخدام للمستخدم الواحد",
+      "userGroups": "مجموعات المستخدمين",
+      "applyToAll": "تطبيق على الكل"
+    }
+  },
+  "seo": {
+    "table": {
+      "name": "الاسم",
+      "value": "القيمة"
+    }
+  },
+  "multi-type-settings": {
+    "table": {
+      "name": "الاسم",
+      "value": "القيمة"
+    }
+  },
+  "countries": {
+    "view": {
+      "header": "عرض البلد",
+      "sub-header": "عرض تفاصيل البلد"
+    },
+    "table": {
+      "name": "الاسم",
+      "phone-number-code": "رمز الهاتف",
+      "iso": "رمز ISO",
+      "published": "نشر على المتجر"
+    },
+    "forms": {
+      "nameAr": "الاسم بالعربية",
+      "nameEn": "الاسم بالإنجليزية",
+      "iso2": "رمز ISO",
+      "phoneNumberCode": "رمز الهاتف",
+      "active": "فعال",
+      "localeCode": "رمز اللغة"
+    }
+  },
+  "faq": {
+    "table": {
+      "question": "السؤال",
+      "description": "الجواب"
+    },
+    "common": {
+      "add-faq": "إضافة سؤال متكرر",
+      "edit-faq": "تعديل سؤال متكرر",
+      "faq-details": "تفاصيل السؤال"
+    },
+    "forms": {
+      "questionAr": "السؤال بالعربية",
+      "questionEn": "السؤال بالإنجليزية",
+      "answerAr": "الإجابة بالعربية",
+      "answerEn": "الإجابة بالإنجليزية"
+    }
+  },
+  "sliders": {
+    "list": {
+      "link": "الرابط",
+      "title": "العنوان"
+    },
+    "common": {
+      "current-image": "الصورة الحالية"
+    },
+    "forms": {
+      "titleEn": "العنوان بالإنجليزية",
+      "titleAr": "العنوان بالعربية",
+      "descriptionEn": "الوصف بالإنجليزية",
+      "descriptionAr": "الوصف بالعربية",
+      "link": "الرابط",
+      "buttonTextEn": "نص الزر بالإنجليزية",
+      "buttonTextAr": "نص الزر بالعربية",
+      "image": "الصورة",
+      "buttonColor": "لون الزر",
+      "publish": "نشر على المتجر",
+      "media": "وسائط"
+    }
+  },
+  "error-logs": {
+    "table": {
+      "error-code": "رمز المشكلة",
+      "endpoint": "API",
+      "error-details": "تفاصيل المشكلة",
+      "error-date": "تاريخ حدوث المشكلة"
+    }
+  },
+  "affiliates": {
+    "common": {
+      "add-affiliate": "إضافة مسوّق",
+      "edit-affiliate": "تعديل معلومات المسوّق",
+      "info": "المعلومات الرئيسية",
+      "orders": "الطلبات",
+      "payments": "المدفوعات",
+      "add-affiliate-payment": "إضافة دفعة للمسوّق",
+      "edit-affiliate-payment": "تعديل دفعة للمسوّق",
+      "total-amount": "المبلغ الإجمالي",
+      "amount-to-paid": "المبلغ المطلوب دفعه",
+      "payment-date": "تاريخ الدفع",
+      "removed-option": "خيارات تمت إزالتها:",
+      "statistics": "إحصائيات",
+      "commission_rate": "سعر العمولة ",
+      "commission_total": "إجمالي العمولة",
+      "order": "الطلب",
+      "active": "فعال"
+    },
+    "table": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "slug": "رابط المسوّق",
+      "coupons": "الكوبونات",
+      "user-info": "معلومات المسوّق",
+      "status": "الحالة",
+      "address": "العنوان",
+      "total-price": "نسبة المسوق",
+      "created-at": "تاريخ الإنشاء",
+      "amount": "المبلغ",
+      "payment-date": "تاريخ الدفع",
+      "sale-orders": "الطلبات",
+      "commission": "العمولة",
+      "statistics-link": "رابط الاحصائيات"
+    },
+    "forms": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "slug": "لاحقة المسوق",
+      "priceType": "نوع السعر",
+      "price": "السعر",
+      "add-coupons": "إضافة كوبونات",
+      "coupons": "الكوبونات",
+      "amount": "المبلغ",
+      "payment-date": "تاريخ الدفع",
+      "sale-orders": "طلبات البيع",
+      "add-slug": "إضافة رمز",
+      "add-coupon": "إضافة كوبون",
+      "slug-validation": "Aيجب ان يبدأ بـ ",
+      "commissionType": "نوع العمولة",
+      "commission_rate": "سعر العمولة",
+      "password": "كلمة المرور",
+      "active": "متاح للاستخدام"
+    },
+    "tabs": {
+      "view": {
+        "header": "عرض المسوّق",
+        "sub-header": "عرض تفاصيل المسوّق"
+      }
+    }
+  },
+  "affiliate-statistics": {
+    "header": "إحصائيات المسوّق",
+    "sub-header": "عرض تفاصيل إحصائيات المسوّق",
+    "link-count": "عدد الطلبات القادمة عن طريق الرابط",
+    "link-commission": "إجمالي العمولة عن طريق الرابط",
+    "coupon-count": "عدد الطلبات عن طريق الكوبونات",
+    "coupon-commission": "إجمالي العمولة عبر الكوبونات",
+    "no-orders": "لا توجد طلبات",
+    "no-payments": "لا توجد مدفوعات",
+    "link-table": {
+      "title": "طلبات البيع عبر الروابط",
+      "orders": "الطلبات",
+      "commission": "العمولة"
+    },
+    "coupon-table": {
+      "title": "طلبات البيع عبر الكوبونات",
+      "orders": "الطلبات",
+      "commission": "العمولة"
+    },
+    "payment-table": {
+      "title": "المدفوعات",
+      "orders": "الطلبات",
+      "order": "الطلب",
+      "amount": "المبلغ",
+      "date": "التاريخ",
+      "total": "الإجمالي"
+    }
+  },
+  "shipping": {
+    "table": {
+      "image": "الصورة",
+      "name": "الاسم",
+      "description": "الوصف",
+      "publish": "نشر على المتجر",
+      "value": "تكلفة الشحن"
+    },
+    "common": {
+      "add-shipping": "إضافة وسيلة شحن جديدة",
+      "edit-shipping": "تعديل وسيلة الشحن",
+      "shipping-details": "تفاصيل وسيلة الشحن",
+      "current-icon": "الصورة الحالية"
+    },
+    "forms": {
+      "nameEn": "الاسم بالإنجليزية",
+      "nameAr": "الاسم بالعربية",
+      "descriptionEn": "الوصف بالإنجليزية",
+      "descriptionAr": "الوصف بالعربية",
+      "value": "القيمة",
+      "minSubtotalValue": "الحد الأدنى لقيمة الفاتورة الإجمالية",
+      "icon": "الصورة",
+      "publish": "نشر على المتجر",
+      "defaultMethod": "وسيلة الشحن الافتراضية"
+    }
+  },
+  "states": {
+    "table": {
+      "name": "الاسم",
+      "country": "البلد",
+      "published": "نشر"
+    },
+    "view": {
+      "header": "عرض الولاية/المحافظة",
+      "sub-header": "عرض تفاصيل الولاية/المحافظة"
+    },
+    "common": {
+      "add-state": "إضافة ولاية/محافظة",
+      "edit-state": "تعديل ولاية/محافظة",
+      "view-state": "عرض الولاية/المحافظة",
+      "publish": "نشر على المتجر"
+    },
+    "forms": {
+      "publish": "نشر",
+      "country": "البلد",
+      "nameAr": "الاسم بالعربية",
+      "nameEn": "الاسم بالإنجليزية"
+    }
+  },
+  "cities": {
+    "table": {
+      "name": "الاسم",
+      "state": "الولاية/المحافظة",
+      "published": "نشر على المتجر"
+    },
+    "common": {
+      "add-city": "إضافة مدينة",
+      "edit-city": "تعديل مدينة",
+      "view-city": "عرض مدينة",
+      "publish": "نشر على المتجر"
+    },
+    "forms": {
+      "publish": "نشر على المتجر",
+      "state": "الولاية/المحافظة",
+      "nameAr": "الاسم بالعربية",
+      "nameEn": "الاسم بالإنجليزية"
+    }
+  },
+  "dashboard-settings": {
+    "title": "إعدادات لوحة التحكم",
+    "preferredTableLocale": "اللغة المفضلة لمحتوى البيانات",
+    "preferredHomePage": "الصفحة الرئيسية المفضلة",
+    "button-update": "تحديث",
+    "storeName": "اسم المتجر",
+    "storeCategory": "فئة المتجر",
+    "monthOrdersGoal": "هدف الطلبات الشهري"
+  },
+  "alert-modal": {
+    "confirm-button": "تأكيد",
+    "deny-button": "إلغاء"
+  },
+  "website-ui-settings": {
+    "update": "تحديث",
+    "footer-flag-title": "Footer Flag",
+    "guest-checkout-title": "Guest CheckOut Required Field",
+    "user-addresses-title": "User Can CRUD Addresses",
+    "hide": "إخفاء",
+    "show": "عرض",
+    "yes": "نعم",
+    "no": "لا",
+    "EMAIL": "البريد الإلكتروني",
+    "PHONE_NUMBER": "رقم الهاتف",
+    "BOTH": "كلاهما",
+    "footer-logo-brief": "Footer Logo Brief",
+    "enable-user-address": "ENABLE USER MULTI ADDRESS",
+    "footer-copy-right": "Footer Copy Right",
+    "enable-footer-flag": "ENABLE FOOTER FLAG",
+    "guest-checkout-req": "GUEST CHECKOUT REQUIRED FIELDS",
+    "add-to-cart-flag-title": "Active Add To Cart",
+    "product-review-flag-title": "Active Product Review",
+    "wishlist-flag-title": "WishList Flag",
+    "active": "فعال",
+    "inactive": "غير فعال",
+    "register-login-title": "Active Register Login",
+    "coming-soon-title": "Coming Soon Mode",
+    "maintenance-mode-title": "Maintenance Mode",
+    "product-tax-title": "Active Product Tax"
+  },
+  "model-compatibility": {
+    "table": {
+      "name": "الاسم",
+      "brand": "العلامة التجارية",
+      "created-at": "تاريخ الإنشاء"
+    },
+    "common": {
+      "add-model-compatibility": "إضافة توافق النموذج",
+      "edit-model-compatibility": "تحرير توافق النموذج",
+      "model-details": "تفاصيل توافق النموذج"
+    },
+    "forms": {
+      "nameEn": "الاسم بالإنجليزية",
+      "nameAr": "الاسم بالعربية",
+      "name": "الاسم",
+      "brand": "العلامة التجارية",
+      "description": "الوصف",
+      "descriptionEn": "الوصف بالإنجليزية",
+      "descriptionAr": "الوصف بالعربية",
+      "modelImage": "صورة النموذج",
+      "publish": "نشر على المتجر"
+    }
+  },
+  "user-groups": {
+    "common": {
+      "add-user-group": "إضافة مجموعة مستخدمين",
+      "edit-user-group": "تعديل مجموعة مستخدمين"
+    },
+    "table": {
+      "name": "اسم المجموعة",
+      "no-users": "لم يتم العثور على مستخدمين",
+      "no-discounts": "لم يتم تطبيق أي خصومات"
+    },
+    "view": {
+      "header": "عرض مجموعة المستخدمين",
+      "sub-header": "عرض تفاصيل مجموعة المستخدمين"
+    },
+    "forms": {
+      "nameEn": "الاسم بالإنجليزية",
+      "nameAr": "الاسم بالعربية",
+      "descriptionEn": "الوصف بالإنجليزية",
+      "descriptionAr": "الوصف بالعربية",
+      "users": "المستخدمون"
+    }
+  },
+  "notifications": {
+    "common": {
+      "event": "حدث",
+      "target": "الهدف",
+      "active": "نشط",
+      "edit-notification-event": "تعديل حدث الإشعار",
+      "event-details": "تفاصيل حدث الإشعار",
+      "title": "العنوان",
+      "body": "الرسالة",
+      "add-notification": "إضافة إشعار",
+      "notification-list-ended": "لقد رأيت كل شيء",
+      "order": "طلب"
+    },
+    "forms": {
+      "titleEn": "العنوان بالإنجليزية",
+      "titleAr": "العنوان بالعربية",
+      "bodyEn": "الرسالة بالإنجليزية",
+      "bodyAr": "الرسالة بالعربية",
+      "active": "نشط",
+      "topic": "الموضوع",
+      "link": "الرابط"
+    }
+  },
+  "product-review": {
+    "table": {
+      "userName": "اسم المستخدم",
+      "title": "العنوان",
+      "published": "نشر",
+      "message": "الرسالة",
+      "rate": "التقييم"
+    },
+    "view": {
+      "header": "حالة العرض",
+      "sub-header": "عرض تفاصيل الحالة"
+    },
+    "common": {
+      "add-product-review": "إضافة تقييم المنتج",
+      "edit-product-review": "تعديل تقييم المنتج",
+      "product-review-details": "عرض تقييم المنتج",
+      "publish": "هل تم النشر",
+      "current-image": "الصورة الحالية"
+    },
+    "forms": {
+      "publish": "نشر",
+      "products": "المنتجات",
+      "product": "المنتج",
+      "rate": "التقييم",
+      "message": "الرسالة",
+      "image": "الصورة",
+      "title": "العنوان",
+      "user_fullname": "الاسم الكامل للمستخدم",
+      "user_email": "بريد المستخدم الإلكتروني"
+    }
+  },
+  "variants": {
+    "table": {
+      "cost": "التكلفة",
+      "price": "السعر",
+      "sku": "Sku",
+      "quantity": "الكمية",
+      "options": "الخيارات"
+    }
+  },
+  "products-images": {
+    "table": {
+      "images": "الصور",
+      "options": "الخيارات"
+    }
+  },
+  "products": {
+    "forms": {
+      "weightKg": "الوزن بالكيلوغرام",
+      "widthCm": "العرض بالسنتيمتر",
+      "lengthCm": "الطول بالسنتيمتر",
+      "heightCm": "الارتفاع بالسنتيمتر",
+      "brandCompatibilities": "توافق العلامات التجارية",
+      "modalProducts": "توافق النموذج",
+      "relatedProducts": "المنتجات ذات الصلة",
+      "crossSellingProducts": "منتجات البيع المتقاطع",
+      "connectivity": "طريقة التوصيل",
+      "color": "اللون"
+    }
+  },
+  "tax": {
+    "common": {
+      "add-tax": "إضافة ضريبة",
+      "edit-tax": "تحرير الضريبة",
+      "tax-details": "تفاصيل الضريبة"
+    },
+    "forms": {
+      "nameEn": "الاسم بالإنجليزية",
+      "nameAr": "الاسم بالعربية",
+      "descriptionEn": "الوصف بالإنجليزية",
+      "descriptionAr": "الوصف بالعربية",
+      "taxRate": "نسبة الضريبة",
+      "publish": "نشر",
+      "products": "المنتجات"
+    },
+    "table": {
+      "name": "اسم الضريبة",
+      "description": "وصف الضريبة",
+      "taxRate": "نسبة الضريبة",
+      "publish": "نشر"
+    }
+  },
+  "shipment-products": {
+    "common": {
+      "shipment-product-details": "تفاصيل منتج الشحن",
+      "edit-shipping-product": "تعديل منتج الشحن",
+      "add-shipping-product": "إضافة منتج شحن"
+    },
+    "forms": {
+      "name": "الاسم",
+      "code": "الرمز",
+      "billingNumber": "رقم الفاتورة",
+      "shipping": "طريقة الشحن",
+      "description": "الوصف",
+      "total": "الاجمالي",
+      "type": " نوع الشحن",
+      "price": "السعر",
+      "products": "المنتج"
+    },
+    "table": {
+      "name": "الاسم",
+      "code": "الرمز",
+      "billingNumber": "رقم الفاتورة",
+      "shipping": "طريقة الشحن",
+      "description": "الوصف"
+    }
+  },
+  "shipment-packages": {
+    "common": {
+      "shipment-package-details": "تفاصيل حزمة الشحن",
+      "edit-shipment-package": "تعديل حزمة الشحن",
+      "add-shipment-package": "إضافة حزمة شحن"
+    },
+    "forms": {
+      "name": "الاسم",
+      "description": "الوصف",
+      "dimensionUom": "وحدة قياس الأبعاد",
+      "height": "الارتفاع",
+      "width": "العرض",
+      "length": "الطول",
+      "weightUom": "وحدة قياس الوزن",
+      "weight": "الوزن"
+    },
+    "table": {
+      "name": "الاسم",
+      "description": "الوصف",
+      "dimensionUom": "وحدة قياس الأبعاد",
+      "height": "الارتفاع",
+      "width": "العرض",
+      "length": "الطول",
+      "weightUom": "وحدة قياس الوزن",
+      "weight": "الوزن"
+    }
+  },
+  "shipment-shippers": {
+    "common": {
+      "shipment-package-details": "تفاصيل شاحن الشحنة",
+      "edit-shipment-package": "تعديل شاحن الشحنة",
+      "add-shipment-package": "إضافة شاحن الشحنة"
+    },
+    "forms": {
+      "name": "الاسم",
+      "description": "الوصف",
+      "addressStreet": "شارع العنوان",
+      "additionalAddressInformation": "معلومات إضافية للعنوان",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "country": "البلد",
+      "city": "المدينة"
+    }
+  },
+  "ebay": {
+    "common": {
+      "add-account": "إضافة حساب ",
+      "return-policy": "سياسة الارجاع",
+      "shipping-policy": "سياسة الشحن",
+      "selling-policy": " سياسة البيع",
+      "add-more-shipping": "إضافة المزيد من الخدمات",
+      "info": "معلومات عامة",
+      "ebay-details": " معلومات ebay"
+    },
+    "policy": {
+      "add": {
+        "text-header": "إضافة سياسة الإرجاع",
+        "text-sub-header": "سياسة الارجاع"
+      }
+    },
+    "forms": {
+      "title": "العنوان",
+      "description": "الوصف",
+      "return-policy": "تفعيل سياسة الارجاع",
+      "unit": "الوحدة",
+      "type": "النوع",
+      "payer": "من سيدفع",
+      "int-return-policy": "سياسة الارجاع الخارجي",
+      "Domestic-Returns": "الارجاع الداخلي",
+      "General": "معلومات عامة",
+      "international-Returns": "الارجاع الخارجي",
+      "day": "ايام",
+      "month": "اشهر",
+      "year": "سنوات",
+      "BUYER": "المشتري",
+      "SELLER": "البائع",
+      "marketPlace": "موقع المتجر",
+      "returnAccepted": "الترجيع مقبول"
+    },
+    "table": {
+      "title": "العنوان",
+      "username": "اسم المستخدم",
+      "uuid": "uuid",
+      "expireDate": "تاريخ الانتهاء",
+      "active": "فعال"
+    }
+  },
+  "ebay-locations": {
+    "common": {
+      "add-location": "إضافة موقع",
+      "locations": "المواقع"
+    },
+    "forms": {
+      "name": "الاسم",
+      "city": "المدينة",
+      "country": "البلد",
+      "postalCode": "الرمز البريدي"
+    },
+    "table": {
+      "name": "الاسم",
+      "description": "الوصف",
+      "email": "البريد الإلكتروني",
+      "postalCode": "الرمز البريدي"
+    }
+  },
+  "sale-orders-shipments": {
+    "create-shipment-request": "إنشاء طلب شحن",
+    "create-verify-request": "إنشاء طلب تحقق",
+    "update-address": "تعديل العنوان",
+    "error": {
+      "missingOrder": "يرجى تحديد طلبات أولا"
+    },
+    "common": {
+      "ship-containers": "حاويات الشحن",
+      "containers-message": "يرجى تحديد الطلب الافتراضي ",
+      "add-new-ship": "إضافة شحنة جديدة"
+    },
+    "forms": {
+      "shipmentProduct": "منتج الشحن",
+      "shipmentShipper": "شاحن الشحن",
+      "shipmentPackage": "حزمة الشحن",
+      "customDimensions": "الأبعاد المخصصة",
+      "dimensionUom": "وحدة قياس الأبعاد",
+      "height": "الارتفاع",
+      "width": "العرض",
+      "length": "الطول",
+      "weightUom": "وحدة قياس الوزن",
+      "weight": "الوزن",
+      "consigneeName": "اسم المستلم",
+      "consigneeName2": "اسم المستخدم 2",
+      "consigneeName3": "اسم المستخدم 3",
+      "consigneeEmail": "بريد المستلم الإلكتروني",
+      "consigneePhone": "هاتف المستلم",
+      "consigneeCountry": "دولة المستلم",
+      "consigneeCity": "مدينة المستلم",
+      "consigneeAddressStreet": "شارع عنوان المستلم",
+      "consigneeAdditionalAddressInformation": "معلومات العنوان الإضافية للمستلم",
+      "consigneePostCode": "رمز بريد المستلم",
+      "validateAnsShip": " التحقق من الشحن",
+      "postalCode": "الرمز البريدي",
+      "addressNotes": " معلومات اضافية للعنوان",
+      "streetAddress": " عنوان الشارع ",
+      "city": "المدينة",
+      "state": "الولاية",
+      "your-orders": "طلباتك",
+      "address": "العنوان",
+      "action": "الخيارات",
+      "refNumber": "الرقم المرجعي ",
+      "country": "البلد",
+      "userFullName": "الاسم",
+      "shipping": " طريقة الشحن",
+      "shipTogether": "شحن معا"
+    },
+    "table": {
+      "description": "الوصف",
+      "shipmentNumber": "رقم الشحن",
+      "shipmentRefNumber": "رقم مرجع الشحن",
+      "label": "الملصق",
+      "manifest": "البيان",
+      "city": "المدينة",
+      "country": "البلد",
+      "postalCode": "الرمز البريدي",
+      "account": "الحساب",
+      "consignee-name": "اسم المرسل إليه"
+    }
+  },
+  "ebay-ship": {
+    "common": {
+      "view": {
+        "header": "صفحة تفاصيل سياسة الشحن",
+        "sub-header": "مشاهدة جميع تفاصيل سياسة الشحن"
+      }
+    },
+    "header": " سياسة شحن",
+    "sub-header": "إضافة سياسة الشحن",
+    "forms": {
+      "General": "معلومات عامة",
+      "title": "عنوان",
+      "cost": "التكلفة",
+      "time": "الوقت",
+      "costType": "نوع التكلفة",
+      "shippingServiceCode": "كود الشحن",
+      "mode": "نوع الشحن",
+      "currency": "العملة",
+      "marketPlace": "مكان المتجر"
+    }
+  },
+  "ebay-selling-policy": {
+    "header": "إضافة سياسة البيع",
+    "sub-header": "سياسة البيع",
+    "forms": {
+      "General": "عام",
+      "title": "العنوان",
+      "how": "كيف تريد بيع العنصر الخاص بك",
+      "listing-type": "نوع الإدراج",
+      "quantity": "الكمية",
+      "taxation": "الضرائب",
+      "vatRate": "معدل ضريبة القيمة المضافة",
+      "percentage": "معدل ضريبة القيمة المضافة %",
+      "price": "السعر",
+      "uuid": "UUID",
+      "account": "اسم الحساب",
+      "marketplace": "السوق",
+      "time": "مدة المعالجة",
+      "costType": "نوع التكلفة",
+      "optionType": "نوع الخيار",
+      "buyerResponsibleForShipping": "المشتري مسؤول عن الشحن",
+      "freeShipping": "شحن مجاني",
+      "shippingServiceCode": "رمز خدمة الشحن",
+      "sku": "كود التخزين",
+      "format": "التنسيق",
+      "availableQuantity": "الكمية المتاحة",
+      "currency": "العملة"
+    }
+  },
+  "ebay-listing": {
+    "products": {
+      "view": {
+        "header": "عرض تفاصيل المنتج",
+        "sub-header": "معلومات تفصيلية عن المنتج المحدد"
+      },
+      "common": {
+        "add-product": "إضافة منتج"
+      },
+      "forms": {
+        "products": "المنتجات",
+        "categories": "الفئة",
+        "treeName": "اسم شجرة الفئة",
+        "listing": "اسم القائمة",
+        "reference": "معرف القائمة المرجعية لموقع ebay",
+        "productVariant": "نسخة المنتج",
+        "errors": "الأخطاء",
+        "syncErrors": "أخطاء المزامنة",
+        "lastSyncedToEbayAt": "أخر وقت مزامنة",
+        "publishedToEbayAt": "وقت النشر",
+        "endedAt": "تم أيقاف النشر في"
+      },
+      "table": {
+        "publishStatus": "Ebay حالة المنتج على",
+        "syncStatus": "حالة المزامنة",
+        "product": "المنتج",
+        "reference": "رابط المنتج",
+        "category": " اسم الفئة",
+        "actions": "الخيارات"
+      }
+    },
+    "common": {
+      "add-list": "إضافة قائمة",
+      "products": "المنتجات"
+    },
+    "forms": {
+      "name": "الاسم",
+      "account": "الحساب",
+      "location": "الموقع",
+      "return": "سياسة الارجاع",
+      "shipping": "سياسة الشحن",
+      "selling": "ساسية البيع",
+      "marketPlace": " مكان المتجر"
+    },
+    "table": {
+      "accountName": "الحساب",
+      "returnPolicy": "سياسة الارجاع ",
+      "shippingPolicy": "سياسة الشحن",
+      "sellingPolicy": "سياسة البيع",
+      "location": "الموقع",
+      "name": "الاسم"
+    }
+  },
+  "ebay-cate": {
+    "view": {
+      "header": "عرض تفاصيل الفئة",
+      "sub-header": "تفاصيل الفئة"
+    },
+    "table": {
+      "treeName": "اسم الشجرة",
+      "parent": "الفئة الرئيسية",
+      "marketplace": "السوق",
+      "reference": "معرف مرجع إيباي",
+      "publish": "تم النشر"
+    },
+    "forms": {
+      "treeName": "اسم الشجرة",
+      "parent": "الفئة الرئيسية",
+      "marketplace": "سوق",
+      "reference": "معرف المرجع في إيباي",
+      "publish": "نشر",
+      "aspects": "جوانب إيباي",
+      "internalKey": " المفتاح الداخلي",
+      "internalModel": "النموذج الداخلي",
+      "name": "الاسم"
+    }
+  },
+
+  "report": {
+    "table": {
+      "totalOrder": "إجمالي الطلبات",
+      "totalPrice": "إجمالي السعر",
+      "country": "البلد",
+      "userName": "اسم المستخدم",
+      "userEmail": "البريد الإلكتروني للمستخدم",
+      "phoneNumber": "رقم الهاتف",
+      "currency": "العملة",
+      "created-at": "تاريخ الإنشاء",
+      "product": "المنتج",
+      "productId": "معرف المنتج",
+      "sku": "SKU",
+      "status": "الحالة",
+      "total": "الإجمالي",
+      "orderNo": "رقم الطلب"
+    }
+  }
+}

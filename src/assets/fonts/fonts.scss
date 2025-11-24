@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'PingARLT';
+  src: url('./ping/PingAR+LT-Regular.otf');
+}
+
+html[dir=rtl] body {
+  font-family: 'PingARLT', sans-serif !important;
+}

@@ -1,0 +1,1713 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "users": "Users",
+    "multi-type-menu": "Multi-Type Menus",
+    "countries": "Countries",
+    "payment-methods-menu": "Payment Methods",
+    "currencies-menu": "Currencies",
+    "roles": "Roles",
+    "visual-settings": "Visual Settings",
+    "contact-us": "Contact Us",
+    "sale-order-menu": "Sale Order",
+    "products-menu": "Products Catalogue",
+    "products": "Products",
+    "categories-menu": "Categories",
+    "brands-menu": "Brands",
+    "product-types-menu": "Product Types",
+    "tags-menu": "Tags",
+    "faqs-menu": "FAQs",
+    "Sliders": "Sliders",
+    "website-content": "Website Content",
+    "settings-menu": "Settings",
+    "visit-store": "visit store",
+    "website-themes": "Website Themes",
+    "marketing": "Marketing",
+    "discounts": "Discounts",
+    "auto-discounts": "Auto Discounts",
+    "coupon-discounts": "Coupon Discounts",
+    "seo": "SEO",
+    "product-group-menu": "Product Group",
+    "product-attributes": "Product Attributes",
+    "error-logs": "Error Logs",
+    "maintenance": "Maintenance",
+    "affiliates": "Affiliates",
+    "shippings": "Shippings",
+    "states": "States",
+    "cities": "Cities",
+    "website-ui-settings": "Website UI Settings",
+    "model-compatibility": "Model Compatibility",
+    "payments-settings": "Payments Settings",
+    "store-settings": "Store Settings",
+    "store-appearance": "Store Appearance",
+    "store-admins": "Store Admins",
+    "store-info": "Info",
+    "social-media-links": "Social Media Links",
+    "functionality-settings": "Functionality Settings",
+    "admins": "Admins",
+    "company": "Companies",
+    "user-groups": "User Groups",
+    "registration-requests": "Registration Requests",
+    "notifications": "Notifications",
+    "notifications-events": "Notifications Events",
+    "broadcast-notifications": "BroadCast Notifications",
+    "product-reviews": "Product Reviews",
+    "tax": "Tax",
+    "mobile-sliders": "Mobile Sliders",
+    "desktop-sliders": "Desktop Sliders",
+    "shipment-products": "Shipment Products",
+    "shipment-packages": "Shipment Packages",
+    "shipment-shippers": "Shipment Shippers",
+    "dhl": "DHL",
+    "sale-orders-requests": "Sale Orders Requests",
+    "sale-orders-shipments": "Sale Orders Shipments",
+    "ebay": "Ebay Accounts",
+    "ebay-policies": "eBay Policies",
+    "Ebay": "Ebay",
+    "ebay-shipping-policy": "Ebay shipping policy ",
+    "ebay-selling-policy": "Ebay selling policy ",
+    "ebay-orders": "Sale Orders",
+    "ebay-listing": "Ebay listing",
+    "deutsche-sale-orders-requests": "Sale Orders Requests ",
+    "deutsche-sale-orders-shipments": "Sale Orders Shipments",
+    "deutsche": "Deutsche",
+    "ebay-categories": "Ebay Categories",
+    "pages": "Pages",
+    "apps": "Apps",
+    "user-details": "User Details",
+    "reports": "Reports",
+    "date-wise-sales": "Date Wise Sales",
+    "country-wise-sales": "Country Wise Sales",
+    "customer-wise-sales": "Customer Wise Sales",
+    "item-wise-sales": "Item Wise Sales",
+    "latest-products-sales": "Latest Products Sales",
+    "sales-details": "Sales Details"
+  },
+  "common": {
+    "home": "Home",
+    "users": "Users",
+    "countries": "Countries",
+    "awards": "Awards",
+    "brands": "Brands",
+    "categories": "Product Categories",
+    "contact-us": "Contact Us",
+    "currencies": "Currencies",
+    "faqs": "Frequently Asked Questions",
+    "website-links": "Website Links",
+    "payment-methods": "Payment Methods",
+    "product-types": "Product Types",
+    "products": "Products",
+    "sale-orders": "Sale Orders",
+    "sliders": "Sliders",
+    "tags": "Tags",
+    "visual-settings": "Visual Settings",
+    "roles": "Roles",
+    "add-currency": "Add New Currency",
+    "currency-subtext": "Add a new Currency, if it does not exist",
+    "add-role": "Add New Role",
+    "role-subtext": "Add a new Role, if it does not exist",
+    "website-themes": "Website Themes",
+    "edit-theme-value": "Edit Theme Value",
+    "Edit": "Edit",
+    "submit": "Submit",
+    "copied": "Copied",
+    "editValue": "Click to edit",
+    "edit-product-page": "Edit Product Page",
+    "product-details-page": "Product Details Page",
+    "productOutOfStock": "Product almost out of stock",
+    "notOutOfStock": "Nothing Out Of Stock",
+    "latestOrders": "Latest Orders",
+    "edit-month-goal": "edit month goal",
+    "value": "value",
+    "add-product-page": "Add Product Page",
+    "add-brand": "Add Brand",
+    "edit-brand": "Edit Brand",
+    "brand-details": "Brand Details",
+    "add-category": "Add Category",
+    "edit-category": "Edit Category",
+    "category-details": "Category Details",
+    "sale-order-details": "Sale Order Details",
+    "Dashboards": "Dashboards",
+    "Analytics": "Analytics",
+    "Apps": "Apps",
+    "eCommerce": "eCommerce",
+    "Chat": "Chat",
+    "Todo": "Todo",
+    "Calendar": "Calendar",
+    "Ecommerce": "Ecommerce",
+    "Shop": "Shop",
+    "Wish List": "Wish List",
+    "Details": "Details",
+    "Checkout": "Checkout",
+    "List": "List",
+    "View": "View",
+    "Starter Kit": "Starter Kit",
+    "1 Column": "1 Column",
+    "2 Columns": "2 Columns",
+    "Fixed Navbar": "Fixed Navbar",
+    "Floating Navbar": "Floating Navbar",
+    "Fixed Layout": "Fixed Layout",
+    "Static Layout": "Static Layout",
+    "Dark Layout": "Dark Layout",
+    "Light Layout": "Light Layout",
+    "UI Elements": "UI Elements",
+    "Content": "Content",
+    "Grid": "Grid",
+    "Typography": "Typography",
+    "Text Utilities": "Text Utilities",
+    "Syntax Highlighter": "Syntax Highlighter",
+    "Icons": "Icons",
+    "Feather": "Feather",
+    "Card": "Card",
+    "Basic": "Basic",
+    "Advance": "Advance",
+    "Statistics": "Statistics",
+    "actions": "Actions",
+    "Table": "Table",
+    "Reactstrap Tables": "Reactstrap Tables",
+    "React Tables": "React Tables",
+    "DataTable": "DataTable",
+    "Advanced": "Advanced",
+    "Mail Template": "Mail Template",
+    "Page Layouts": "Page Layouts",
+    "Collapsed Menu": "Collapsed Menu",
+    "Layout Boxed": "Layout Boxed",
+    "Without Menu": "Without Menu",
+    "Layout Empty": "Layout Empty",
+    "Layout Blank": "Layout Blank",
+    "Components": "Components",
+    "Alerts": "Alerts",
+    "Buttons": "Buttons",
+    "Breadcrumbs": "Breadcrumbs",
+    "Carousel": "Carousel",
+    "Collapse": "Collapse",
+    "Dropdowns": "Dropdowns",
+    "List Group": "List Group",
+    "Modals": "Modals",
+    "Pagination": "Pagination",
+    "Navs Component": "Navs Component",
+    "Navbar": "Navbar",
+    "Tabs Component": "Tabs Component",
+    "Pills Component": "Pills Component",
+    "Tooltips": "Tooltips",
+    "Popovers": "Popovers",
+    "Badges": "Badges",
+    "Pill Badges": "Pill Badges",
+    "Progress": "Progress",
+    "Media Objects": "Media Objects",
+    "Spinner": "Spinner",
+    "Toasts": "Toasts",
+    "Timeline": "Timeline",
+    "Extra Components": "Extra Components",
+    "Avatar": "Avatar",
+    "Chips": "Chips",
+    "Divider": "Divider",
+    "Wizard": "Wizard",
+    "Pages": "Pages",
+    "Miscellaneous": "Miscellaneous",
+    "Coming Soon": "Coming Soon",
+    "Maintenance": "Maintenance",
+    "Extensions": "Extensions",
+    "Profile": "Profile",
+    "Account Settings": "Account Settings",
+    "FAQ": "FAQ",
+    "Knowledge Base": "Knowledge Base",
+    "Search": "Search",
+    "Invoice": "Invoice",
+    "Charts & Maps": "Charts & Maps",
+    "Charts": "Charts",
+    "Apex": "Apex",
+    "ChartJS": "ChartJS",
+    "Recharts": "Recharts",
+    "Leaflet Maps": "Leaflet Maps",
+    "Sweet Alert": "Sweet Alert",
+    "React Hot Toasts": "React Hot Toasts",
+    "Sliders": "Sliders",
+    "File Uploader": "File Uploader",
+    "Editor": "Editor",
+    "Drag & Drop": "Drag & Drop",
+    "Tour": "Tour",
+    "Auto Complete": "Auto Complete",
+    "Clipboard": "Clipboard",
+    "Swiper": "Swiper",
+    "Tree": "Tree",
+    "I18n": "I18n",
+    "React Paginate": "React Paginate",
+    "Export": "Export",
+    "Import": "Import",
+    "Export Selected": "Export Selected",
+    "Access Control": "Access Control",
+    "Others": "Others",
+    "Menu Levels": "Menu Levels",
+    "Second Level": "Second Level",
+    "Second Level 2.1": "Second Level 2.1",
+    "Second Level 2.2": "Second Level 2.2",
+    "Third Level 3.1": "Third Level 3.1",
+    "Third Level 3.2": "Third Level 3.2",
+    "Disabled Menu": "Disabled Menu",
+    "Documentation": "Documentation",
+    "Raise Support": "Raise Support",
+    "Change Log": "Change Log",
+    "text": "Cake sesame snaps cupcake gingerbread danish I love gingerbread. Apple pie pie jujubes chupa chups muffin halvah lollipop. Chocolate cake oat cake tiramisu marzipan sugar plum. Donut sweet pie oat cake dragée fruitcake cotton candy lemon drops.",
+    "Pricing": "Pricing",
+    "Blog": "Blog",
+    "Detail": "Detail",
+    "Form Repeater": "Form Repeater",
+    "Preview": "Preview",
+    "Add": "Add",
+    "Ratings": "Ratings",
+    "show": "show",
+    "entries": "entries",
+    "search": "search",
+    "Prev": "Prev",
+    "Next": "Next",
+    "BlockUI": "BlockUI",
+    "Reactstrap": "Reactstrap",
+    "Welcome": "Welcome",
+    "Reset Password": "Reset Password",
+    "Verify Email": "Verify Email",
+    "Deactivate Account": "Deactivate Account",
+    "Promotional": "Promotional",
+    "Apps & Pages": "Apps & Pages",
+    "User Interface": "User Interface",
+    "Misc": "Misc",
+    "Roles": "Roles",
+    "License": "License",
+    "API Key": "API Key",
+    "Accordion": "Accordion",
+    "OffCanvas": "OffCanvas",
+    "Permissions": "Permissions",
+    "Modal Examples": "Modal Examples",
+    "Roles & Permissions": "Roles & Permissions",
+    "clear": "Clear",
+    "apply": "Apply",
+    "filters": "Filters",
+    "add-slider-page": "Add Slider Page",
+    "edit-slider-page": "Edit Slider Page",
+    "view-slider-page": "View Slider Page",
+    "edit-slider-details": "Edit Slider Details",
+    "back": "Back",
+    "title-en": "English Title",
+    "title-ar": "Arabic Title",
+    "description-en": "English Description",
+    "description-ar": "Arabic Description",
+    "link": "Link",
+    "button-text": "Button Text",
+    "button-color": "Button Color",
+    "publish-website": "Published To Website",
+    "discounts": "Discounts",
+    "add-discounts": "Add Discounts",
+    "edit-discount": "Edit Discounts",
+    "view-discount": "View Discount",
+    "coupon-discounts": "Coupon Discounts",
+    "add-coupon-discounts": "Add Coupon Discounts",
+    "edit-coupon-discounts": "Edit Coupon Discounts",
+    "view-coupon-discounts": "View Coupon Discounts",
+    "Login": "Login",
+    "seo-page": "SEO",
+    "invoice": "Invoice",
+    "date-issued": "Date Issued",
+    "invoice-to": "Invoice To",
+    "name": "Name",
+    "address": "Address",
+    "phone-number": "Phone Number",
+    "email": "Email",
+    "payment-details": "Payment Details",
+    "total-due": "Total Due",
+    "currency": "Currency",
+    "subtotal": "Subtotal",
+    "coupon-discount": "Coupon Discount",
+    "regular-discount": "Regular Discount",
+    "tax": "Tax",
+    "total": "Total",
+    "product-image": "Product Image",
+    "product-info": "Product Info",
+    "product-options": "Selected Options",
+    "quantity": "Quantity",
+    "price": "Price",
+    "attribute-item-main-attributes": "Main Details",
+    "attribute-item-options": "Options Details",
+    "item": "Item",
+    "option": "Option",
+    "add-option": "Add Option",
+    "add": "Add",
+    "create": "Create",
+    "attribute-item-add-title": "Add Attribute Item",
+    "product-main-details": "Main Details",
+    "product-relations": "Relations",
+    "product-specification": "Specification",
+    "product-meta-info": "Meta Information",
+    "cost": "Cost",
+    "more-info": "More Info",
+    "publish-to-website": "Publish To Website",
+    "info": "Info",
+    "meta": "Meta",
+    "images": "Images",
+    "attributes": "Attributes",
+    "delete": "Delete",
+    "no-data": "No Data",
+    "update": "Update",
+    "product-group": "Product Group",
+    "product-group-menu": "Product Group",
+    "add-product-group": "Add Product Group",
+    "edit-product-group": "Edit Product Group",
+    "view-product-group": "View Product Group",
+    "product-attributes": "Product Attributes",
+    "error-logs": "Error Logs",
+    "affiliates": "Affiliates",
+    "affiliate-details-page": "Affiliate Details Page",
+    "shippingValue": "Shipping Value",
+    "shipping": "Shipping",
+    "shippings": "Shippings",
+    "add-shipping": "Add Shipping",
+    "states": "States",
+    "cities": "Cities",
+    "states-details-page": "States Details Page",
+    "countries-details-page": "Countries Details Page",
+    "address-notes": "Address Notes",
+    "filter-clear-button": "clear",
+    "filter-apply-button": "submit",
+    "image-uploader-subLabel": "Drag & Drop your files or Browse",
+    "no-data-table": "There are no records to displayy",
+    "male": "Male",
+    "female": "Female",
+    "edit-setting-page": "Edit Setting Page",
+    "website-ui-settings": "Website Ui Settings",
+    "model-compatibility": "Model Compatibility",
+    "store-info": "Store Info",
+    "store-social-links": "Store Social Media Links",
+    "admins": "Admins",
+    "company": "Companies",
+    "user-groups": "User Groups",
+    "user-group-details-page": "User Group Details Page",
+    "notifications": "Notifications",
+    "notifications-events": "Notifications Events",
+    "product reviews": "Product Reviews",
+    "mobile-sliders": "Mobile Sliders",
+    "desktop-sliders": "Desktop Sliders",
+    "Add Product Variant": "Add Product Variant",
+    "Edit Product Variant": "Edit Product Variant",
+    "options": "options",
+    "sku": "Sku",
+    "Add options and images": "Add options and images",
+    "Edit options and images": "Edit options and images",
+    "View Image": "View image",
+    "sort": "Sort",
+    "process-done": "process was done successfully",
+    "countryOfOrigin": "Country Of Origin",
+    "shipment-products": "Shipment Products",
+    "shipment-packages": "Shipment Packages",
+    "shipment-shippers": "Shipment Shippers",
+    "sale-orders-shipments": "Sale Orders Shipments",
+    "edit-sale-order-shipment": "Edit Sale Order Shipment",
+    "ebay": "eBay store",
+    "add-return-policy": "Add return policy",
+    "ebay-return-policy": "Ebay return policy",
+    "get-token": "Submit & Get token",
+    "account-created": "Account has been created successfully",
+    "ebay-shipping-policy": "Ebay shipping policy ",
+    "add-selling-policy": "Add Selling Policy ",
+    "ebay-selling-policy": "Ebay selling policy",
+    "ebay-listing": "eBay listing",
+    "ebay-listing-products": "eBay listing products",
+    "ebay-sale-orders": "Ebay Sale Orders",
+    "paymentMethod": "Payment Method ",
+    "paymentReferenceId": "Payment Reference Id",
+    "amount": "Amount",
+    "date": "Payment Date",
+    "userName": "User Name",
+    "fullName": "Full Name",
+    "buyerData": "Buyer Data",
+    "ebay-order-id": "Ebay Order ID",
+    "userPostalCode": "User Postal Code",
+    "ebay-categories": "Ebay Categories",
+    "shippingTrackingNumberSyncedToEbay": "Tracking Number Synced To Ebay",
+    "shippingTrackingNumber": "Shipping Tracking Number",
+    "multi-ship-request": "send multiple shipments",
+    "note" : "* Changing the shipping method only alters the shipping process for the order and does not affect the price in any way",
+    "user-details": "User Details",
+    "reports": "Reports",
+    "date-wise-sales": "Date Wise Sales",
+    "country-wise-sales": "Country Wise Sales",
+    "customer-wise-sales": "Customer Wise Sales",
+    "item-wise-sales": "Item Wise Sales",
+    "latest-products-sales": "Latest Products Sales",
+    "sales-details": "Sales Details",
+    "create-ship": "Create Shipment",
+    "expand-all" : "Expand All",
+    "wallet": "Deutsche Wallet",
+    "resend-invoice-to-user":"Resend Invoice To User",
+    "collapse-all" : "Collapse All"
+  },
+  "action-buttons": {
+    "duplicate_row": "Duplicate Row",
+    "view_profile": "View Profile",
+    "edit": "Edit",
+    "view_details": "View Details",
+    "view": "View",
+    "standard": "Standard",
+    "added-by-admins": "Added By Admins",
+    "delete": "Delete",
+    "edit-role": "Edit Role",
+    "delete-role": "Delete Role",
+    "duplicate-role": "Duplicate Role",
+    "edit-currency": "Edit Currency",
+    "delete-currency": "Delete Currency",
+    "duplicate-currency": "Duplicate Currency",
+    "active": "Active",
+    "in-active": "In Active",
+    "edit-payment-method": "Edit Payment Method",
+    "delete-payment-method": "Delete Payment Method",
+    "duplicate-payment-method": "Duplicate Payment Method",
+    "edit-visual-setting": "Edit Visual Setting",
+    "delete-visual-setting": "Delete Visual Setting",
+    "duplicate-visual-setting": "Duplicate Visual Setting",
+    "view-visual-setting": "View Visual Setting",
+    "edit-item": "Edit Item",
+    "delete-item": "Delete Item",
+    "shipment_request": "Shipment",
+    "verify": "Verify And Shipment"
+  },
+  "forms": {
+    "User": "User",
+    "Email": "Email",
+    "Forms & Tables": "Forms & Tables",
+    "Form Elements": "Form Elements",
+    "Select": "Select",
+    "Switch": "Switch",
+    "Checkbox": "Checkbox",
+    "Radio": "Radio",
+    "Input": "Input",
+    "Input Groups": "Input Groups",
+    "Number Input": "Number Input",
+    "Textarea": "Textarea",
+    "Date & Time Picker": "Date & Time Picker",
+    "Input Mask": "Input Mask",
+    "Form Layout": "Form Layout",
+    "Form Wizard": "Form Wizard",
+    "React Hook Form": "React Hook Form",
+    "Form Validation": "Form Validation",
+    "Authentication": "Authentication",
+    "Login v1": "Login v1",
+    "Login v2": "Login v2",
+    "Register v1": "Register v1",
+    "Register v2": "Register v2",
+    "Forgot Password v1": "Forgot Password v1",
+    "Forgot Password v2": "Forgot Password v2",
+    "Reset Password v1": "Reset Password v1",
+    "Reset Password v2": "Reset Password v2",
+    "Error": "Error",
+    "Not Authorized": "Not Authorized",
+    "field-required": "This field is Required",
+    "number-field-typeError": "Please enter a valid number",
+    "nameEn": "English Name",
+    "nameAr": "Arabic Name",
+    "descriptionEn": "English Description",
+    "descriptionAr": "Arabic Description",
+    "shortDescriptionAr": "Arabic Short Description",
+    "shortDescriptionEn": "English Short Description",
+    "image": "Image",
+    "current-image": "Current Image",
+    "feature-image": "Feature Image",
+    "publish": "Publish",
+    "update": "Update",
+    "name": "Name",
+    "description": "Description",
+    "meta-description": "Meta Description",
+    "meta-keywords": "Meta Keywords",
+    "meta-descriptionAr": "Arabic Meta Description",
+    "meta-keywordsAr": "Arabic Meta Keywords",
+    "meta-descriptionEn": "English Meta Description",
+    "meta-keywordsEn": "English Meta Keywords",
+    "save": "Save",
+    "outOfStock": "Out Of Stock",
+    "invalid-billing-number": "You should add 14 character",
+    "Send": "Send",
+    "shipment-created-successfully": "Shipment Created successfully",
+    "create-ship": "Create Shipment"
+  },
+  "home": {
+    "brands": "Brands",
+    "categories": "Categories",
+    "products": "Products",
+    "users": "Users",
+    "income": "Income",
+    "products-chart": "Explore our wide range of products across various categories",
+    "income-chart": "Enhance your financial well-being with a steady stream of income",
+    "visitors": "Visitors",
+    "month-goal": "Month Goal",
+    "total-paid-orders": "Total Paid Orders(Default Currency)",
+    "orders-count": "Orders Count",
+    "month-summary": "Month summary"
+  },
+  "table": {
+    "add-btn": "Add Record",
+    "add-img": "Add Image",
+    "add-slider": "Add Image/Video",
+    "clear": "Clear",
+    "paginate": "entities of",
+    "total": "total",
+    "headers": {
+      "created-at": "Created At",
+      "name": "Name",
+      "description": "Description"
+    }
+  },
+  "product-group": {
+    "common": {
+      "product-attributes": "Product Attributes"
+    },
+    "all-page": {
+      "add-card-button": "Add New Group",
+      "add-card-description": "Enter New Product Group"
+    },
+    "add-page": {
+      "text-header": "Add Product Group",
+      "text-sub-header": "Enter New Product Group"
+    },
+    "edit-page": {
+      "text-header": "Edit Product Group",
+      "text-sub-header": "Edit A Product Group"
+    },
+    "forms": {
+      "text-attributes-label": "Attributes"
+    }
+  },
+  "product-attribute": {
+    "common": {
+      "add-option": "Add New Option",
+      "option": "Option",
+      "add-attribute": "Add New Attribute",
+      "attributes": "Attributes"
+    },
+    "add-page": {
+      "text-header": "Add New Attribute"
+    },
+    "forms": {
+      "main-details": "Main Details",
+      "option-details": "Option Details",
+      "price-type": "Price Type",
+      "price": "Price",
+      "option": "Option",
+      "required": "required",
+      "default": "Default"
+    }
+  },
+  "product": {
+    "common": {
+      "info": "Info",
+      "meta": "Meta",
+      "images": "Images",
+      "attributes": "Options",
+      "categories": "Categories",
+      "brand": "Brand",
+      "slug": "Slug",
+      "price": "Price",
+      "cost": "Cost",
+      "sku": "Stock Keeping Unit (SKU)",
+      "mpn": "Manufacturer Part Number (MPN)",
+      "gtin": "Global Trade Item Number (GTIN)",
+      "image": "Product Image",
+      "product-group": "Product Group",
+      "metaKeywordEn": "Meta Keywords English",
+      "metaKeywordAr": "Meta Keywords Arabic",
+      "metaDescriptionEn": "Meta Description English",
+      "metaDescriptionAr": "Meta Description Arabic",
+      "publish": "Published To Website",
+      "add-image": "Add Image",
+      "extra-info": "Extra Info",
+      "add-attribute": "Add New Option",
+      "add-option": "Add New Value",
+      "add.header": "Add Product",
+      "add.sub-header": "add details of the product",
+      "add-info": "Add Extra Info",
+      "add-meta": "Add Meta Info",
+      "sort-options": "Options Sort",
+      "outOfStock": "Out Of Stock",
+      "variant-des": "In this Tab you can specify additional details for this product's variations",
+      "product-variants": "Product Variants",
+      "options-images": "Options Images",
+      "featured": "Featured"
+    },
+    "table": {
+      "product-image": "Product Image",
+      "product-info": "Product Info",
+      "more-info": "More Info",
+      "price": "Price",
+      "quantity": "ََQuantity",
+      "publish": "Publish To Website",
+      "sku": "SKU"
+    },
+    "forms": {
+      "image": "Product Image",
+      "publish": "Publish To Website",
+      "current-image": "Current Image",
+      "product-images": "Images",
+      "feature-image": "Feature Image"
+    },
+    "tabs": {
+      "view": {
+        "header": "View Product",
+        "sub-header": "View the details of the product"
+      },
+      "meta": {
+        "header": "Meta Information Page",
+        "sub-header": "meta information help you product chance of appearance in the internet search engins"
+      },
+      "extra-info": {
+        "header": "Extra Information Page",
+        "sub-header": "meta information help you product chance of appearance in the internet search engins"
+      }
+    }
+  },
+  "filter": {
+    "forms": {
+      "user": "user",
+      "status": "Status",
+      "publish": "Publish",
+      "country": "Country",
+      "paymentProvideCode": "Payment Provide Code",
+      "itemProduct": "Product",
+      "fromDate": "From Date",
+      "toDate": "To Date",
+      "sort" : "Sort By"
+    }
+  },
+  "currencies": {
+    "sub-header": "Effortlessly manage your e-commerce store's currency settings.",
+    "common": {
+      "add-currency": "Add Currency",
+      "edit-currency": "edit-currency",
+      "countries-sublabel": "*This currency will be the default currency for the selected countries",
+      "equals": "equals"
+    },
+    "forms": {
+      "nameEn": "English Name",
+      "nameAr": "Arabic Name",
+      "code": "Currency Code",
+      "symbol": "Symbol",
+      "defaultExchangeRate": "Exchange Rate With Default Currency",
+      "countries": "Countries",
+      "active": "Set as available to use"
+    }
+  },
+  "roles": {
+    "sub-header": "EfA role provides access to predefined menus and features depending on the assigned role to an administrator that can have access to what he needs.",
+    "card-header": "Roles Count",
+    "common": {
+      "add-role": "Add Role",
+      "edit-role": "Edit Role",
+      "role-permissions": "Role Permissions"
+    },
+    "forms": {
+      "role-name": "Role Name"
+    }
+  },
+  "payment-method": {
+    "sub-header": "Manage your preferred payment method easily and securely. Update your payment details to ensure smooth transactions and uninterrupted service.",
+    "common": {
+      "edit-payment": "Edit Payment Method",
+      "current-image": "Current Image"
+    },
+    "list": {},
+    "forms": {
+      "nameEn": "English Name",
+      "nameAr": "Arabic Name",
+      "image": "Image",
+      "publish": "Publish To Website"
+    }
+  },
+  "visual-settings": {
+    "sub-header": "Manage your preferred visual settings easily and securely. Update your visual settings to ensure smooth edits.",
+    "edit-header": "Edit Setting",
+    "edit-subHeader": "Edit the details of the setting",
+    "forms": {
+      "titleEn": "English Title",
+      "titleAr": "Arabic Title",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "image": "Image",
+      "current-image": "Current Image"
+    }
+  },
+  "sale-order": {
+    "table": {
+      "user-info": "User Info",
+      "status": "Status",
+      "address": "Address",
+      "total-price": "Total Price",
+      "created-at": "Created At",
+      "reference": "Order Number",
+      "update-status": "Are you sure you want to update the status?",
+      "ebayOrderId": "Ebay Order Id",
+      "select": "select",
+      "productId" : "Product Qty",
+      "ActionColumn" : "Action Column"
+    },
+    "invoice": {
+      "subtotal-discount": "Subtotal Discount"
+    }
+  },
+  "users": {
+    "common": {
+      "add-user": "Add User",
+      "edit-user": "Edit User",
+      "current-avatar": "Current Avatar",
+      "company-info": "Company Info"
+    },
+    "table": {
+      "full-name": "Full Name",
+      "phone-number": "Phone Number",
+      "gender": "Gender",
+      "user-type": "User Type",
+      "blocked": "Block User",
+      "status": "Status",
+      "update-status": "Are you sure you want to update the status?"
+    },
+    "forms": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "password": "Password",
+      "phoneNumber": "Phone Number",
+      "gender": "Gender",
+      "country": "Country",
+      "dateOfBirth": "Date Of Birth",
+      "roleGroup": "Role Group",
+      "avatar": "Avatar",
+      "cancel-button": "Cancel"
+    },
+    "profile": {
+      "details": "Details",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "country": "Country",
+      "defaultCurrency": "Default Currency",
+      "gender": "Gender",
+      "createdAt": "Created At",
+      "dateOfBirth": "Date Of Birth",
+      "userGroup": "User Group",
+      "companyName": "Company Name",
+      "companyLogo": "Company Logo",
+      "companyCommercialRecord": "Company Commercial Record",
+      "viewCommercialRecord": "View Commercial Record",
+      "tabs": {
+        "addresses": "Addresses",
+        "orders": "Orders",
+        "company-details": "Company Details"
+      },
+      "addresses": {
+        "table": {
+          "primary": "Primary Address",
+          "location": "Location",
+          "notes": "Notes"
+        }
+      }
+    }
+  },
+  "contact-us": {
+    "table": {
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "email": "Email",
+      "phone-number": "Phone Number",
+      "message": "Message",
+      "status": "Status"
+    },
+    "common": {
+      "status-read": "READ",
+      "status-unread": "UNREAD",
+      "contact-details": "Contact Details",
+      "edit-status": "Edit Status",
+      "fullName": "Full Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "message": "Message",
+      "status": "Status"
+    }
+  },
+  "tags": {
+    "table": {
+      "image": "Image",
+      "title": "Title",
+      "description": "Description",
+      "publish": "Publish To Website",
+      "featured": "Featured"
+    },
+    "forms": {
+      "titleEn": "English Title",
+      "titleAr": "Arabic Title",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "products": "Products",
+      "image": "Image",
+      "backgroundColor": "Background Color",
+      "publish": "Publish to website",
+      "featured": "Featured"
+    },
+    "common": {
+      "add-tag": "Add Tag",
+      "edit-tag": "Edit Tag",
+      "tag-details": "Tag Details",
+      "current-image": "Current Image"
+    }
+  },
+  "categories": {
+    "table": {
+      "image": "Image",
+      "name": "Name",
+      "description": "Description",
+      "publish": "Publish to Website",
+      "featured": "Featured"
+    },
+    "common": {
+      "add-category": "Add Category",
+      "edit-category": "Edit Category",
+      "category-details": "Category Details",
+      "current-image": "Current Image"
+    },
+    "forms": {
+      "nameEn": "English Title",
+      "nameAr": "Arabic Title",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "parent": "Parent",
+      "image": "Image",
+      "publish": "Publish to website",
+      "featured": "Featured",
+      "guide": "Image Guide"
+    }
+  },
+  "brands": {
+    "table": {
+      "image": "Image",
+      "name": "Name",
+      "description": "Description",
+      "publish": "Publish to Website",
+      "featured": "Featured"
+    },
+    "common": {
+      "add-brand": "Add Brand",
+      "edit-brand": "Edit Brand",
+      "brand-details": "Brand Details",
+      "current-image": "Current Image"
+    },
+    "forms": {
+      "nameEn": "English Title",
+      "nameAr": "Arabic Title",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "parent": "Parent",
+      "image": "Image",
+      "publish": "Publish to website",
+      "featured": "Featured"
+    }
+  },
+  "discount": {
+    "table": {
+      "name": "Name",
+      "value": "Value",
+      "start-date": "Start Date",
+      "expiry-date": "Expiry Date",
+      "active": "Active",
+      "couponCode": "Coupon Code"
+    },
+    "common": {
+      "add-discount": "Add Discount",
+      "edit-discount": "Edit Discount",
+      "discount-details": "Discount Details",
+      "current-icon": "Current Icon",
+      "add-coupon-discount": "Add Coupon Discount",
+      "edit-coupon-discount": "Edit Coupon Discount",
+      "coupon-discount-details": "Coupon Discount Details",
+      "active": "Is Active"
+    },
+    "forms": {
+      "nameEn": "English Name",
+      "nameAr": "Arabic Name",
+      "type": "Type",
+      "value": "Value",
+      "applicableTo": "ApplicableTo",
+      "categories": "Categories",
+      "products": "Products",
+      "startDate": "Start Date",
+      "expiryDate": "Expiry Date",
+      "active": "Active",
+      "couponCode": "Coupon Code",
+      "usageLimitPerUser": "usage Limit Per User",
+      "userGroups": "User Groups",
+      "applyToAll": "Apply To All"
+    }
+  },
+  "seo": {
+    "table": {
+      "name": "Name",
+      "value": "Value"
+    }
+  },
+  "multi-type-settings": {
+    "table": {
+      "name": "Name",
+      "value": "Value"
+    }
+  },
+  "countries": {
+    "view": {
+      "header": "View Country",
+      "sub-header": "View the details of the country"
+    },
+    "table": {
+      "name": "Name",
+      "phone-number-code": "Phone Number Code",
+      "iso": "ISO",
+      "published": "Published to Website"
+    },
+    "forms": {
+      "nameAr": "Arabic Name",
+      "nameEn": "English Name",
+      "iso2": "ISO",
+      "phoneNumberCode": "Phone Number Code",
+      "active": "Is Active",
+      "localeCode": "Locale Code"
+    }
+  },
+  "faq": {
+    "table": {
+      "question": "Question",
+      "description": "Description"
+    },
+    "common": {
+      "add-faq": "Add FAQ",
+      "edit-faq": "Edit FAQ",
+      "faq-details": "FAQ Details"
+    },
+    "forms": {
+      "questionAr": "Arabic Question",
+      "questionEn": "English Question",
+      "answerAr": "Arabic Answer",
+      "answerEn": "English Answer"
+    }
+  },
+  "sliders": {
+    "list": {
+      "link": "Link",
+      "title": "Title"
+    },
+    "common": {
+      "current-image": "Current Image"
+    },
+    "forms": {
+      "titleEn": "English Title",
+      "titleAr": "Arabic Title",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "link": "link",
+      "buttonTextEn": "English Button Text",
+      "buttonTextAr": "Arabic Button Text",
+      "image": "Image",
+      "buttonColor": "Button Color",
+      "publish": "Publish to website",
+      "media": "Media"
+    }
+  },
+  "error-logs": {
+    "table": {
+      "error-code": "Status Code",
+      "endpoint": "Endpoint",
+      "error-details": "Error Details",
+      "error-date": "Error Date"
+    }
+  },
+  "affiliates": {
+    "common": {
+      "add-affiliate": "Add Affiliate",
+      "edit-affiliate": "Edit Affiliate",
+      "info": "Info",
+      "orders": "Orders",
+      "payments": "Payments",
+      "add-affiliate-payment": "Add Affiliate Payment",
+      "edit-affiliate-payment": "Edit Affiliate Payment",
+      "total-amount": "Total amount",
+      "amount-to-paid": " Amount to be paid",
+      "payment-date": "Payment Date",
+      "removed-option": "removed options:",
+      "statistics": "Statistics",
+      "commission_rate": "Commission Rate\\Value ",
+      "commission_total": "commission total",
+      "order": "order",
+      "active": "active"
+    },
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "slug": "Slug",
+      "coupons": "Coupons",
+      "user-info": "User Info",
+      "status": "Status",
+      "address": "Address",
+      "total-price": "Total Price",
+      "created-at": "Created At",
+      "amount": "Amount",
+      "payment-date": "Payment Date",
+      "sale-orders": "Sale Orders",
+      "commission": "Affiliate Commission",
+      "statistics-link": "Statistics Link"
+    },
+    "forms": {
+      "name": "Name",
+      "email": "Email",
+      "slug": "Slug",
+      "priceType": "Price Type",
+      "price": "Price",
+      "add-coupons": "add coupons",
+      "coupons": "Coupons",
+      "amount": "Amount",
+      "payment-date": "Payment Date",
+      "sale-orders": "Sale Orders",
+      "add-slug": "Add Slug",
+      "add-coupon": "Add Coupon",
+      "slug-validation": "must start with 'A-'",
+      "commissionType": "Commission Type",
+      "commission_rate": "Commission Rate",
+      "password": "Affiliate Password",
+      "active": "Active"
+    },
+    "tabs": {
+      "view": {
+        "header": "View Affiliate",
+        "sub-header": "View the details of the affiliate"
+      }
+    }
+  },
+  "affiliate-statistics": {
+    "header": "Statistic Affiliate",
+    "sub-header": "View the details of the statistic affiliate",
+    "link-count": "Link Sale Orders Count",
+    "link-commission": "Link Total Commission",
+    "coupon-count": "Coupon Sale Orders Count",
+    "coupon-commission": "Coupon Total Commission",
+    "no-orders": "there is no Orders",
+    "no-payments": "there is no Payments",
+    "link-table": {
+      "title": "Link Sale Orders",
+      "orders": "Orders",
+      "commission": "Commission"
+    },
+    "coupon-table": {
+      "title": "Coupon Sale Orders",
+      "orders": "Orders",
+      "commission": "Commission"
+    },
+    "payment-table": {
+      "title": "Payments",
+      "orders": "Orders",
+      "order": "Order",
+      "amount": "Amount",
+      "date": "Date",
+      "total": "Total"
+    }
+  },
+  "shipping": {
+    "table": {
+      "image": "Icon",
+      "name": "Name",
+      "description": "Description",
+      "publish": "Publish to Website",
+      "value": "Value"
+    },
+    "common": {
+      "add-shipping": "Add Shipping",
+      "edit-shipping": "Edit Shipping",
+      "shipping-details": "Shipping Details",
+      "current-icon": "Current Icon"
+    },
+    "forms": {
+      "nameEn": "English Name",
+      "nameAr": "Arabic Name",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "value": "Value",
+      "minSubtotalValue": "Min Subtotal Value",
+      "icon": "Icon",
+      "publish": "Publish to website",
+      "defaultMethod": "Default Shipping Method"
+    }
+  },
+  "states": {
+    "table": {
+      "name": "Name",
+      "country": "Country",
+      "published": "Publish"
+    },
+    "view": {
+      "header": "View State",
+      "sub-header": "View the details of the state"
+    },
+    "common": {
+      "add-state": "Add State",
+      "edit-state": "Edit State",
+      "view-state": "View State",
+      "publish": "Is Publish"
+    },
+    "forms": {
+      "publish": "Publish",
+      "country": "Country",
+      "nameAr": "Arabic Name",
+      "nameEn": "English Name"
+    }
+  },
+  "cities": {
+    "table": {
+      "name": "Name",
+      "state": "State",
+      "published": "Publish"
+    },
+    "common": {
+      "add-city": "Add City",
+      "edit-city": "Edit City",
+      "view-city": "View City",
+      "publish": "Is Publish"
+    },
+    "forms": {
+      "publish": "Publish",
+      "state": "State",
+      "nameAr": "Arabic Name",
+      "nameEn": "English Name"
+    }
+  },
+  "dashboard-settings": {
+    "title": "Dashboard Settings Manager",
+    "preferredTableLocale": "Preferred Locale For Table Content",
+    "preferredHomePage": "Preferred Home Page",
+    "button-update": "Update",
+    "storeName": "Store Name",
+    "storeCategory": "Store Category",
+    "monthOrdersGoal": "Monthly Orders Goal"
+  },
+  "alert-modal": {
+    "confirm-button": "Yes",
+    "deny-button": "cancel"
+  },
+  "website-ui-settings": {
+    "update": "Update",
+    "footer-flag-title": "Footer Flag",
+    "guest-checkout-title": "Guest CheckOut Required Field",
+    "user-addresses-title": "User Can CRUD Addresses",
+    "hide": "Hide",
+    "show": "Show",
+    "yes": "Yes",
+    "no": "No",
+    "EMAIL": "EMAIL",
+    "PHONE_NUMBER": "Phone Number",
+    "BOTH": "Both",
+    "footer-logo-brief": "Footer Logo Brief",
+    "enable-user-address": "ENABLE USER MULTI ADDRESS",
+    "footer-copy-right": "Footer Copy Right",
+    "enable-footer-flag": "ENABLE FOOTER FLAG",
+    "guest-checkout-req": "GUEST CHECKOUT REQUIRED FIELDS",
+    "add-to-cart-flag-title": "Active Add To Cart",
+    "product-review-flag-title": "Active Product Review",
+    "wishlist-flag-title": "WishList Flag",
+    "active": "Active",
+    "inactive": "Inactive",
+    "register-login-title": "Active Register Login",
+    "coming-soon-title": "Coming Soon Mode",
+    "maintenance-mode-title": "Maintenance Mode",
+    "legal-information-title": "Active Legal Information",
+    "shipment-information-title": "Active Shipment Information",
+    "purchase-process-title": "Active Purchase Process",
+    "product-tax-title": "Auto Calculate Tax Value"
+  },
+  "model-compatibility": {
+    "table": {
+      "name": "Name",
+      "brand": "Brand",
+      "created-at": "Created At"
+    },
+    "common": {
+      "add-model-compatibility": "Add Model Compatibility",
+      "edit-model-compatibility": "Edit Model Compatibility",
+      "model-details": "Model Compatibility Details"
+    },
+    "forms": {
+      "nameEn": "English Name",
+      "nameAr": "Arabic Name",
+      "brand": "Brand",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "modelImage": "Model Image",
+      "publish": "Is Publish"
+    }
+  },
+  "products": {
+    "forms": {
+      "weightKg": "Weight Kg",
+      "widthCm": "Width Cm",
+      "lengthCm": "Length Cm",
+      "heightCm": "Height Cm",
+      "brandCompatibilities": "Brand Compatibilities",
+      "modalProducts": "Model Compatibilities",
+      "relatedProducts": "Related Products",
+      "crossSellingProducts": "Cross Selling Products",
+      "connectivity": "Connectivity",
+      "color": "Color"
+    }
+  },
+  "user-groups": {
+    "common": {
+      "add-user-group": "Add User Group",
+      "edit-user-group": "Edit User Group"
+    },
+    "table": {
+      "name": "Group Name",
+      "no-users": "No Users Found",
+      "no-discounts": "No Discounts Applied"
+    },
+    "view": {
+      "header": "View User Group",
+      "sub-header": "View the details of the User Group"
+    },
+    "forms": {
+      "nameEn": "English Name",
+      "nameAr": "Arabic Name",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "users": "Users"
+    }
+  },
+  "notifications": {
+    "common": {
+      "event": "Event",
+      "target": "Target",
+      "active": "Active",
+      "edit-notification-event": "Edit Notification Event",
+      "event-details": "Notification Event Details",
+      "title": "Title",
+      "body": "Message",
+      "add-notification": "Add Notification",
+      "notification-list-ended": "Yay! You have seen it all",
+      "order": "order"
+    },
+    "forms": {
+      "titleEn": "English Title",
+      "titleAr": "Arabic Title",
+      "bodyEn": "English Message",
+      "bodyAr": "Arabic Message",
+      "active": "Active",
+      "topic": "Topic",
+      "link": "Link"
+    }
+  },
+  "product-review": {
+    "table": {
+      "userName": "User Name",
+      "title": "Title",
+      "published": "Publish",
+      "message": "Message",
+      "rate": "Rate"
+    },
+    "view": {
+      "header": "View State",
+      "sub-header": "View the details of the state"
+    },
+    "common": {
+      "add-product-review": "Add Product Review",
+      "edit-product-review": "Edit Product Review",
+      "product-review-details": "View Product Review",
+      "publish": "Is Publish",
+      "current-image": "Current Image"
+    },
+    "forms": {
+      "publish": "Publish",
+      "products": "Products",
+      "product": "Product",
+      "rate": "Rate",
+      "message": "Message",
+      "image": "Image",
+      "title": "Title",
+      "user_fullname": "User Full Name",
+      "user_email": "User Email"
+    }
+  },
+  "variants": {
+    "table": {
+      "cost": "cost",
+      "price": "price",
+      "sku": "Sku",
+      "quantity": "quantity",
+      "options": "Options"
+    }
+  },
+  "products-images": {
+    "table": {
+      "images": "images",
+      "options": "options"
+    }
+  },
+  "tax": {
+    "common": {
+      "add-tax": "Add Tax",
+      "edit-tax": "Edit Tax",
+      "tax-details": "Tax Details"
+    },
+    "forms": {
+      "nameEn": "English Name",
+      "nameAr": "Arabic Name",
+      "descriptionEn": "English Description",
+      "descriptionAr": "Arabic Description",
+      "taxRate": "Tax Rate",
+      "publish": "Publish",
+      "products": "Products"
+    },
+    "table": {
+      "name": "Tax Name",
+      "description": "Tax Description",
+      "taxRate": "Tax Rate",
+      "publish": "Publish"
+    }
+  },
+  "shipment-products": {
+    "common": {
+      "shipment-product-details": "Shipment Product Details",
+      "edit-shipment-product": "Edit Shipment Product",
+      "add-shipment-product": "Add Shipment Product"
+    },
+    "forms": {
+      "name": "Name",
+      "code": "Code",
+      "billingNumber": "Billing Number",
+      "shipping": "Shipping Method",
+      "description": "Description",
+      "total": "Total",
+      "type": "Method Type",
+      "price": "Price",
+      "products": "Products"
+    },
+    "table": {
+      "name": "Name",
+      "code": "Code",
+      "billingNumber": "Billing Number",
+      "shipping": "Shipping Method",
+      "description": "Description"
+    }
+  },
+  "shipment-packages": {
+    "common": {
+      "shipment-package-details": "Shipment Package Details",
+      "edit-shipment-package": "Edit Shipment Package",
+      "add-shipment-package": "Add Shipment Package"
+    },
+    "forms": {
+      "name": "Name",
+      "description": "Description",
+      "dimensionUom": "Dimension Uom",
+      "height": "Height",
+      "width": "Width",
+      "length": "Length",
+      "weightUom": "Weight Uom",
+      "weight": "weight"
+    },
+    "table": {
+      "name": "Name",
+      "description": "Description",
+      "dimensionUom": "Dimension Uom",
+      "height": "Height",
+      "width": "Width",
+      "length": "Length",
+      "weightUom": "Weight Uom",
+      "weight": "weight"
+    }
+  },
+  "shipment-shippers": {
+    "common": {
+      "shipment-shipper-details": "Shipment Shipper Details",
+      "edit-shipment-shipper": "Edit Shipment Shipper",
+      "add-shipment-shipper": "Add Shipment Shipper"
+    },
+    "forms": {
+      "name": "Name",
+      "description": "Description",
+      "addressStreet": "Address Street",
+      "additionalAddressInformation": "Additional Address Information",
+      "email": "Email",
+      "phone": "Phone",
+      "country": "Country",
+      "city": "City",
+      "postalCode": "Postal Code"
+    },
+    "table": {
+      "name": "Name",
+      "description": "Description",
+      "email": "Email",
+      "postalCode": "Postal Code"
+    }
+  },
+  "sale-orders-shipments": {
+    "create-shipment-request": "Create Shipment Request",
+    "create-verify-request": "Create Verify Shipment Request",
+    "update-address": "Update Address",
+    "error": {
+      "missingOrder": "please select order first"
+    },
+    "common": {
+      "ship-containers": "Shipments Containers",
+      "containers-message" : "Please select the default order" ,
+      "add-new-ship" : "Add New Shipment"
+    },
+    "forms": {
+      "shipmentProduct": "Shipment Product",
+      "shipmentShipper": "Shipment Shipper",
+      "shipmentPackage": "Shipment Package",
+      "customDimensions": "custom Dimensions",
+      "dimensionUom": "Dimension Uom",
+      "height": "Height",
+      "width": "Width",
+      "length": "Length",
+      "weightUom": "Weight Uom",
+      "weight": "weight",
+      "consigneeName": "Consignee Name",
+      "consigneeName2": "Consignee Name 2",
+      "consigneeName3": "Consignee Name 3",
+      "consigneeEmail": "Consignee Email",
+      "consigneePhone": "Consignee Phone",
+      "consigneeCountry": "Consignee Country",
+      "consigneeCity": "Consignee City",
+      "consigneeAddressStreet": "Consignee Address Street",
+      "consigneeAdditionalAddressInformation": "Consignee Additional Address Information",
+      "consigneePostCode": "Consignee PostCode",
+      "validateAndShip": "Validate And Ship",
+      "postalCode": "Postal Code",
+      "addressNotes": "Address Notes",
+      "streetAddress": "Street Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country" ,
+      "userFullName" : "Full Name",
+      "your-orders" : "Your Orders:" ,
+      "address" : "Address",
+      "action" : "Action",
+      "refNumber" : "Reference Number",
+      "shipping" : "Shipping Method",
+      "companyName" : "CompanyName",
+      "addressLine1" : "AddressLine1",
+      "addressLine2" : "AddressLine2",
+      "shipTogether": "Ship Together"
+    },
+    "table": {
+      "description": "Description",
+      "shipmentNumber": "Shipment Number",
+      "shipmentRefNumber": "Shipment Ref Number",
+      "label": "Label",
+      "manifest": "Manifest",
+      "consignee-name":"Consignee Name"
+    }
+  },
+  "ebay": {
+    "common": {
+      "add-account": "Add Account",
+      "return-policy": "Return Policy",
+      "shipping-policy": "Shipping Policy",
+      "selling-policy": "Selling Policy",
+      "add-more-shipping": "Add More Shipping Services",
+      "info": "Info",
+      "ebay-details": "Ebay Details"
+    },
+    "policy": {
+      "add": {
+        "text-header": "Add Return Policy",
+        "text-sub-header": "return policy"
+      }
+    },
+    "forms": {
+      "title": "Title",
+      "description": "Description",
+      "return-policy": "Return Policy",
+      "unit": "Unit",
+      "type": "type",
+      "payer": "payer",
+      "int-return-policy": "international return policy",
+      "Domestic-Returns": "Domestic Returns",
+      "General": "General",
+      "international-Returns": "International Returns",
+      "day": "Days",
+      "month": "Months",
+      "year": "Years",
+      "buyer": "Buyer",
+      "seller": "Seller",
+      "marketPlace": "Market Place ",
+      "returnAccepted": "Return Accepted "
+    },
+    "table": {
+      "title": "Title",
+      "username": "username",
+      "uuid": "uuid",
+      "expireDate": "expiration date",
+      "active": "active"
+    }
+  },
+  "ebay-locations": {
+    "common": {
+      "add-location": "Add location",
+      "locations": "Locations"
+    },
+    "forms": {
+      "name": "name",
+      "city": "city",
+      "country": "country",
+      "postalCode": "postal code"
+    },
+    "table": {
+      "name": "name",
+      "city": "city",
+      "country": "country",
+      "postalCode": "postal code",
+      "account": "account"
+    }
+  },
+  "ebay-ship": {
+    "common": {
+      "view": {
+        "header": "Shipping Policy View Page",
+        "sub-header": "View the details of shipping policy"
+      }
+    },
+    "header": "Add Shipping  Policy",
+    "sub-header": "Shipping  Policy",
+    "forms": {
+      "General": "General",
+      "title": "title",
+      "cost": "cost",
+      "time": "Handling Time",
+      "costType": "cost type",
+      "shippingServiceCode": "shipping service code",
+      "mode": "mode",
+      "currency": "currency",
+      "marketPlace": "Market place"
+    }
+  },
+  "ebay-selling-policy": {
+    "header": "Add Selling  Policy",
+    "sub-header": "Selling  Policy",
+    "forms": {
+      "General": "General",
+      "title": "Title ",
+      "how": "How you want to sell your item",
+      "listing-type": "Listing Type",
+      "quantity": "Quantity",
+      "taxation": "Taxation",
+      "vatRate": "Vat Rate",
+      "percentage": "Vat Rate %",
+      "price": "Price",
+      "uuid": "UUID",
+      "account": "Account",
+      "marketplace": "Marketplace",
+      "time": "Handling Time",
+      "costType": "Cost Type",
+      "optionType": "Option Type",
+      "buyerResponsibleForShipping": "Buyer Responsible for Shipping",
+      "freeShipping": "Free Shipping",
+      "shippingServiceCode": "Shipping Service Code",
+      "sku": "SKU",
+      "format": "Format",
+      "availableQuantity": "Available Quantity",
+      "currency": "Currency"
+    }
+  },
+  "ebay-listing": {
+    "products": {
+      "view": {
+        "header": "View Product Details",
+        "sub-header": "Detailed information about the selected product"
+      },
+      "common": {
+        "add-product": "Add Product"
+      },
+      "forms": {
+        "products": "Products",
+        "categories": "Category",
+        "treeName": "Category Tree Name",
+        "listing": "Listing Name",
+        "reference": "Item Reference",
+        "productVariant": "Product Variant" ,
+        "syncErrors" : "Sync Errors",
+        "lastSyncedToEbayAt" : "Last Synced To Ebay At",
+        "publishedToEbayAt" : "Published To Ebay At",
+        "endedAt" : "Ended At"
+      },
+      "table": {
+        "publishStatus": "Ebay Listing Status",
+        "syncStatus": "Sync Status",
+        "product": "Product",
+        "reference": "Item Reference",
+        "category": "Category Name",
+        "actions" : "Actions"
+      }
+    },
+    "common": {
+      "add-list": "Add List",
+      "products": "Products"
+    },
+    "forms": {
+      "name": "Name",
+      "account": "Account Name",
+      "location": "Location",
+      "return": "Return Policy",
+      "shipping": "Shipping Policy",
+      "selling": "Selling Policy",
+      "marketPlace": "Market place"
+    },
+    "table": {
+      "accountName": "Account",
+      "returnPolicy": "Return Policy",
+      "shippingPolicy": "Shipping Policy",
+      "sellingPolicy": "Selling Policy",
+      "location": "Location",
+      "name": "Name"
+    }
+  },
+  "ebay-cate": {
+    "view": {
+      "header" : "View Category Details",
+      "sub-header" : "Category Details"
+    },
+    "table": {
+      "treeName": "Tree Name",
+      "parent": "Parent Category",
+      "marketplace": "Marketplace",
+      "reference": "Ebay Reference Id",
+      "publish": "Published"
+
+    },
+    "forms": {
+      "treeName": "Tree Name",
+      "parent": "Parent Category",
+      "marketplace": "Marketplace",
+      "reference": "Ebay Reference Id",
+      "publish": "Published",
+      "aspects": "Ebay Aspects",
+      "internalKey": "Internal Key",
+      "internalModel" : "Internal Model",
+      "name": "Name"
+    }
+  },
+
+  "report": {
+    "table": {
+      "totalOrder": "Total Order",
+      "totalPrice": "Total Price",
+      "country": "Country",
+      "userName": "User Name",
+      "userEmail": "User Email",
+      "phoneNumber": "Phone Number",
+      "currency": "Currency",
+      "created-at": "Created At",
+      "product": "Product",
+      "productId": "Product Id",
+      "sku": "SKU",
+      "status": "Status",
+      "total": "Total",
+      "orderNo": "Order Number"
+    }
+  }
+}
+

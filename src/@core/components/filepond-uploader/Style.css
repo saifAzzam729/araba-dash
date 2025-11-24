@@ -1,0 +1,37 @@
+.filepond--item {
+    width: calc(50% - 0.5em);
+}
+
+@media (min-width: 30em) {
+    .filepond--item {
+        width: calc(50% - 0.5em);
+    }
+}
+
+@media (min-width: 50em) {
+    .filepond--item {
+        width: calc(33.33% - 0.5em);
+    }
+}
+
+/*.filepond--root {*/
+/*    max-height: 20em;*/
+/*}*/
+
+[dir=rtl] .filepond--root{
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+[dir=rtl] .filepond--file-info{
+    transform: unset !important;
+}
+
+[dir=rtl] .filepond--list-scroller[data-state=overflow] .filepond--list {
+    left: 1em;
+}
+
+.custom-button{
+    border: 2px solid #eee;
+    border-radius: 20px;
+}

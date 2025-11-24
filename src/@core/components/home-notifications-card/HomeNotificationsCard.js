@@ -1,0 +1,319 @@
+// ** Custom Components
+import Avatar from "@mui/material/Avatar";
+
+// ** Reactstrap Imports
+import { Card, CardHeader, CardTitle, CardBody } from 'reactstrap'
+
+// ** Avatar Imports
+import defaultAvatar from "@src/assets/images/logo/default-avatar.jpg";
+
+const HomeNotificationsCard = ({ colors, trackBgColor }) => {
+    const employeesTasks = [
+        {
+            avatar: defaultAvatar,
+            title: 'Ryan Harrington',
+            subtitle: 'iOS Developer',
+            time: '9hr 20m',
+            chart: {
+                type: 'radialBar',
+                series: [45],
+                height: 30,
+                width: 30,
+                options: {
+                    grid: {
+                        show: false,
+                        padding: {
+                            left: -15,
+                            right: -15,
+                            top: -12,
+                            bottom: -15
+                        }
+                    },
+                    colors: [colors.primary.main],
+                    plotOptions: {
+                        radialBar: {
+                            hollow: {
+                                size: '22%'
+                            },
+                            track: {
+                                background: trackBgColor
+                            },
+                            dataLabels: {
+                                showOn: 'always',
+                                name: {
+                                    show: false
+                                },
+                                value: {
+                                    show: false
+                                }
+                            }
+                        }
+                    },
+                    stroke: {
+                        lineCap: 'round'
+                    }
+                }
+            }
+        },
+        {
+            avatar: defaultAvatar,
+            title: 'Louisa Norton',
+            subtitle: 'UI Designer',
+            time: '4hr 17m',
+            chart: {
+                type: 'radialBar',
+                series: [65],
+                height: 30,
+                width: 30,
+                options: {
+                    grid: {
+                        show: false,
+                        padding: {
+                            left: -15,
+                            right: -15,
+                            top: -12,
+                            bottom: -15
+                        }
+                    },
+                    colors: [colors.danger.main],
+                    plotOptions: {
+                        radialBar: {
+                            hollow: {
+                                size: '22%'
+                            },
+                            track: {
+                                background: trackBgColor
+                            },
+                            dataLabels: {
+                                showOn: 'always',
+                                name: {
+                                    show: false
+                                },
+                                value: {
+                                    show: false
+                                }
+                            }
+                        }
+                    },
+                    stroke: {
+                        lineCap: 'round'
+                    }
+                }
+            }
+        },
+        {
+            avatar: defaultAvatar,
+            title: 'Jayden Duncan',
+            subtitle: 'Java Developer',
+            time: '12hr 8m',
+            chart: {
+                type: 'radialBar',
+                series: [60],
+                height: 30,
+                width: 30,
+                options: {
+                    grid: {
+                        show: false,
+                        padding: {
+                            left: -15,
+                            right: -15,
+                            top: -12,
+                            bottom: -15
+                        }
+                    },
+                    colors: [colors.success.main],
+                    plotOptions: {
+                        radialBar: {
+                            hollow: {
+                                size: '22%'
+                            },
+                            track: {
+                                background: trackBgColor
+                            },
+                            dataLabels: {
+                                showOn: 'always',
+                                name: {
+                                    show: false
+                                },
+                                value: {
+                                    show: false
+                                }
+                            }
+                        }
+                    },
+                    stroke: {
+                        lineCap: 'round'
+                    }
+                }
+            }
+        },
+        {
+            avatar: defaultAvatar,
+            title: 'Cynthia Howell',
+            subtitle: 'Angular Developer',
+            time: '3hr 19m',
+            chart: {
+                type: 'radialBar',
+                series: [35],
+                height: 30,
+                width: 30,
+                options: {
+                    grid: {
+                        show: false,
+                        padding: {
+                            left: -15,
+                            right: -15,
+                            top: -12,
+                            bottom: -15
+                        }
+                    },
+                    colors: [colors.secondary.main],
+                    plotOptions: {
+                        radialBar: {
+                            hollow: {
+                                size: '22%'
+                            },
+                            track: {
+                                background: trackBgColor
+                            },
+                            dataLabels: {
+                                showOn: 'always',
+                                name: {
+                                    show: false
+                                },
+                                value: {
+                                    show: false
+                                }
+                            }
+                        }
+                    },
+                    stroke: {
+                        lineCap: 'round'
+                    }
+                }
+            }
+        },
+        {
+            avatar: defaultAvatar,
+            title: 'Helena Payne',
+            subtitle: 'Marketing',
+            time: '9hr 50m',
+            chart: {
+                type: 'radialBar',
+                series: [65],
+                height: 30,
+                width: 30,
+                options: {
+                    grid: {
+                        show: false,
+                        padding: {
+                            left: -15,
+                            right: -15,
+                            top: -12,
+                            bottom: -15
+                        }
+                    },
+                    colors: [colors.warning.main],
+                    plotOptions: {
+                        radialBar: {
+                            hollow: {
+                                size: '22%'
+                            },
+                            track: {
+                                background: trackBgColor
+                            },
+                            dataLabels: {
+                                showOn: 'always',
+                                name: {
+                                    show: false
+                                },
+                                value: {
+                                    show: false
+                                }
+                            }
+                        }
+                    },
+                    stroke: {
+                        lineCap: 'round'
+                    }
+                }
+            }
+        },
+        {
+            avatar: defaultAvatar,
+            title: 'Troy Jensen',
+            subtitle: 'iOS Developer',
+            time: '4hr 48m',
+            chart: {
+                type: 'radialBar',
+                series: [80],
+                height: 30,
+                width: 30,
+                options: {
+                    grid: {
+                        show: false,
+                        padding: {
+                            left: -15,
+                            right: -15,
+                            top: -12,
+                            bottom: -15
+                        }
+                    },
+                    colors: [colors.primary.main],
+                    plotOptions: {
+                        radialBar: {
+                            hollow: {
+                                size: '22%'
+                            },
+                            track: {
+                                background: trackBgColor
+                            },
+                            dataLabels: {
+                                showOn: 'always',
+                                name: {
+                                    show: false
+                                },
+                                value: {
+                                    show: false
+                                }
+                            }
+                        }
+                    },
+                    stroke: {
+                        lineCap: 'round'
+                    }
+                }
+            }
+        }
+    ]
+
+    const renderTasks = () => {
+        return employeesTasks.map(task => {
+            return (
+                <div key={task.title} className='employee-task d-flex justify-content-between align-items-center'>
+                    <div className='d-flex'>
+                        <Avatar className='me-75' img={task.avatar} imgHeight='50' imgWidth='50' />
+                        <div className='my-auto'>
+                            <h6 className='mb-0'>{task.title}</h6>
+                            <small>{task.subtitle}</small>
+                        </div>
+                    </div>
+                    <div className='d-flex align-items-center'>
+                        <small className='text-muted me-75'>{task.time}</small>
+                    </div>
+                </div>
+            )
+        })
+    }
+
+    return (
+        <Card className='card-employee-task bg-white'>
+            <CardHeader>
+                <CardTitle tag='h4'>التنبيهات</CardTitle>
+            </CardHeader>
+            <CardBody>{renderTasks()}</CardBody>
+        </Card>
+    )
+}
+
+export default HomeNotificationsCard

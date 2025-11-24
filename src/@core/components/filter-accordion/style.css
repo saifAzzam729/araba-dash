@@ -1,0 +1,15 @@
+.accordion-header .accordion-button {
+    /*background-color: var(--bs-primary);*/
+    background-color: #d6d6d6;
+    /*box-shadow: var(--bs-box-shadow);*/
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+
+    color: var(--bs-primary);
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    margin-bottom: 14px;
+}
+
+.accordion .accordion-item:last-of-type {
+    margin-bottom: 10px;
+}

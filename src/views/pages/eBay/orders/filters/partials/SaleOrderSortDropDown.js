@@ -1,0 +1,52 @@
+import {useEffect} from "react";
+import CustomControlledDropdownField from "@components/controlled-inputs/CustomControlledDropdownField";
+import useQueryParams from "@hooks/useQueryParams";
+import {useFormContext} from "react-hook-form";
+import {useLocaleContext} from "@src/providers/LocaleProvider";
+
+export default function SaleOrderSortDropDown() {
+
+    const {control, setValue, formState: {errors}} = useFormContext();
+
+    const saleOrderSortOptions = [
+        {
+            label: "product",
+            value: "soipvp.id",
+        },
+
+    ]
+
+
+    const {getQueryParams} = useQueryParams();
+    const {translate} = useLocaleContext()
+
+
+    function extractSelectedStatusFromOptions(sortValue) {
+        const found = saleOrderSortOptions.find(opt => opt.value === sortValue);
+        if (found) {
+            setValue('sort', found);
+        }
+    }
+
+    useEffect(() => {
+
+        if (getQueryParams('sort')) {
+            extractSelectedStatusFromOptions(getQueryParams('sort'));
+        }
+
+    }, [saleOrderSortOptions]);
+
+
+    return (
+        <CustomControlledDropdownField
+            label={translate('filter.forms.sort')}
+            name={"sort"}
+            placeholder={translate('filter.forms.sort')}
+            control={control}
+            errors={errors}
+            options={saleOrderSortOptions}
+            isClearable={true}
+        />
+    )
+
+}

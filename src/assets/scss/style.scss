@@ -1,0 +1,61 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+//$purple: #004956 !default;
+.vertical-layout .main-menu .navigation a.active {
+  box-shadow: 0 0 10px 1px rgba(0, 73, 86, 0.7);
+  background-color: #024044;
+}
+
+.vertical-layout .main-menu .navigation a.active span,
+.vertical-layout .main-menu .navigation a.active svg{
+  color: #66DDC8 !important;
+}
+
+.store-avatar-wrapper img{
+    object-fit: contain !important;
+}
+
+.ps__rail-y.ps--clicking,
+.ps__rail-y:hover{
+  background-color: transparent !important;
+}
+.dropdown-actions .dropdown-menu.dropdown-menu-end.show{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .px-half-sm{
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+
+  }
+  .mb-3-one-item .rdt_Table{
+    margin-bottom: 3rem;
+  }
+  .d-none-m{
+    display: none !important;
+  }
+  .flex-col-m{
+    flex-direction: column;
+  }
+  .justify-center-m{
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .slick-slider, .slick-list, .slick-track  {
+    height: 100% !important;
+  }
+}
+
+
