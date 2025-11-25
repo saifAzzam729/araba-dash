@@ -80,7 +80,10 @@
     "customer-wise-sales": "المبيعات حسب العميل",
     "item-wise-sales": "المبيعات حسب العنصر",
     "latest-products-sales": "مبيعات أحدث المنتجات",
-    "sales-details": "تفاصيل المبيعات"
+    "sales-details": "تفاصيل المبيعات",
+    "vendors": "الموردون",
+    "vendors-requests": "طلبات الموردين",
+    "vendors-list": "قائمة الموردين"
   },
   "common": {
     "home": "الصفحة الرئيسية",
@@ -435,9 +438,9 @@
     "create-ship": "إنشاء شحنة",
     "expand-all" : "عرض التفاصيل",
     "resend-invoice-to-user":"إعادة إرسال الفاتورة إلى المستخدم" ,
-    "collapse-all" : " اغلق التفاصيل"
-
-
+    "collapse-all" : " اغلق التفاصيل",
+    "vendors": "الموردون",
+    "vendors-requests": "طلبات الموردين"
   },
   "action-buttons": {
     "duplicate_row": "نسخ",

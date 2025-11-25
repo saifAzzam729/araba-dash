@@ -16,6 +16,48 @@ const VerticalNavMenuLink = ({ item, activeItem, showText }) => {
 
     const { translate, makeLocaleUrl } = useLocaleContext();
 
+    const LinkContent = (
+        <LinkTag
+            className="d-flex align-items-center text-white text-nowrap"
+            target={item.newTab ? "_blank" : undefined}
+            /*eslint-disable */
+            {...(item.externalLink === true
+                ? {
+                    href: makeLocaleUrl(item.navLink || "/"),
+                }
+                : {
+                    to: makeLocaleUrl(item.navLink || "/"),
+                    className: ({ isActive }) => {
+                        if (isActive && !item.disabled) {
+                            return "d-flex align-items-center active";
+                        }
+                    },
+                })}
+            onClick={(e) => {
+                if (
+                    item.navLink.length === 0 ||
+                    item.navLink === "#" ||
+                    item.disabled === true
+                ) {
+                    e.preventDefault();
+                }
+            }}
+        >
+            {item.icon}
+            {showText && (
+                <span className="menu-item text-truncate   " >
+                      {translate(`sidebar.${item.id}`)}
+                       </span>
+            )}
+
+            {item.badge && item.badgeText ? (
+                <Badge className="ms-auto me-1 text-white" color={item.badge} pill>
+                    {item.badgeText}
+                </Badge>
+            ) : null}
+        </LinkTag>
+    );
+
     return (
         <li
             className={classnames({
@@ -24,47 +66,7 @@ const VerticalNavMenuLink = ({ item, activeItem, showText }) => {
                 active: item.navLink === activeItem,
             })}
         >
-            <Can I={item.permission}>
-                <LinkTag
-                    className="d-flex align-items-center text-white text-nowrap"
-                    target={item.newTab ? "_blank" : undefined}
-                    /*eslint-disable */
-                    {...(item.externalLink === true
-                        ? {
-                            href: makeLocaleUrl(item.navLink || "/"),
-                        }
-                        : {
-                            to: makeLocaleUrl(item.navLink || "/"),
-                            className: ({ isActive }) => {
-                                if (isActive && !item.disabled) {
-                                    return "d-flex align-items-center active";
-                                }
-                            },
-                        })}
-                    onClick={(e) => {
-                        if (
-                            item.navLink.length === 0 ||
-                            item.navLink === "#" ||
-                            item.disabled === true
-                        ) {
-                            e.preventDefault();
-                        }
-                    }}
-                >
-                    {item.icon}
-                    {showText && (
-                        <span className="menu-item text-truncate   " >
-                      {translate(`sidebar.${item.id}`)}
-                       </span>
-                    )}
-
-                    {item.badge && item.badgeText ? (
-                        <Badge className="ms-auto me-1 text-white" color={item.badge} pill>
-                            {item.badgeText}
-                        </Badge>
-                    ) : null}
-                </LinkTag>
-            </Can>
+            {item.permission ? <Can I={item.permission}>{LinkContent}</Can> : LinkContent}
         </li>
     );
 };

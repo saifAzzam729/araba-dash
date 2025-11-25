@@ -15,9 +15,9 @@ import {useContext} from "react";
 function checkIfAnyChildHasPermission(obj, abilityChecker) {
 	return obj.children.some(child => {
 		if (child.children) {
-			return child.children.some(item => abilityChecker.can(item.permission));
+			return child.children.some(item => !item.permission || abilityChecker.can(item.permission));
 		} else {
-			return abilityChecker.can(child.permission);
+			return !child.permission || abilityChecker.can(child.permission);
 		}
 	});
 }
@@ -40,13 +40,7 @@ const VerticalMenuNavItems = (props) => {
 
 		if (item.children) {
 			return (
-				// <TagName item={item} index={index} key={`${item.id}-${index}`} {...props} />
-
 				checkIfAnyChildHasPermission(item, ability) && <TagName item={item} index={index} key={`item-${item.id}`} {...props} showText={showText} />
-
-				// canViewMenuGroup(item) && (
-				// <TagName item={item} index={index} key={item.id} {...props} />
-				// )
 			);
 		}
 		return <TagName key={item.id || item.header} item={item} {...props}  showText={showText}/>;

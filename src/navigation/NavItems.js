@@ -104,6 +104,28 @@ export default [
     },
 
     {
+        id: "vendors",
+        title: "vendors",
+        icon: <Users size={20}/>,
+        children: [
+            {
+                id: "vendors-requests",
+                title: "vendors-requests",
+                icon: <CheckSquare size={20}/>,
+                navLink: "/vendor-requests",
+                // permission: PERMISSIONS_NAMES.ROLE_VENDOR_REQUEST_LIST,
+            },
+            {
+                id: "vendors-list",
+                title: "vendors",
+                icon: <User size={20}/>,
+                navLink: "/vendors",
+                // permission: PERMISSIONS_NAMES.ROLE_VENDOR_LIST,
+            }
+        ],
+    },
+
+    {
         id: "products-menu",
         title: "Product",
         icon: <Box size={20}/>,

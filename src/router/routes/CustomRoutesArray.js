@@ -6,9 +6,6 @@ import SaleOrdersPage from "@src/views/pages/sale-orders/SaleOrdersPage";
 import {lazy} from 'react';
 import EbayProductDetailsPage from "@src/views/pages/eBay/listings/products/pages/EbayProductDetailsPage";
 
-
-
-
 const ProfilePage = lazy(() => import('@src/views/pages/users/ProfilePage'));
 const AddProducts = lazy(() => import('@src/views/pages/products/pages/add/AddPage'));
 const ViewProducts = lazy(() => import('@src/views/pages/products/pages/view/ViewPage'));
@@ -54,6 +51,8 @@ const CompaniesPage = lazy(() => import('@src/views/pages/users/company/Companie
 const UserGroupsPage = lazy(() => import('@src/views/pages/user-groups/UserGroupsPage'));
 const ViewUserGroupPage = lazy(() => import('@src/views/pages/user-groups/pages/ViewPage'));
 const RegistrationRequestsPage = lazy(() => import('@src/views/pages/users/registration-requests/RegistrationRequestsPage'));
+const VendorsPage = lazy(() => import('@src/views/pages/vendors/vendors/VendorsPage'));
+const VendorRequestsPage = lazy(() => import('@src/views/pages/vendors/vendor-requests/VendorRequestsPage'));
 const NotificationsEventsPage = lazy(() => import('@src/views/pages/notifications/notifications-events/NotificationsEventsPage'))
 const NotificationsPage = lazy(() => import('@src/views/pages/notifications/notifications-crud/NotificationsPage'))
 const ProductReviewsPage = lazy(() => import('@src/views/pages/product-reviews/ProductReviewsPage'))
@@ -370,6 +369,18 @@ const CustomRoutesArray = [
   {
     path: "registration-requests",
     element: <RegistrationRequestsPage />,
+  },
+  {
+    path: "vendors",
+    element: <VendorsPage />,
+  },
+  {
+    path: "vendors/profile/:id",
+    element: <ProfilePage />,
+  },
+  {
+    path: "vendor-requests",
+    element: <VendorRequestsPage />,
   },
   {
     path: "notifications-events",

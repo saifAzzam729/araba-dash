@@ -81,7 +81,10 @@
     "customer-wise-sales": "Customer Wise Sales",
     "item-wise-sales": "Item Wise Sales",
     "latest-products-sales": "Latest Products Sales",
-    "sales-details": "Sales Details"
+    "sales-details": "Sales Details",
+    "vendors": "Vendors",
+    "vendors-requests": "Vendor Requests",
+    "vendors-list": "Vendors List"
   },
   "common": {
     "home": "Home",
@@ -437,7 +440,9 @@
     "expand-all" : "Expand All",
     "wallet": "Deutsche Wallet",
     "resend-invoice-to-user":"Resend Invoice To User",
-    "collapse-all" : "Collapse All"
+    "collapse-all" : "Collapse All",
+    "vendors": "Vendors",
+    "vendors-requests": "Vendor Requests"
   },
   "action-buttons": {
     "duplicate_row": "Duplicate Row",
