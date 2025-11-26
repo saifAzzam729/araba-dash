@@ -182,5 +182,8 @@
   "API Key": "API-Schlüssel",
   "Permissions": "Berechtigungen",
   "Modal Examples": "Modale Beispiele",
-  "Roles & Permissions": "Rollen & Berechtigungen"
+  "Roles & Permissions": "Rollen & Berechtigungen",
+  "ACCOUNT_AWAITING_APPROVAL": "Wartet auf Genehmigung",
+  "ACTIVE": "Aktiv",
+  "REJECTED": "Abgelehnt"
 }

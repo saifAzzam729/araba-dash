@@ -182,5 +182,8 @@
   "OffCanvas": "OffCanvas",
   "Permissions": "Permissões",
   "Modal Examples": "Exemplos Modais",
-  "Roles & Permissions": "Funções e permissões"
+  "Roles & Permissions": "Funções e permissões",
+  "ACCOUNT_AWAITING_APPROVAL": "Aguardando Aprovação",
+  "ACTIVE": "Ativo",
+  "REJECTED": "Rejeitado"
 }

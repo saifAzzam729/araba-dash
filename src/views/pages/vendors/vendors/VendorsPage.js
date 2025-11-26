@@ -1,10 +1,11 @@
 import TableBase from "@components/table/TableBase";
-import {createColumns} from "../columns";
+import {createColumns} from "./columns";
 import BreadCrumbs from "@components/breadcrumbs";
 import useModal from "@components/modal/useModal";
 import EditUserModal from "../modals/edit";
 import useTable from "@components/table/useTable";
 import showSuccessAlert from "@components/alert/showSuccessAlert";
+import VendorsService from "@src/common/services/VendorsService";
 import UsersService from "../../../../common/services/UsersService";
 import {useNavigate} from "react-router-dom";
 import AddUserModal from "../modals/add";
@@ -16,6 +17,8 @@ import {useLocaleContext} from "@src/providers/LocaleProvider";
 import useWindowSize from "@hooks/useWindowSize";
 import {useSettingsUiContext} from "@src/providers/SettingsUi/SettingsUiProvider";
 import {useAuth} from "@src/utility/context/AuthProvider";
+import VendorsFiltersAccordion from "./filters/VendorsFiltersAccordion";
+import useVendorsFilterQueryParamsListener from "./filters/hooks/useVendorsFilterQueryParamsListener";
 
 export default function VendorsPage() {
     const navigate = useNavigate();
@@ -50,17 +53,18 @@ export default function VendorsPage() {
         updateSearch,
     } = useTable();
 
+    const {filterParams} = useVendorsFilterQueryParamsListener();
+
     const {isError, isLoading, refetch} = useQuery(
-        ["vendors", currentPage, searchTerm],
-        () =>
-            UsersService.getPagination({
-                page: currentPage,
-                search: searchTerm,
-                locale: preferredTableContentLocale,
-                type: 'VENDOR'
-            }),
+        ["vendors", currentPage, searchTerm, filterParams],
+        () => VendorsService.getPagination({
+            page: currentPage,
+            search: searchTerm,
+            locale: preferredTableContentLocale,
+            status: filterParams.status,
+        }),
         {
-            onSuccess: ({pagination: {items, page, pages, totalItems}}) => {
+            onSuccess: ({pagination: {items, page, totalItems}}) => {
                 updateItems(items);
                 updateTotalItemsCount(totalItems);
                 updateCurrentPage(page);
@@ -131,6 +135,7 @@ export default function VendorsPage() {
     return (
         <>
             <BreadCrumbs title={"Vendors"} data={[]}/>
+            <VendorsFiltersAccordion/>
             <TableBase
                 columns={COLUMNS}
                 data={items}
@@ -168,4 +173,3 @@ export default function VendorsPage() {
         </>
     );
 }
-

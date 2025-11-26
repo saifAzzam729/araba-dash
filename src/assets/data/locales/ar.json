@@ -1705,5 +1705,8 @@
       "total": "الإجمالي",
       "orderNo": "رقم الطلب"
     }
-  }
+  },
+  "ACCOUNT_AWAITING_APPROVAL": "في انتظار الموافقة",
+  "ACTIVE": "نشط",
+  "REJECTED": "مرفوض"
 }

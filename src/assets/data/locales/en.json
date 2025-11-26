@@ -1713,6 +1713,9 @@
       "total": "Total",
       "orderNo": "Order Number"
     }
-  }
+  },
+  "ACCOUNT_AWAITING_APPROVAL": "Account Awaiting Approval",
+  "ACTIVE": "Active",
+  "REJECTED": "Rejected"
 }
 

@@ -237,6 +237,10 @@ const REPORTS_URLS = {
     GENERAL : `${API_BASE_BACKEND_URL}/admin/reports`
 }
 
+const VENDORS_URLS = {
+    GENERAL: `${API_BASE_BACKEND_URL}/admin/vendors/requests`
+};
+
 const URLS = {
 	BASE_BACKEND_URL,
 	API_BASE_BACKEND_URL,
@@ -301,6 +305,7 @@ const URLS = {
     EBAY_LISTINGS_PRODUCTS_URLS,
     EBAY_CATEGORIES_URLS,
     REPORTS_URLS,
+    VENDORS_URLS,
 
 };
 

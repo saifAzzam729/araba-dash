@@ -7,7 +7,7 @@ import EditStatusColumn from "@src/views/pages/users/partials/EditStatusColumn";
 import {useQuery} from "react-query";
 import OptionsService from "@src/common/services/OptionsService";
 import showSuccessAlert from "@components/alert/showSuccessAlert";
-import UsersService from "@src/common/services/UsersService";
+import VendorsService from "@src/common/services/VendorsService";
 import useTable from "@components/table/useTable";
 import {useLocaleContext} from "@src/providers/LocaleProvider";
 import {useSettingsUiContext} from "@src/providers/SettingsUi/SettingsUiProvider";
@@ -17,6 +17,8 @@ import useWindowSize from "@hooks/useWindowSize";
 import {createColumns} from "./columns";
 import useModal from "@components/modal/useModal";
 import ViewUserModal from "../modals/view";
+import ErrorPage from "@components/ErrorPage/ErrorPage";
+import {VENDOR_STATUS_VALUES} from "../constants";
 
 export default function VendorRequestsPage() {
     const {translate} = useLocaleContext();
@@ -44,16 +46,14 @@ export default function VendorRequestsPage() {
 
     const {isError, isLoading, refetch} = useQuery(
         ["vendor-requests", currentPage, searchTerm],
-        () =>
-            UsersService.getPagination({
-                page: currentPage,
-                search: searchTerm,
-                locale: preferredTableContentLocale,
-                type: 'VENDOR',
-                status: 'ACCOUNT_AWAITING_APPROVAL'
-            }),
+        () => VendorsService.getPagination({
+            page: currentPage,
+            search: searchTerm,
+            locale: preferredTableContentLocale,
+            status: VENDOR_STATUS_VALUES.ACCOUNT_AWAITING_APPROVAL
+        }),
         {
-            onSuccess: ({pagination: {items, page, pages, totalItems}}) => {
+            onSuccess: ({pagination: {items, page, totalItems}}) => {
                 updateItems(items);
                 updateTotalItemsCount(totalItems);
                 updateCurrentPage(page);
@@ -72,29 +72,31 @@ export default function VendorRequestsPage() {
         showSuccessAlert({});
     };
 
+    if (isError) {
+        return <ErrorPage title={"Vendor Requests"}/>;
+    }
 
     const COLUMNS = createColumns(width)
 
     const hasPermissionToUpdateStatus = ability.can(PERMISSIONS_NAMES.ROLE_VENDOR_REQUEST_UPDATE)
 
-    const customColumns = hasPermissionToUpdateStatus
-        ? [...COLUMNS,
-            CreateColumn({
-                name: "Status",
-                translateKey: "users.table.status",
-                minWidth: "200px",
-                cellCustomizationFunction: (row) => (
-                    <div>
-                        <EditStatusColumn
-                            row={row}
-                            statusOptions={statusOptions ? statusOptions.data : []}
-                            onEditSuccess={onEditSuccess}
-                        />
-                    </div>
-                ),
-            }),
-        ]
-        : COLUMNS;
+    const customColumns = hasPermissionToUpdateStatus ? [
+        ...COLUMNS,
+        CreateColumn({
+            name: "Status",
+            translateKey: "users.table.status",
+            minWidth: "200px",
+            cellCustomizationFunction: (row) => (
+                <div>
+                    <EditStatusColumn
+                        row={row}
+                        statusOptions={statusOptions ? statusOptions.data : []}
+                        onEditSuccess={onEditSuccess}
+                    />
+                </div>
+            ),
+        }),
+    ] : COLUMNS;
 
     return (
         <>
@@ -124,4 +126,3 @@ export default function VendorRequestsPage() {
         </>
     )
 }
-

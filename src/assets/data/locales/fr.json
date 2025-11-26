@@ -181,5 +181,8 @@
   "Accordion": "Accordéon",
   "Permissions": "Autorisations",
   "Modal Examples": "Exemples modaux",
-  "Roles & Permissions": "Rôles et autorisations"
+  "Roles & Permissions": "Rôles et autorisations",
+  "ACCOUNT_AWAITING_APPROVAL": "En attente d'approbation",
+  "ACTIVE": "Actif",
+  "REJECTED": "Rejeté"
 }
