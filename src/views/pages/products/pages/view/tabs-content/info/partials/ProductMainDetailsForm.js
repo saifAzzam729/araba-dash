@@ -5,6 +5,7 @@ import CustomControlledCheckboxInput from "@components/controlled-inputs/CustomC
 import React, {useState} from "react";
 import {useFormContext} from "react-hook-form";
 import {useLocaleContext} from "@src/providers/LocaleProvider";
+import {Link} from "react-router-dom";
 import CustomControlledAsyncSelectPaginate
     from "@components/controlled-inputs/CustomControlledAsyncSelectPaginateField";
 import TagsService from "@src/common/services/TagsService";
@@ -22,7 +23,7 @@ import ProductsService from "@src/common/services/ProductsService";
 import {WITH_EXTRA_PRODUCT_DETAILS} from "@src/views/pages/products/config";
 
 function ProductMainDetailsForm({product}) {
-    const {translate} = useLocaleContext();
+    const {translate, makeLocaleUrl} = useLocaleContext();
     const [image, setImage] = useState(null);
     const {preferredTableContentLocale} = useSettingsUiContext();
 
@@ -431,6 +432,22 @@ function ProductMainDetailsForm({product}) {
                                     errors={errors}
                                 />
                             </Col>
+                            {product?.vendor && (
+                                <Col md={12} lg={6} className="mb-2">
+                                    <label className="form-label">
+                                        {translate('common.vendor')}
+                                    </label>
+                                    <div>
+                                        <Link 
+                                            to={makeLocaleUrl(`/vendors/profile/${product.vendor.id}`)}
+                                            className="text-primary text-decoration-none"
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            {product.vendor.storeName}
+                                        </Link>
+                                    </div>
+                                </Col>
+                            )}
                             <Col md={12} lg={6} className="mb-2">
                                 <CustomControlledAsyncSelectPaginate
                                     placeholder={translate('products.forms.relatedProducts')}

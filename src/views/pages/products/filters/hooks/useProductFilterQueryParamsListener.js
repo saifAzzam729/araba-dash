@@ -7,12 +7,14 @@ export default function useProductFilterQueryParamsListener() {
     const search = params.get('search');
     const quantity = params.get('quantity');
     const sku = params.get('sku');
+    const vendorId = params.get('vendorId');
 
     return {
         filterParams: {
             search,
             quantity,
             sku,
+            vendorId,
         }
     };
 }

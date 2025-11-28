@@ -11,7 +11,7 @@ import translateColumns from "@src/utility/helpers/translateColumns";
 import CustomCan from "@components/Authorize/CustomCan";
 import useWindowSize from "@hooks/useWindowSize";
 
-const CustomHeader = ({onAdd = null, onSearch = null, searchTerm, permissionName}) => {
+const CustomHeader = ({onAdd = null, onSearch = null, searchTerm, permissionName, customFilterComponent = null}) => {
     const {translate} = useLocaleContext();
 
 
@@ -19,6 +19,11 @@ const CustomHeader = ({onAdd = null, onSearch = null, searchTerm, permissionName
         <div className="invoice-list-table-header w-100 py-2">
             <Row>
                 <Col lg="6" className="d-flex align-items-center px-0 px-lg-1">
+                    {customFilterComponent && (
+                        <div className="me-2">
+                            {customFilterComponent}
+                        </div>
+                    )}
                     {onSearch && (
                         <>
                             <input
@@ -89,7 +94,8 @@ export default function ({
                              bodyCellJustification = 'center',
                              permissionObject = null, // if not passed => no authorization applied
                              noDataComponent,
-                             customLimit
+                             customLimit,
+                             customFilterComponent = null
                          }) {
     // ** Store vars
     const limit = customLimit ?? 10
@@ -195,7 +201,7 @@ export default function ({
                         paginationComponent={CustomPagination}
                         subHeaderComponent={
                             <CustomHeader permissionName={permissionObject?.add} onAdd={onAdd} onSearch={onSearch}
-                                          searchTerm={searchTerm}/>
+                                          searchTerm={searchTerm} customFilterComponent={customFilterComponent}/>
                         }
                         customStyles={customStyles}
                         noDataComponent={noDataComponent}

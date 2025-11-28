@@ -51,7 +51,7 @@ export default function VendorsPage() {
     }
 
     const onGoToProfile = (row) => {
-        navigate(makeLocaleUrl(`/vendors/profile/${row.id}`));
+        navigate(makeLocaleUrl(`/vendors/profile/${row.vendorDetails.vendorId}`));
     };
 
     const COLUMNS = createVendorRequestColumns();

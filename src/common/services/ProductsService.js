@@ -5,7 +5,15 @@ const generalUrl = URLS.PRODUCTS_URLS.GENERAL;
 
 const productAttribute = URLS.SINGLE_PRODUCT_ATTRIBUTES.GENERAL
 
-const getPagination = async ({page = 1, limit = 100, search = "", locale = 'en', quantity=null, sku=null}) => {
+const getPagination = async ({
+    page = 1, 
+    limit = 100, 
+    search = "", 
+    locale = 'en', 
+    quantity=null, 
+    sku=null,
+    vendorId=null,
+}) => {
     const res = await ApiClient.CustomAxios.get(generalUrl, {
         params: {
             page,
@@ -14,7 +22,8 @@ const getPagination = async ({page = 1, limit = 100, search = "", locale = 'en',
             quantity,
             sku,
             sort:'p.id',
-            direction:'desc'
+            direction:'desc',
+            vendorId,
         },
         headers: {
             'x-locale': locale

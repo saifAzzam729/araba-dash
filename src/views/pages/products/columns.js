@@ -176,8 +176,9 @@ const PriceColumn = CreateColumn({
 	translateKey: 'product.table.price',
 	maxWidth: '100px',
 	cellCustomizationFunction: (row) => {
+		const currencySymbol = row.currencySymbol || '';
 		return (
-			<span className="h5">{row.price}</span>
+			<span className="h5">{currencySymbol}{row.price}</span>
 		)
 	},
 });
@@ -200,6 +201,72 @@ const PublishColumn = CreateColumn({
 });
 
 const columns = [AvatarColumn, ProductColumn, OtherInfoColumn, PriceColumn, PublishColumn];
+
+// New column combining image, product name, and vendor name
+const ProductImageNameVendorColumn = CreateColumn({
+	name: "Product",
+	translateKey: 'product.table.product-info',
+	style: {
+		justifyContent: 'flex-start',
+		textAlign: 'left'
+	},
+	cellCustomizationFunction: (row) => {
+		const {makeLocaleUrl} = useLocaleContext();
+		// Get product image - try imageFileUrl first, then defaultImages array
+		let productImageUrl = row.imageFileUrl;
+		if (!productImageUrl && row.defaultImages && row.defaultImages.length > 0 && row.defaultImages[0]?.imageFileUrl) {
+			productImageUrl = row.defaultImages[0].imageFileUrl;
+		}
+		
+		return (
+			<div className="d-flex align-items-center gap-3 my-2" style={{ justifyContent: 'flex-start', textAlign: 'left' }}>
+				{/* Product Image - clickable to product page */}
+				<Link to={makeLocaleUrl(`/products/view/${row.id}`)}>
+					<Avatar
+						alt={`${row.name} avatar`}
+						sx={{ width: 56, height: 56 }}
+						src={productImageUrl ? ParseImageUrl(productImageUrl) : undefined}
+					/>
+				</Link>
+				
+				{/* Product Name and Vendor Name */}
+				<div className="d-flex flex-column gap-1">
+					{/* Product Name - clickable to product page */}
+					<Link 
+						to={makeLocaleUrl(`/products/view/${row.id}`)}
+						className="text-decoration-none"
+						id={`product-name-${row.id}`}
+					>
+						<div className="h5 mb-0" style={{ color: 'inherit' }}>
+							{row.name}
+						</div>
+					</Link>
+					<UncontrolledTooltip placement="left" target={`product-name-${row.id}`}>
+						Product Name
+					</UncontrolledTooltip>
+					
+					{/* Vendor Name - clickable to vendor profile page */}
+					{row.vendor && (
+						<>
+							<Link 
+								to={makeLocaleUrl(`/vendors/profile/${row.vendor.id}`)}
+								className="text-decoration-none"
+								id={`vendor-name-${row.id}`}
+							>
+								<div className="text-muted" style={{ color: 'inherit', fontSize: '0.875rem' }}>
+									{row.vendor.storeName || 'N/A'}
+								</div>
+							</Link>
+							<UncontrolledTooltip placement="left" target={`vendor-name-${row.id}`}>
+								Vendor Store
+							</UncontrolledTooltip>
+						</>
+					)}
+				</div>
+			</div>
+		);
+	}
+});
 
 export const createColumns = (publishToggleMutation, isPublishToggleLoading, outOfStockToggleMutation, isOutOfStockToggleLoading, width) => {
 
@@ -232,30 +299,22 @@ export const createColumns = (publishToggleMutation, isPublishToggleLoading, out
 
 	if (width <= WindowBreakpoint.sm){
 		return [
-			AvatarProductColumn,
-			PublishToggleColumn,
-			OutOfStockToggleColumn,
-			FeaturedToggleColumn
+			ProductImageNameVendorColumn,
+			PriceColumn,
+			QuantityColumn
 		]
 	}
 	if (width <= WindowBreakpoint.md){
 		return [
-			AvatarColumn,
-			ProductColumn,
+			ProductImageNameVendorColumn,
 			PriceColumn,
-			PublishToggleColumn,
-			OutOfStockToggleColumn,
-			FeaturedToggleColumn
+			QuantityColumn
 		]
 	}
     return [
-		AvatarColumn,
-		ProductColumn,
+		ProductImageNameVendorColumn,
 		PriceColumn,
-		PublishToggleColumn,
-		OutOfStockToggleColumn,
-		QuantityColumn,
-		FeaturedToggleColumn
+		QuantityColumn
 	]
 }
 
