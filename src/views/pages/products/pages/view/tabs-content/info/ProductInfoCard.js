@@ -1,5 +1,5 @@
 import {Button, Card} from "reactstrap";
-import React, {useEffect, useMemo, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useLocaleContext} from "@src/providers/LocaleProvider";
 import ErrorAlert from "@components/ErrorAlert/ErrorAlert";
@@ -19,15 +19,13 @@ import {Alert} from "@mui/material";
 import {useSettingsUiContext} from "@src/providers/SettingsUi/SettingsUiProvider";
 import MultiTypeSettingsService from "@src/common/services/MultiTypeSettingsService";
 
-function ProductInfoCard({product, publish = true}) {
+function ProductInfoCard({product}) {
 
     const navigate = useNavigate();
     const {makeLocaleUrl, translate, isRtl} = useLocaleContext();
     const [backendErrors, setBackendErrors] = useState({});
     const queryClient = useQueryClient()
     const {preferredTableContentLocale} = useSettingsUiContext();
-
-
 
     const schema = yup.object().shape({
         nameEn: yup.string().required(translate('forms.field-required')),
@@ -54,8 +52,27 @@ function ProductInfoCard({product, publish = true}) {
         }
     })
 
-    const defaultImagesUrl = imageUrl?.map((img)=> img.fileUrl)
+    const defaultImagesUrl = imageUrl?.map((img) => img.fileUrl)
 
+    const brandValue = product?.brand ? {
+        label: product.brand.name,
+        value: product.brand.id,
+    } : null;
+
+    const {data: relatedProducts} = useQuery(
+        ['related-products', product.id],
+        () => ProductsService.getRelatedProducts(product.id, {
+            locale: preferredTableContentLocale
+        }),
+        {
+            enabled: !!product.id
+        }
+    )
+
+    const relatedProductsValue = relatedProducts?.items?.map((obj) => ({
+        value: obj.id,
+        label: obj.name
+    })) || [];
 
     const {data: autoCalcTaxSettings} = useQuery(
         ['website-Links-included'],
@@ -87,6 +104,8 @@ function ProductInfoCard({product, publish = true}) {
                 label: product?.countryOfOrigin?.name,
                 value: product?.countryOfOrigin?.id,
             },
+            brand: brandValue,
+            relatedProducts: relatedProductsValue,
 
             images: defaultImagesUrl && defaultImagesUrl
         },
@@ -98,6 +117,16 @@ function ProductInfoCard({product, publish = true}) {
             FormMethods.setValue('price', product?.nativePrice)
         }
     }, [isAutoCalcTaxSettingEnabled, product, autoCalcTaxSettings]);
+
+    useEffect(() => {
+        if (relatedProducts) {
+            const relatedProductsValue = relatedProducts.items.map((obj) => ({
+                value: obj.id,
+                label: obj.name
+            }));
+            FormMethods.setValue('relatedProducts', relatedProductsValue);
+        }
+    }, [relatedProducts, FormMethods]);
 
     const {mutate, isError, isLoading} = useMutation(
         (data) => ProductsService.update(product.id, data, preferredTableContentLocale),
@@ -137,7 +166,9 @@ function ProductInfoCard({product, publish = true}) {
             featured,
             countryOfOrigin,
             shortDescriptionEn,
-            shortDescriptionAr
+            shortDescriptionAr,
+            brand,
+            relatedProducts
         } = data;
 
         const translations = {
@@ -176,9 +207,11 @@ function ProductInfoCard({product, publish = true}) {
                     publish: true
                 }
             )),
-            deletedImages: deletedImages.length > 0 ? deletedImages.map((obj)=>obj.id) : [],
+            deletedImages: deletedImages.length > 0 ? deletedImages.map((obj) => obj.id) : [],
             tax: tax?.value,
-            featured
+            featured,
+            brand: brand ? brand.value : null,
+            relatedProducts: relatedProducts ? relatedProducts.map((pro) => pro.value) : null
 
         })
 

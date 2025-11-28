@@ -17,6 +17,7 @@ import useWindowSize from "@hooks/useWindowSize";
 import ProductsFiltersAccordion from "./filters/ProductsFiltersAccordion";
 import { Col, Row } from "reactstrap";
 import useProductFilterQueryParamsListener from "./filters/hooks/useProductFilterQueryParamsListener";
+import {WITH_EXTRA_PRODUCT_DETAILS} from "@src/views/pages/products/config";
 
 
 export default function () {
@@ -48,7 +49,7 @@ export default function () {
             page: currentPage,
             search: searchTerm,
             quantity: filterParams.quantity,
-            sku: filterParams.sku,
+            ...(WITH_EXTRA_PRODUCT_DETAILS && { sku: filterParams.sku }),
             locale: preferredTableContentLocale
         }),
         {
@@ -133,12 +134,13 @@ export default function () {
     return (
         <>
             <BreadCrumbs title={"Products"} data={[]}/>
-            <Row>
-                <Col md={'8'}>
-                    <ProductsFiltersAccordion/>
-
-                </Col>
-            </Row>
+            {WITH_EXTRA_PRODUCT_DETAILS && (
+                <Row>
+                    <Col md={'8'}>
+                        <ProductsFiltersAccordion/>
+                    </Col>
+                </Row>
+            )}
             <TableBase
                 columns={COLUMNS}
                 data={items}

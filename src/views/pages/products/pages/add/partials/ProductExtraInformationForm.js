@@ -31,7 +31,7 @@ export default function ProductExtraInformationForm() {
         const page = params.page;
         const perPage = 10;
         const search = params.search;
-        BrandsService.getPagination({page: page, search: search , limit: perPage}).then((res) => {
+        BrandsService.getPagination({page, search, limit: perPage}).then((res) => {
             const { pages, page: currentPage, items } = res.pagination;
             resolve({
                 options: items.map((item) => ({
@@ -61,7 +61,7 @@ export default function ProductExtraInformationForm() {
         const page = params.page;
         const perPage = 10;
         const search = params.search;
-        ProductGroupService.getPagination({page: page, search: search , limit: perPage}).then((res) => {
+        ProductGroupService.getPagination({page, search, limit: perPage}).then((res) => {
             const { pages, page: currentPage, items } = res.pagination;
             resolve({
                 options: items.map((item) => ({
@@ -91,7 +91,7 @@ export default function ProductExtraInformationForm() {
         const page = params.page;
         const perPage = 10;
         const search = params.search;
-        ModelCompatibilityService.getPagination({page: page, search: search , limit: perPage}).then((res) => {
+        ModelCompatibilityService.getPagination({page, search, limit: perPage}).then((res) => {
             const { pages, page: currentPage, items } = res.pagination;
             resolve({
                 options: items.map((item) => ({
@@ -121,7 +121,7 @@ export default function ProductExtraInformationForm() {
         const page = params.page;
         const perPage = 10;
         const search = params.search;
-        ProductsService.getPagination({page: page, search: search , limit: perPage}).then((res) => {
+        ProductsService.getPagination({page, search, limit: perPage}).then((res) => {
             const { pages, page: currentPage, items } = res.pagination;
             resolve({
                 options: items.map((item) => ({
@@ -244,18 +244,6 @@ export default function ProductExtraInformationForm() {
             <Col md={12} lg={6} className="mb-2">
                 <CustomControlledAsyncSelectPaginate
                     placeholder='brand'
-                    name='brand'
-                    label={translate('common.brands')}
-                    control={control}
-                    getOptionsPromise={promiseBrandsOptions}
-                    defaultOptions={[]}
-                    errors={errors}
-                />
-            </Col>
-
-            <Col md={12} lg={6} className="mb-2">
-                <CustomControlledAsyncSelectPaginate
-                    placeholder='brand'
                     name='brandCompatibilities'
                     label="brandCompatibilities"
                     control={control}
@@ -287,19 +275,6 @@ export default function ProductExtraInformationForm() {
                     control={control}
                     getOptionsPromise={promiseProductGroups}
                     defaultOptions={[]}
-                    errors={errors}
-                />
-            </Col>
-
-            <Col md={12} lg={6} className="mb-2">
-                <CustomControlledAsyncSelectPaginate
-                    placeholder='relatedProducts'
-                    name='relatedProducts'
-                    label={'relatedProducts'}
-                    control={control}
-                    getOptionsPromise={promiseProducts}
-                    defaultOptions={[]}
-                    isMulti={true}
                     errors={errors}
                 />
             </Col>

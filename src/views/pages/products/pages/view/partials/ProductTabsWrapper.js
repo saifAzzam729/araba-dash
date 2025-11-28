@@ -3,7 +3,9 @@ import {AlignLeft, Image, Info, Layout, Plus, PlusCircle, Slack, Box} from "reac
 import {useLocaleContext} from "@src/providers/LocaleProvider";
 import {VIEW_PAGE_TABS_IDS} from "@src/views/pages/products/pages/view/data";
 import CustomCan from "@components/Authorize/CustomCan";
+import {WITH_EXTRA_PRODUCT_DETAILS, WITH_PRODUCT_OPTIONS_AND_VARIANTS} from "@src/views/pages/products/config";
 
+// eslint-disable-next-line no-unused-vars
 function ProductTabsWrapper({activeTab, setActiveTab, productImagePermissionObject,
                                 productAttributePermissionObject,
                                 productPermissionObject, productVariantsPermissionObject}) {
@@ -39,19 +41,22 @@ function ProductTabsWrapper({activeTab, setActiveTab, productImagePermissionObje
             {/*</CustomCan>*/}
 
             {/* ATTRIBUTES TAB */}
-            <CustomCan permissionName={productAttributePermissionObject}>
-                <NavItem>
-                    <NavLink
-                        active={activeTab === VIEW_PAGE_TABS_IDS.ATTRIBUTES}
-                        onClick={() => setActiveTab(VIEW_PAGE_TABS_IDS.ATTRIBUTES)}
-                    >
-                        <Slack className="font-medium-3 me-50"/>
-                        <span className="fw-bold">{translate('product.common.attributes')}</span>
-                    </NavLink>
-                </NavItem>
-            </CustomCan>
+            {WITH_PRODUCT_OPTIONS_AND_VARIANTS && (            
+                <CustomCan permissionName={productAttributePermissionObject}>
+                    <NavItem>
+                        <NavLink
+                            active={activeTab === VIEW_PAGE_TABS_IDS.ATTRIBUTES}
+                            onClick={() => setActiveTab(VIEW_PAGE_TABS_IDS.ATTRIBUTES)}
+                        >
+                            <Slack className="font-medium-3 me-50"/>
+                            <span className="fw-bold">{translate('product.common.attributes')}</span>
+                        </NavLink>
+                    </NavItem>
+                </CustomCan>
+            )}
 
             {/* EXTRA INFO TAB */}
+            {WITH_EXTRA_PRODUCT_DETAILS && (
                 <CustomCan permissionName={productPermissionObject}>
                     <NavItem>
                         <NavLink
@@ -63,6 +68,7 @@ function ProductTabsWrapper({activeTab, setActiveTab, productImagePermissionObje
                         </NavLink>
                     </NavItem>
                 </CustomCan>
+            )}
 
             {/* META TAB */}
             <CustomCan permissionName={productPermissionObject}>
@@ -78,43 +84,48 @@ function ProductTabsWrapper({activeTab, setActiveTab, productImagePermissionObje
             </CustomCan>
             {/* META TAB */}
 
-            <CustomCan permissionName={productPermissionObject}>
-                <NavItem>
-                    <NavLink
-                        active={activeTab === VIEW_PAGE_TABS_IDS.SORT_OPTIONS}
-                        onClick={() => setActiveTab(VIEW_PAGE_TABS_IDS.SORT_OPTIONS)}
-                    >
-                        <AlignLeft className="font-medium-3 me-50"/>
-                        <span className="fw-bold">{translate('product.common.sort-options')}</span>
-                    </NavLink>
-                </NavItem>
-            </CustomCan>
+            {WITH_PRODUCT_OPTIONS_AND_VARIANTS && (
+                <CustomCan permissionName={productPermissionObject}>
+                    <NavItem>
+                        <NavLink
+                            active={activeTab === VIEW_PAGE_TABS_IDS.SORT_OPTIONS}
+                            onClick={() => setActiveTab(VIEW_PAGE_TABS_IDS.SORT_OPTIONS)}
+                        >
+                            <AlignLeft className="font-medium-3 me-50"/>
+                            <span className="fw-bold">{translate('product.common.sort-options')}</span>
+                        </NavLink>
+                    </NavItem>
+                </CustomCan>
+            )}
             {/*VARIANTS TAB*/}
-            <CustomCan permissionName={productVariantsPermissionObject}>
-                <NavItem>
-                    <NavLink
-                        active={activeTab === VIEW_PAGE_TABS_IDS.PRODUCT_VARIANT}
-                        onClick={() => setActiveTab(VIEW_PAGE_TABS_IDS.PRODUCT_VARIANT)}
-                    >
-                        <Box className="font-medium-3 me-50"/>
-                        <span className="fw-bold">{translate('product.common.product-variants')}</span>
-                    </NavLink>
-                </NavItem>
-            </CustomCan>
+            {WITH_PRODUCT_OPTIONS_AND_VARIANTS && (
+                <CustomCan permissionName={productVariantsPermissionObject}>
+                    <NavItem>
+                        <NavLink
+                            active={activeTab === VIEW_PAGE_TABS_IDS.PRODUCT_VARIANT}
+                            onClick={() => setActiveTab(VIEW_PAGE_TABS_IDS.PRODUCT_VARIANT)}
+                        >
+                            <Box className="font-medium-3 me-50"/>
+                            <span className="fw-bold">{translate('product.common.product-variants')}</span>
+                        </NavLink>
+                    </NavItem>
+                </CustomCan>
+            )}
 
             {/*OPTIONS IMAGES TAB*/}
-
-            <CustomCan permissionName={productPermissionObject}>
-                <NavItem>
-                    <NavLink
-                        active={activeTab === VIEW_PAGE_TABS_IDS.OPTIONS_IMAGES}
-                        onClick={() => setActiveTab(VIEW_PAGE_TABS_IDS.OPTIONS_IMAGES)}
-                    >
-                        <Box className="font-medium-3 me-50"/>
-                        <span className="fw-bold">{translate('product.common.options-images')}</span>
-                    </NavLink>
-                </NavItem>
-            </CustomCan>
+            {WITH_PRODUCT_OPTIONS_AND_VARIANTS && (
+                <CustomCan permissionName={productPermissionObject}>
+                    <NavItem>
+                        <NavLink
+                            active={activeTab === VIEW_PAGE_TABS_IDS.OPTIONS_IMAGES}
+                            onClick={() => setActiveTab(VIEW_PAGE_TABS_IDS.OPTIONS_IMAGES)}
+                        >
+                            <Box className="font-medium-3 me-50"/>
+                            <span className="fw-bold">{translate('product.common.options-images')}</span>
+                        </NavLink>
+                    </NavItem>
+                </CustomCan>
+            )}
         </Nav>
     )
 }

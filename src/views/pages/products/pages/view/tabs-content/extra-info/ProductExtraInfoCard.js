@@ -26,16 +26,6 @@ export default function ProductExtraInfoCard({product}) {
     const queryClient = useQueryClient()
 
 
-    const {data: relatedProducts} = useQuery(
-        ['related-products', product.id],
-        () => ProductsService.getRelatedProducts(product.id, {
-            locale: preferredTableContentLocale
-        }),
-        {
-            enabled: !!product.id
-        }
-    )
-
     const {data: crossSellingProducts} = useQuery(
         ['cross-selling-products', product.id],
         () => ProductsService.getCrossSellingProducts(product.id, {
@@ -53,7 +43,6 @@ export default function ProductExtraInfoCard({product}) {
         cost: yup.number().nullable().transform((v) => (v === '' || Number.isNaN(v) ? null : v)),
         connectivity: yup.string().nullable(),
         color: yup.string().nullable(),
-        brand: yup.object().nullable(),
         productGroup: yup.object().nullable(),
         ean: yup.number().nullable().transform((v) => (v === '' || Number.isNaN(v) ? null : v)),
         weightKg: yup.number().nullable(),
@@ -62,7 +51,6 @@ export default function ProductExtraInfoCard({product}) {
         heightCm: yup.number().nullable(),
         brandCompatibilities: yup.array().nullable(),
         modalProducts: yup.array().nullable(),
-        relatedProducts: yup.array().nullable(),
         crossSellingProducts: yup.array().nullable(),
     });
 
@@ -82,8 +70,7 @@ export default function ProductExtraInfoCard({product}) {
         handleSubmit,
         control,
         formState: {errors},
-        reset,
-        getValues
+        reset
     } = useForm({
         defaultValues: {
             cost: product.cost,
@@ -91,10 +78,6 @@ export default function ProductExtraInfoCard({product}) {
             color: product.color,
             gtin: product.gtin,
             mpn: product.mpn,
-            brand: {
-                label: product.brand?.name,
-                value: product.brand?.id,
-            },
             productGroup: {
                 label: product.ProductGroup?.name,
                 value: product.ProductGroup?.id,
@@ -106,26 +89,12 @@ export default function ProductExtraInfoCard({product}) {
             heightCm: product.heightCm,
             brandCompatibilities: brandCompatibilitiesValue,
             modalProducts: modalProductsValue,
-            relatedProducts: [],
             crossSellingProducts: [],
             isbn: product.isbn,
             upc: product.upc,
         },
         resolver: yupResolver(schema),
     });
-
-    useEffect(() => {
-        if (relatedProducts) {
-            const relatedProductsValue = relatedProducts.items.map((obj) => ({
-                value: obj.id,
-                label: obj.name
-            }));
-            reset((formValues) => ({
-                ...formValues,
-                relatedProducts: relatedProductsValue,
-            }));
-        }
-    }, [relatedProducts]);
 
     useEffect(() => {
         if (crossSellingProducts) {
@@ -145,7 +114,6 @@ export default function ProductExtraInfoCard({product}) {
         {
             onSuccess: () => {
                 showSuccessAlert({});
-                queryClient.invalidateQueries({ queryKey: ['related-products'] })
                 queryClient.invalidateQueries({ queryKey: ['cross-selling-products'] })
             },
             onError: (error) => {
@@ -169,7 +137,7 @@ export default function ProductExtraInfoCard({product}) {
         const perPage = 10;
         const search = params.search;
         BrandsService.getPagination({
-            page: page, search: search, limit: perPage, locale: preferredTableContentLocale
+            page, search, limit: perPage, locale: preferredTableContentLocale
         }).then((res) => {
             const {pages, page: currentPage, items} = res.pagination;
             resolve({
@@ -201,7 +169,7 @@ export default function ProductExtraInfoCard({product}) {
         const perPage = 10;
         const search = params.search;
         ProductGroupService.getPagination({
-            page: page, search: search, limit: perPage, locale: preferredTableContentLocale
+            page, search, limit: perPage, locale: preferredTableContentLocale
         }).then((res) => {
             const {pages, page: currentPage, items} = res.pagination;
             resolve({
@@ -232,7 +200,7 @@ export default function ProductExtraInfoCard({product}) {
         const page = params.page;
         const perPage = 10;
         const search = params.search;
-        ProductsService.getPagination({page: page, search: search, limit: perPage}).then((res) => {
+        ProductsService.getPagination({page, search, limit: perPage}).then((res) => {
             const {pages, page: currentPage, items} = res.pagination;
             resolve({
                 options: items.map((item) => ({
@@ -262,7 +230,7 @@ export default function ProductExtraInfoCard({product}) {
         const page = params.page;
         const perPage = 10;
         const search = params.search;
-        ModelCompatibilityService.getPagination({page: page, search: search, limit: perPage}).then((res) => {
+        ModelCompatibilityService.getPagination({page, search, limit: perPage}).then((res) => {
             const {pages, page: currentPage, items} = res.pagination;
             resolve({
                 options: items.map((item) => ({
@@ -281,7 +249,6 @@ export default function ProductExtraInfoCard({product}) {
     const onSubmit = ({
                           gtin,
                           mpn,
-                          brand,
                           productGroup,
                           cost,
                           ean,
@@ -291,7 +258,6 @@ export default function ProductExtraInfoCard({product}) {
                           heightCm,
                           brandCompatibilities,
                           modalProducts,
-                          relatedProducts,
                           crossSellingProducts,
                           isbn,
                           upc,
@@ -301,7 +267,6 @@ export default function ProductExtraInfoCard({product}) {
         mutate({
             gtin,
             mpn,
-            brand: brand ? brand.value : '',
             productGroup: productGroup.value ?? '',
             cost: cost ?? 0,
             ean: ean ?? 0,
@@ -311,7 +276,6 @@ export default function ProductExtraInfoCard({product}) {
             heightCm,
             brandCompatibilities: brandCompatibilities ? brandCompatibilities.map((brand)  => brand.value) : null,
             modalProducts: modalProducts ? modalProducts.map((obj)  => obj.value) : null,
-            relatedProducts: relatedProducts ? relatedProducts.map((pro)  => pro.value) : null,
             crossSellingProducts: crossSellingProducts ? crossSellingProducts.map((pro)  => pro.value) : null,
             isbn,
             upc,
@@ -442,18 +406,6 @@ export default function ProductExtraInfoCard({product}) {
 
                             <Col md={12} lg={6} className="mb-2">
                                 <CustomControlledAsyncSelectPaginate
-                                    placeholder={translate('common.brands')}
-                                    name='brand'
-                                    label={translate('common.brands')}
-                                    control={control}
-                                    getOptionsPromise={promiseBrandsOptions}
-                                    defaultOptions={[]}
-                                    errors={errors}
-                                />
-                            </Col>
-
-                            <Col md={12} lg={6} className="mb-2">
-                                <CustomControlledAsyncSelectPaginate
                                     placeholder={translate('products.forms.brandCompatibilities')}
                                     name='brandCompatibilities'
                                     label={translate('products.forms.brandCompatibilities')}
@@ -486,19 +438,6 @@ export default function ProductExtraInfoCard({product}) {
                                     control={control}
                                     getOptionsPromise={promiseProductGroups}
                                     defaultOptions={[]}
-                                    errors={errors}
-                                />
-                            </Col>
-
-                            <Col md={12} lg={6} className="mb-2">
-                                <CustomControlledAsyncSelectPaginate
-                                    placeholder={translate('products.forms.relatedProducts')}
-                                    name='relatedProducts'
-                                    label={translate('products.forms.relatedProducts')}
-                                    control={control}
-                                    getOptionsPromise={promiseProducts}
-                                    defaultOptions={[]}
-                                    isMulti={true}
                                     errors={errors}
                                 />
                             </Col>

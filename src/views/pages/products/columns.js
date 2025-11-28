@@ -251,7 +251,6 @@ export const createColumns = (publishToggleMutation, isPublishToggleLoading, out
     return [
 		AvatarColumn,
 		ProductColumn,
-		SkuColumn,
 		PriceColumn,
 		PublishToggleColumn,
 		OutOfStockToggleColumn,

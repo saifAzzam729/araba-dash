@@ -18,6 +18,9 @@ import TaxesService from "@src/common/services/TaxesService";
 import {useQuery} from "react-query";
 import CustomControlledRichTextField from "@components/controlled-inputs/CustomControlledRichTextField";
 import ControlledCounterRichTextField from "@components/controlled-inputs/ControlledCounterRichTextField";
+import BrandsService from "@src/common/services/BrandsService";
+import ProductsService from "@src/common/services/ProductsService";
+import {WITH_EXTRA_PRODUCT_DETAILS} from "@src/views/pages/products/config";
 
 export default function ProductMainDetailsForm() {
     const [openExtraInformation, setOpenExtraInformation] = useState(false);
@@ -160,6 +163,66 @@ export default function ProductMainDetailsForm() {
         });
     });
 
+    const promiseBrandsOptions = (
+        searchValue,
+        prevOptions,
+        additional,
+    ) => new Promise((resolve) => {
+        const prevPage = additional?.prevPage ?? 0;
+
+        const params = {
+            search: searchValue,
+            page: prevPage + 1,
+        };
+        const page = params.page;
+        const perPage = 10;
+        const search = params.search;
+        BrandsService.getPagination({page: page, search: search , limit: perPage}).then((res) => {
+            const { pages, page: currentPage, items } = res.pagination;
+            resolve({
+                options: items.map((item) => ({
+                    label: item.name,
+                    value: item.id,
+                })),
+                hasMore: currentPage < pages,
+                additional: {
+                    prevPage: currentPage,
+                    prevSearchValue: searchValue,
+                },
+            });
+        });
+    });
+
+    const promiseProducts = (
+        searchValue,
+        prevOptions,
+        additional,
+    ) => new Promise((resolve) => {
+        const prevPage = additional?.prevPage ?? 0;
+
+        const params = {
+            search: searchValue,
+            page: prevPage + 1,
+        };
+        const page = params.page;
+        const perPage = 10;
+        const search = params.search;
+        ProductsService.getPagination({page: page, search: search , limit: perPage}).then((res) => {
+            const { pages, page: currentPage, items } = res.pagination;
+            resolve({
+                options: items.map((item) => ({
+                    label: item.name,
+                    value: item.id,
+                })),
+                hasMore: currentPage < pages,
+                additional: {
+                    prevPage: currentPage,
+                    prevSearchValue: searchValue,
+                },
+            });
+        });
+    });
+
     const handleAddExtraInformation = () => {
         setOpenExtraInformation(!openExtraInformation)
     }
@@ -267,27 +330,31 @@ export default function ProductMainDetailsForm() {
                                         placeholder="quantity"
                                     />
                                 </Col>
-                                <Col md={12} lg={4} className="mb-2">
-                                    <CustomControlledInputField
-                                        label="sku"
-                                        name="sku"
-                                        control={control}
-                                        placeholder="sku"
-                                        errors={errors}
-                                    />
-                                </Col>
+                                {WITH_EXTRA_PRODUCT_DETAILS && (
+                                    <Col md={12} lg={4} className="mb-2">
+                                        <CustomControlledInputField
+                                            label="sku"
+                                            name="sku"
+                                            control={control}
+                                            placeholder="sku"
+                                            errors={errors}
+                                        />
+                                    </Col>
+                                )}
 
-                                <Col md={12} lg={6} className="mb-2">
-                                    <CustomControlledAsyncSelectPaginate
-                                        placeholder={translate('common.countryOfOrigin')}
-                                        name='countryOfOrigin'
-                                        label={translate('common.countryOfOrigin')}
-                                        control={control}
-                                        getOptionsPromise={promiseCountriesOptions}
-                                        defaultOptions={[]}
-                                        errors={errors}
-                                    />
-                                </Col>
+                                {WITH_EXTRA_PRODUCT_DETAILS && (
+                                    <Col md={12} lg={6} className="mb-2">
+                                        <CustomControlledAsyncSelectPaginate
+                                            placeholder={translate('common.countryOfOrigin')}
+                                            name='countryOfOrigin'
+                                            label={translate('common.countryOfOrigin')}
+                                            control={control}
+                                            getOptionsPromise={promiseCountriesOptions}
+                                            defaultOptions={[]}
+                                            errors={errors}
+                                        />
+                                    </Col>
+                                )}
 
                                 <Col md={12} lg={6} className="mb-2">
                                     <CustomControlledAsyncSelectPaginate
@@ -315,16 +382,41 @@ export default function ProductMainDetailsForm() {
                                 </Col>
                                 <Col md={12} lg={6} className="mb-2">
                                     <CustomControlledAsyncSelectPaginate
-                                        placeholder='tax'
-                                        name='tax'
-                                        label={translate('common.tax')}
+                                        placeholder='brand'
+                                        name='brand'
+                                        label={translate('common.brands')}
                                         control={control}
-                                        getOptionsPromise={promiseTaxessOptions}
+                                        getOptionsPromise={promiseBrandsOptions}
                                         defaultOptions={[]}
-                                        isMulti={false}
                                         errors={errors}
                                     />
                                 </Col>
+                                <Col md={12} lg={6} className="mb-2">
+                                    <CustomControlledAsyncSelectPaginate
+                                        placeholder='relatedProducts'
+                                        name='relatedProducts'
+                                        label={'relatedProducts'}
+                                        control={control}
+                                        getOptionsPromise={promiseProducts}
+                                        defaultOptions={[]}
+                                        isMulti={true}
+                                        errors={errors}
+                                    />
+                                </Col>
+                                {WITH_EXTRA_PRODUCT_DETAILS && (
+                                    <Col md={12} lg={6} className="mb-2">
+                                        <CustomControlledAsyncSelectPaginate
+                                            placeholder='tax'
+                                            name='tax'
+                                            label={translate('common.tax')}
+                                            control={control}
+                                            getOptionsPromise={promiseTaxessOptions}
+                                            defaultOptions={[]}
+                                            isMulti={false}
+                                            errors={errors}
+                                        />
+                                    </Col>
+                                )}
 
 
                                 <Col md={12} lg={4} className="mb-2">
@@ -373,7 +465,7 @@ export default function ProductMainDetailsForm() {
                                     md={12} lg={12}
                                      className='d-flex flex-column align-items-center flex-sm-row gap-sm-1'
                                 >
-                                    {!openExtraInformation &&
+                                    {WITH_EXTRA_PRODUCT_DETAILS && !openExtraInformation &&
                                         <div className='mb-2' >
                                             <Button type="button" color="primary" outline onClick={handleAddExtraInformation}>
                                                 {translate('product.common.add-info')}
