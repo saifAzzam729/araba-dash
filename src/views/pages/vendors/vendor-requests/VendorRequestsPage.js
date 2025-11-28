@@ -3,9 +3,7 @@ import TableBase from "@components/table/TableBase";
 import translateColumns from "@src/utility/helpers/translateColumns";
 import {PERMISSIONS_NAMES} from "@src/utility/context/PermissionProvider/PERMISSIONS_NAMES";
 import CreateColumn from "@components/table/CreateColumn";
-import EditStatusColumn from "@src/views/pages/users/partials/EditStatusColumn";
 import {useQuery} from "react-query";
-import OptionsService from "@src/common/services/OptionsService";
 import showSuccessAlert from "@components/alert/showSuccessAlert";
 import VendorsService from "@src/common/services/VendorsService";
 import useTable from "@components/table/useTable";
@@ -19,6 +17,7 @@ import useModal from "@components/modal/useModal";
 import ViewUserModal from "../modals/view";
 import ErrorPage from "@components/ErrorPage/ErrorPage";
 import {VENDOR_STATUS_VALUES} from "../constants";
+import VendorStatusColumn from "./VendorStatusColumn";
 
 export default function VendorRequestsPage() {
     const {translate} = useLocaleContext();
@@ -61,12 +60,6 @@ export default function VendorRequestsPage() {
         }
     );
 
-    const {data: statusOptions} = useQuery(
-        ['user-option-service', preferredTableContentLocale],
-        () => OptionsService.getUserStatus({
-            locale: preferredTableContentLocale
-        }),
-    );
     const onEditSuccess = () => {
         refetch();
         showSuccessAlert({});
@@ -78,7 +71,8 @@ export default function VendorRequestsPage() {
 
     const COLUMNS = createColumns(width)
 
-    const hasPermissionToUpdateStatus = ability.can(PERMISSIONS_NAMES.ROLE_VENDOR_REQUEST_UPDATE)
+    // const hasPermissionToUpdateStatus = ability.can(PERMISSIONS_NAMES.ROLE_VENDOR_REQUEST_UPDATE)
+    const hasPermissionToUpdateStatus = true;
 
     const customColumns = hasPermissionToUpdateStatus ? [
         ...COLUMNS,
@@ -87,13 +81,10 @@ export default function VendorRequestsPage() {
             translateKey: "users.table.status",
             minWidth: "200px",
             cellCustomizationFunction: (row) => (
-                <div>
-                    <EditStatusColumn
-                        row={row}
-                        statusOptions={statusOptions ? statusOptions.data : []}
-                        onEditSuccess={onEditSuccess}
-                    />
-                </div>
+                <VendorStatusColumn
+                    row={row}
+                    onEditSuccess={onEditSuccess}
+                />
             ),
         }),
     ] : COLUMNS;

@@ -238,7 +238,7 @@ const REPORTS_URLS = {
 }
 
 const VENDORS_URLS = {
-    GENERAL: `${API_BASE_BACKEND_URL}/admin/vendors/requests`
+    GENERAL: `${API_BASE_BACKEND_URL}/admin/vendors`
 };
 
 const URLS = {
