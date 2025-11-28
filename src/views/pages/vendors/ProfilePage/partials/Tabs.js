@@ -41,7 +41,7 @@ const VendorTabs = ({ active, toggleTab, vendor }) => {
 					<StatisticsTab />
 				</TabPane>
 				<TabPane tabId="2">
-					<ProductsTab />
+					<ProductsTab vendor={vendor} />
 				</TabPane>
 				<TabPane tabId="3">
 					<SaleOrdersTab />

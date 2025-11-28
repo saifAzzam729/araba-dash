@@ -22,12 +22,14 @@ import VendorFilterDropdown from "./filters/partials/VendorFilterDropdown";
 import useQueryParams from "@hooks/useQueryParams";
 import {useState, useEffect} from "react";
 import VendorsService from "../../../common/services/VendorsService";
+import {useAuth} from "../../../utility/context/AuthProvider";
 
 
 export default function () {
     const navigate = useNavigate();
     const {makeLocaleUrl} = useLocaleContext();
     const {preferredTableContentLocale} = useSettingsUiContext();
+    const {user} = useAuth();
 
     const {width} = useWindowSize()
 
@@ -46,14 +48,16 @@ export default function () {
     const {toggleValueInQueryParam} = useQueryParams();
     const [selectedVendor, setSelectedVendor] = useState(null);
 
-    const vendorId = filterParams.vendorId;
+    const isVendor = user?.type === "VENDOR";
+    const vendorIdFromUser = isVendor ? user?.vendor?.id : null;
+    const vendorId = isVendor ? vendorIdFromUser : filterParams.vendorId;
 
-    // Fetch vendor details using React Query when vendorId exists
+    // Fetch vendor details using React Query when vendorId exists (only for non-vendor users)
     useQuery(
         ['vendor', vendorId, preferredTableContentLocale],
         () => VendorsService.getById(vendorId, {locale: preferredTableContentLocale}),
         {
-            enabled: !!vendorId,
+            enabled: !!vendorId && !isVendor,
             onSuccess: (res) => {
                 const vendor = res.data;
                 setSelectedVendor({
@@ -67,12 +71,12 @@ export default function () {
         }
     );
 
-    // Reset selectedVendor when vendorId is cleared
+    // Reset selectedVendor when vendorId is cleared (only for non-vendor users)
     useEffect(() => {
-        if (!vendorId) {
+        if (!vendorId && !isVendor) {
             setSelectedVendor(null);
         }
-    }, [vendorId]);
+    }, [vendorId, isVendor]);
 
     const handleVendorChange = (selectedOption) => {
         setSelectedVendor(selectedOption);
@@ -81,13 +85,13 @@ export default function () {
     };
 
     const {isError, isLoading, refetch} = useQuery(
-        ['products', currentPage, searchTerm, filterParams, preferredTableContentLocale],
+        ['products', currentPage, searchTerm, filterParams, preferredTableContentLocale, vendorIdFromUser],
         () => ProductsService.getPagination({
             page: currentPage,
             search: searchTerm,
             quantity: filterParams.quantity,
             ...(WITH_EXTRA_PRODUCT_DETAILS && { sku: filterParams.sku }),
-            ...(filterParams.vendorId && { vendorId: parseInt(filterParams.vendorId) }),
+            ...(vendorId && { vendorId: parseInt(vendorId) }),
             locale: preferredTableContentLocale
         }),
         {
@@ -167,12 +171,12 @@ export default function () {
 
 	const COLUMNS = createColumns(publishToggleMutation, isPublishToggleLoading, outOfStockToggleMutation, isOutOfStockToggleLoading, width);
 
-    const vendorFilterComponent = (
+    const vendorFilterComponent = !isVendor ? (
         <VendorFilterDropdown
             value={selectedVendor}
             onChange={handleVendorChange}
         />
-    );
+    ) : null;
  
    
     return (

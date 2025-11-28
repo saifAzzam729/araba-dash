@@ -52,11 +52,25 @@ const getById = async (id, {locale = 'en'}) => {
     return res.data;
 };
 
+const banProduct = async (vendorId, productId) => {
+    const url = `${generalUrl}/${vendorId}/products/${productId}/ban`;
+    const res = await ApiClient.CustomAxios.put(url);
+    return res.data;
+};
+
+const unbanProduct = async (vendorId, productId) => {
+    const url = `${generalUrl}/${vendorId}/products/${productId}/unban`;
+    const res = await ApiClient.CustomAxios.put(url);
+    return res.data;
+};
+
 const VendorsService = {
     getPagination,
     approve,
     reject,
     getById,
+    banProduct,
+    unbanProduct,
 };
 
 export default VendorsService;
