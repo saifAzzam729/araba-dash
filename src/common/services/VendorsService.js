@@ -40,10 +40,23 @@ const reject = async (id) => {
     return res.data;
 };
 
+const getById = async (id, {locale = 'en'}) => {
+    const url = `${generalUrl}/${id}`;
+
+    const res = await ApiClient.CustomAxios.get(url, {
+        headers: {
+            'x-locale': locale
+        }
+    });
+
+    return res.data;
+};
+
 const VendorsService = {
     getPagination,
     approve,
     reject,
+    getById,
 };
 
 export default VendorsService;

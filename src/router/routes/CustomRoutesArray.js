@@ -53,6 +53,7 @@ const ViewUserGroupPage = lazy(() => import('@src/views/pages/user-groups/pages/
 const RegistrationRequestsPage = lazy(() => import('@src/views/pages/users/registration-requests/RegistrationRequestsPage'));
 const VendorsPage = lazy(() => import('@src/views/pages/vendors/vendors/VendorsPage'));
 const VendorRequestsPage = lazy(() => import('@src/views/pages/vendors/vendor-requests/VendorRequestsPage'));
+const VendorProfilePage = lazy(() => import('@src/views/pages/vendors/ProfilePage'));
 const NotificationsEventsPage = lazy(() => import('@src/views/pages/notifications/notifications-events/NotificationsEventsPage'))
 const NotificationsPage = lazy(() => import('@src/views/pages/notifications/notifications-crud/NotificationsPage'))
 const ProductReviewsPage = lazy(() => import('@src/views/pages/product-reviews/ProductReviewsPage'))
@@ -376,7 +377,7 @@ const CustomRoutesArray = [
   },
   {
     path: "vendors/profile/:id",
-    element: <ProfilePage />,
+    element: <VendorProfilePage />,
   },
   {
     path: "vendor-requests",

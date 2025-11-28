@@ -84,7 +84,7 @@ const UserInfoCard = ({user}) => {
                             </li>
                             <li className="mb-75 d-flex justify-content-between">
                                 <span className="fw-bolder me-25">{translate('users.profile.country')}:</span>
-                                <span>{user.country.name}</span>
+                                <span>{user.country?.name ?? '-'}</span>
                             </li>
                             <li className="mb-75 d-flex justify-content-between">
                                 <span className="fw-bolder me-25">{translate('users.profile.defaultCurrency')}:</span>
