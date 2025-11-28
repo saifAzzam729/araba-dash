@@ -11,10 +11,9 @@ import {useLocaleContext} from "@src/providers/LocaleProvider";
 import {useSettingsUiContext} from "@src/providers/SettingsUi/SettingsUiProvider";
 import {useContext} from "react";
 import {AbilityContext} from "@src/utility/context/PermissionProvider";
-import useWindowSize from "@hooks/useWindowSize";
 import {createColumns} from "./columns";
 import useModal from "@components/modal/useModal";
-import ViewUserModal from "../modals/view";
+import ViewVendorRequestModal from "./modals/view";
 import ErrorPage from "@components/ErrorPage/ErrorPage";
 import {VENDOR_STATUS_VALUES} from "../constants";
 import VendorStatusColumn from "./VendorStatusColumn";
@@ -23,7 +22,6 @@ export default function VendorRequestsPage() {
     const {translate} = useLocaleContext();
     const {preferredTableContentLocale} = useSettingsUiContext();
     const ability = useContext(AbilityContext);
-    const {width} = useWindowSize();
 
     const {
         isOpen: isViewModalOpen,
@@ -69,7 +67,7 @@ export default function VendorRequestsPage() {
         return <ErrorPage title={"Vendor Requests"}/>;
     }
 
-    const COLUMNS = createColumns(width)
+    const COLUMNS = createColumns();
 
     // const hasPermissionToUpdateStatus = ability.can(PERMISSIONS_NAMES.ROLE_VENDOR_REQUEST_UPDATE)
     const hasPermissionToUpdateStatus = true;
@@ -108,7 +106,7 @@ export default function VendorRequestsPage() {
             />
 
             {isViewModalOpen &&
-                <ViewUserModal
+                <ViewVendorRequestModal
                     closeModal={closeViewModal}
                     isOpen={isViewModalOpen}
                     item={viewItem}

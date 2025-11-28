@@ -1,42 +1,47 @@
+import Avatar from "@mui/material/Avatar";
 import CreateColumn from "@components/table/CreateColumn";
-import GenderDisplayer from "@components/gender-displayer/GenderDisplayer";
-import ToggleBtnWithMutation from "@components/table/ToggleBtnWithMutation";
-import {WindowBreakpoint} from "@src/utility/context/WindowBreakpoints";
+import ParseImageUrl from "@src/common/helpers/ParseImageUrl";
 
-const EmailColumn = CreateColumn({
-    name: "email",
-    translateKey: 'affiliates.table.email',
-    cellCustomizationFunction: (row) => <span>{row.email}</span>,
+const StoreInfoColumn = CreateColumn({
+    name: "Store",
+    translateKey: "vendor-requests.table.store-info",
+    minWidth: "200px",
+    cellCustomizationFunction: (row) => {
+        const storeName = row?.vendorDetails?.storeName ?? "-";
+        const storeLogo = row?.vendorDetails?.storeLogo;
+
+        return (
+            <div className="d-flex align-items-center gap-75">
+                <Avatar
+                    alt={`${storeName} logo`}
+                    sx={{width: 40, height: 40}}
+                    src={ParseImageUrl(storeLogo)}
+                />
+                <span className="fw-bold">{storeName}</span>
+            </div>
+        );
+    },
 });
 
 const FullNameColumn = CreateColumn({
     name: "Full Name",
     translateKey: "users.table.full-name",
-    minWidth: "120px",
+    minWidth: "160px",
     cellCustomizationFunction: (row) => <span>{row.fullName}</span>,
 });
 
-const PhoneNumberColumn = CreateColumn({
-    name: "Phone Number",
-    translateKey: "users.table.phone-number",
-    cellCustomizationFunction: (row) => <span>{row.phoneNumber}</span>,
+const EmailColumn = CreateColumn({
+    name: "Email",
+    translateKey: "affiliates.table.email",
+    minWidth: "180px",
+    cellCustomizationFunction: (row) => <span>{row.email}</span>,
 });
 
-const UserTypeColumn = CreateColumn({
-    name: "User Type",
-    translateKey: "users.table.user-type",
-    minWidth: "120px",
-    cellCustomizationFunction: (row) => {
-        return <span>{row.rolesGroups[0].name}</span>;
-    },
-});
-
-export const createColumns = (width) => {
+export const createColumns = () => {
     return [
+        StoreInfoColumn,
         FullNameColumn,
         EmailColumn,
-        PhoneNumberColumn,
-        UserTypeColumn,
     ];
 };
 
