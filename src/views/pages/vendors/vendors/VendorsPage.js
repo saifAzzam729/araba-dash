@@ -1,46 +1,20 @@
 import TableBase from "@components/table/TableBase";
-import {createColumns} from "./columns";
 import BreadCrumbs from "@components/breadcrumbs";
-import useModal from "@components/modal/useModal";
-import EditUserModal from "../modals/edit";
+import {createColumns as createVendorRequestColumns} from "../vendor-requests/columns";
 import useTable from "@components/table/useTable";
-import showSuccessAlert from "@components/alert/showSuccessAlert";
 import VendorsService from "@src/common/services/VendorsService";
-import UsersService from "../../../../common/services/UsersService";
 import {useNavigate} from "react-router-dom";
-import AddUserModal from "../modals/add";
-import {useMutation, useQuery} from "react-query";
-import handleDeleteMutation from "@components/alert/handleDeleteMutation";
-import showErrorAlert from "@components/alert/showErrorAlert";
+import {useQuery} from "react-query";
 import ErrorPage from "@components/ErrorPage/ErrorPage";
 import {useLocaleContext} from "@src/providers/LocaleProvider";
-import useWindowSize from "@hooks/useWindowSize";
 import {useSettingsUiContext} from "@src/providers/SettingsUi/SettingsUiProvider";
-import {useAuth} from "@src/utility/context/AuthProvider";
 import VendorsFiltersAccordion from "./filters/VendorsFiltersAccordion";
 import useVendorsFilterQueryParamsListener from "./filters/hooks/useVendorsFilterQueryParamsListener";
 
 export default function VendorsPage() {
     const navigate = useNavigate();
-    const {user} = useAuth();
     const {makeLocaleUrl} = useLocaleContext();
     const {preferredTableContentLocale} = useSettingsUiContext();
-
-    // add modal
-    const {
-        isOpen: isAddModalOpen,
-        closeModal: closeAddModal,
-        openModal: openAddModal,
-        item: addItem,
-    } = useModal();
-
-    // edit modal
-    const {
-        item: editItem,
-        isOpen: isEditModalOpen,
-        closeModal: closeEditModal,
-        openModal: openEditModal,
-    } = useModal();
 
     const {
         items,
@@ -55,7 +29,7 @@ export default function VendorsPage() {
 
     const {filterParams} = useVendorsFilterQueryParamsListener();
 
-    const {isError, isLoading, refetch} = useQuery(
+    const {isError, isLoading} = useQuery(
         ["vendors", currentPage, searchTerm, filterParams],
         () => VendorsService.getPagination({
             page: currentPage,
@@ -72,54 +46,6 @@ export default function VendorsPage() {
         }
     );
 
-    const {mutate: deleteMutation} = useMutation(
-        (data) => UsersService.deleteObject(data.id),
-        {
-            onSuccess: () => {
-                refetch();
-                showSuccessAlert({});
-            },
-            onError: () => {
-                showErrorAlert({});
-            },
-        }
-    );
-
-    const {mutate: toggleMutation, isLoading: isToggleLoading} = useMutation(
-        (data) => {
-            if (user.id === data.id) {
-                throw new Error('You can\'t block yourself')
-            }
-            return UsersService.update(data.id, {blocked: data.blocked});
-        },
-        {
-            onSuccess: () => {
-                refetch()
-                showSuccessAlert({});
-            },
-            onError: () => {
-                showErrorAlert({})
-            }
-        }
-    );
-
-
-    const onAddSuccess = () => {
-        refetch();
-        closeAddModal();
-        showSuccessAlert({});
-    };
-
-    const onEditSuccess = () => {
-        refetch();
-        closeEditModal();
-        showSuccessAlert({});
-    };
-
-    const onDelete = (row) => {
-        handleDeleteMutation(deleteMutation, row);
-    };
-
     if (isError) {
         return <ErrorPage title={"Vendors"}/>;
     }
@@ -128,9 +54,7 @@ export default function VendorsPage() {
         navigate(makeLocaleUrl(`/vendors/profile/${row.id}`));
     };
 
-    const {width} = useWindowSize();
-
-    const COLUMNS = createColumns(toggleMutation, isToggleLoading, width);
+    const COLUMNS = createVendorRequestColumns();
 
     return (
         <>
@@ -145,31 +69,10 @@ export default function VendorsPage() {
                 page={currentPage}
                 total={totalItemsCount}
                 searchTerm={searchTerm}
-                onAdd={openAddModal}
-                onEdit={openEditModal}
-                // onView={openViewModal}
-                onDelete={onDelete}
                 onSearch={updateSearch}
                 onGoToProfile={onGoToProfile}
                 isLoading={isLoading}
             />
-
-            {isAddModalOpen && (
-                <AddUserModal
-                    closeModal={closeAddModal}
-                    isOpen={isAddModalOpen}
-                    item={addItem}
-                    onAddSuccessCb={onAddSuccess}
-                />
-            )}
-            {isEditModalOpen && (
-                <EditUserModal
-                    closeModal={closeEditModal}
-                    isOpen={isEditModalOpen}
-                    item={editItem}
-                    onEditSuccessCb={onEditSuccess}
-                />
-            )}
         </>
     );
 }

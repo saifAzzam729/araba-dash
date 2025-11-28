@@ -182,6 +182,14 @@
   "Permissions": "Autorisations",
   "Modal Examples": "Exemples modaux",
   "Roles & Permissions": "Rôles et autorisations",
+  "vendor-requests": {
+    "table": {
+      "store-info": "Magasin"
+    },
+    "modal": {
+      "title": "Détails de la demande de vendeur"
+    }
+  },
   "ACCOUNT_AWAITING_APPROVAL": "En attente d'approbation",
   "ACTIVE": "Actif",
   "REJECTED": "Rejeté"

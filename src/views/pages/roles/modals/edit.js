@@ -87,7 +87,7 @@ const EditRoleModal = ({isOpen, closeModal, item, onEditSuccessCb}) => {
     };
 
     return (
-        <CustomModal translatedHeader={translate('roles.common.edit-role')} isOpen={isOpen} closeModal={closeModal}>
+        <CustomModal translatedHeader={translate('roles.common.edit-role')} isOpen={isOpen} closeModal={closeModal} size="xl">
             <form onSubmit={handleSubmit(prepareData)}>
                 <ErrorAlert isError={isError} errors={backendErrors}/>
                 <Col xs={12}>

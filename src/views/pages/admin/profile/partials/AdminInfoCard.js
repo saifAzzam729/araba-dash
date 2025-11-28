@@ -80,7 +80,7 @@ const AdminInfoCard = ({user}) => {
                             </li>
                             <li className="mb-75 d-flex justify-content-between">
                                 <span className="fw-bolder me-25">Country:</span>
-                                <span>{user.country.name}</span>
+                                <span>{user.country?.name ?? "-"}</span>
                             </li>
                             <li className="mb-75 d-flex justify-content-between">
                                 <span className="fw-bolder me-25">Gender:</span>

@@ -1714,6 +1714,14 @@
       "orderNo": "Order Number"
     }
   },
+  "vendor-requests": {
+    "table": {
+      "store-info": "Store"
+    },
+    "modal": {
+      "title": "Vendor Request Details"
+    }
+  },
   "ACCOUNT_AWAITING_APPROVAL": "Account Awaiting Approval",
   "ACTIVE": "Active",
   "REJECTED": "Rejected"

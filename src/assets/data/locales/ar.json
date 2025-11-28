@@ -1706,6 +1706,14 @@
       "orderNo": "رقم الطلب"
     }
   },
+  "vendor-requests": {
+    "table": {
+      "store-info": "المتجر"
+    },
+    "modal": {
+      "title": "تفاصيل طلب البائع"
+    }
+  },
   "ACCOUNT_AWAITING_APPROVAL": "في انتظار الموافقة",
   "ACTIVE": "نشط",
   "REJECTED": "مرفوض"

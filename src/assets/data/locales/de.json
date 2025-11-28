@@ -183,6 +183,14 @@
   "Permissions": "Berechtigungen",
   "Modal Examples": "Modale Beispiele",
   "Roles & Permissions": "Rollen & Berechtigungen",
+  "vendor-requests": {
+    "table": {
+      "store-info": "Geschäft"
+    },
+    "modal": {
+      "title": "Verkäuferanfrage-Details"
+    }
+  },
   "ACCOUNT_AWAITING_APPROVAL": "Wartet auf Genehmigung",
   "ACTIVE": "Aktiv",
   "REJECTED": "Abgelehnt"
