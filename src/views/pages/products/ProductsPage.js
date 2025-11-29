@@ -29,7 +29,7 @@ export default function () {
     const navigate = useNavigate();
     const {makeLocaleUrl} = useLocaleContext();
     const {preferredTableContentLocale} = useSettingsUiContext();
-    const {user} = useAuth();
+    const {user, isVendor} = useAuth();
 
     const {width} = useWindowSize()
 
@@ -48,7 +48,6 @@ export default function () {
     const {toggleValueInQueryParam} = useQueryParams();
     const [selectedVendor, setSelectedVendor] = useState(null);
 
-    const isVendor = user?.type === "VENDOR";
     const vendorIdFromUser = isVendor ? user?.vendor?.id : null;
     const vendorId = isVendor ? vendorIdFromUser : filterParams.vendorId;
 

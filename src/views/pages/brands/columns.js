@@ -49,7 +49,7 @@ const PublishColumn = CreateColumn({
 
 const columns = [AvatarColumn, NameColumn, DescriptionColumn, PublishColumn];
 
-export const createColumns = (mutatuion, isLoading, width) => {
+export const createColumns = (mutatuion, isLoading, width, isVendor = false) => {
 
     const PublishToggleColumn = CreateColumn({
         name: "Published To Website",
@@ -74,6 +74,12 @@ export const createColumns = (mutatuion, isLoading, width) => {
     });
 
     if (width <= WindowBreakpoint.md) {
+        if (isVendor) {
+            return [
+                AvatarColumn,
+                NameColumn
+            ]
+        }
         return [
             AvatarColumn,
             NameColumn,
@@ -82,6 +88,13 @@ export const createColumns = (mutatuion, isLoading, width) => {
         ]
 
     } else {
+        if (isVendor) {
+            return [
+                AvatarColumn,
+                NameColumn,
+                DescriptionColumn
+            ]
+        }
         return [
             AvatarColumn,
             NameColumn,

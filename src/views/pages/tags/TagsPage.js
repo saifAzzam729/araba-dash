@@ -19,9 +19,11 @@ import createPermissionObjectForUi from "@src/utility/context/PermissionProvider
 import {PERMISSIONS_NAMES} from "@src/utility/context/PermissionProvider/PERMISSIONS_NAMES";
 import {useSettingsUiContext} from "@src/providers/SettingsUi/SettingsUiProvider";
 import useWindowSize from "@hooks/useWindowSize";
+import {useAuth} from "../../../utility/context/AuthProvider";
 
 export default function () {
     const {preferredTableContentLocale} = useSettingsUiContext();
+    const {isVendor} = useAuth();
 
     const {
         isOpen: isAddModalOpen,
@@ -130,7 +132,7 @@ export default function () {
 
     const {width} = useWindowSize()
 
-    const COLUMNS = createColumns(toggleMutation, isToggleLoading, width);
+    const COLUMNS = createColumns(toggleMutation, isToggleLoading, width, isVendor);
 
     return (
         <>
@@ -144,10 +146,10 @@ export default function () {
                 page={currentPage}
                 total={totalItemsCount}
                 searchTerm={searchTerm}
-                onAdd={openAddModal}
+                onAdd={isVendor ? null : openAddModal}
                 onView={openViewModal}
-                onEdit={openEditModal}
-                onDelete={onDelete}
+                onEdit={isVendor ? null : openEditModal}
+                onDelete={isVendor ? null : onDelete}
                 onSearch={updateSearch}
                 isLoading={isLoading}
                 permissionObject={permissionObject}

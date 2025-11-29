@@ -56,7 +56,7 @@ const PublishColumn = CreateColumn({
 const columns = [AvatarColumn, TitleColumn, DescriptionColumn, PublishColumn];
 
 
-export const createColumns = (mutatuion, isLoading, width) => {
+export const createColumns = (mutatuion, isLoading, width, isVendor = false) => {
     const PublishToggleColumn = CreateColumn({
         name: "Published To Website",
         translateKey:'tags.table.publish',
@@ -80,6 +80,12 @@ export const createColumns = (mutatuion, isLoading, width) => {
     });
 
     if (width <= WindowBreakpoint.md) {
+        if (isVendor) {
+            return [
+                AvatarColumn,
+                TitleColumn
+            ]
+        }
         return [
             AvatarColumn,
             TitleColumn,
@@ -88,6 +94,13 @@ export const createColumns = (mutatuion, isLoading, width) => {
         ]
 
     } else {
+        if (isVendor) {
+            return [
+                AvatarColumn,
+                TitleColumn,
+                DescriptionColumn
+            ]
+        }
         return [
             AvatarColumn,
             TitleColumn,

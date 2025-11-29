@@ -61,12 +61,12 @@ function AuthProvider(props) {
         }
     }, [token])
 
+    const isVendor = user?.type === "VENDOR";
+
     const value = React.useMemo(
-        () => ({user, logUserIn, token, refetchUser, logout}),
-        [user, token]
+        () => ({user, logUserIn, token, refetchUser, logout, isVendor}),
+        [user, token, isVendor]
     );
-
-
 
     if (!token || pathname.includes('login')) {
         return <AuthContext.Provider value={value} {...props} />
