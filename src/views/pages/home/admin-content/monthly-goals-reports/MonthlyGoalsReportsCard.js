@@ -1,5 +1,5 @@
 import MonthSummary from "@components/home-month-summary-card/MonthSummary";
-import EditmonthGoalModal from "@src/views/pages/home/monthly-goals-reports/modals/edit";
+import EditmonthGoalModal from "@src/views/pages/home/admin-content/monthly-goals-reports/modals/edit";
 import useModal from "@components/modal/useModal";
 import showSuccessAlert from "@components/alert/showSuccessAlert";
 import {useQuery} from "react-query";

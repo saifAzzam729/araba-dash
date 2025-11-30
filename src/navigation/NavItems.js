@@ -48,7 +48,7 @@ export default [
         title: "Home",
         icon: <Home size={20}/>,
         navLink: "/home",
-        permission: PERMISSIONS_NAMES.ACCESS_TO_DASHBOARD,
+        // permission: PERMISSIONS_NAMES.ACCESS_TO_DASHBOARD,
     },
     {
         id: "sale-order-menu",

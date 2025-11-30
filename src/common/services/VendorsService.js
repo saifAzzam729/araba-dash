@@ -64,6 +64,36 @@ const unbanProduct = async (vendorId, productId) => {
     return res.data;
 };
 
+const updateProfile = async ({
+    storeName,
+    storeDescription,
+    storeLogo,
+    registrationDocument
+}, {locale = 'en'} = {}) => {
+    const dataToSend = {};
+    
+    if (storeName !== undefined) {
+        dataToSend.storeName = storeName;
+    }
+    if (storeDescription !== undefined) {
+        dataToSend.storeDescription = storeDescription;
+    }
+    if (storeLogo && storeLogo.length > 0) {
+        dataToSend.storeLogo = storeLogo.item(0);
+    }
+    if (registrationDocument && registrationDocument.length > 0) {
+        dataToSend.registrationDocument = registrationDocument.item(0);
+    }
+    
+    const url = `${URLS.API_BASE_BACKEND_URL}/auth/edit/vendors/profile`;
+    const res = await ApiClient.CustomMultiPartAxios.put(url, dataToSend, {
+        headers: {
+            'x-locale': locale
+        }
+    });
+    return res.data;
+};
+
 const VendorsService = {
     getPagination,
     approve,
@@ -71,6 +101,7 @@ const VendorsService = {
     getById,
     banProduct,
     unbanProduct,
+    updateProfile,
 };
 
 export default VendorsService;
