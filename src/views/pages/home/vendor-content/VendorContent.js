@@ -24,8 +24,8 @@ const VendorContent = () => {
 
     return (
         <Fragment>
-            <Row className="mb-3">
-                <Col sm="12" lg={"12"}>
+            <Row className="mb-3 justify-content-center">
+                <Col sm="12" lg="8" xl="6">
                     <StoreDetailsCard vendor={user} onEdit={openEditModal} />
                 </Col>
             </Row>

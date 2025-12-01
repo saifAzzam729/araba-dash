@@ -113,14 +113,14 @@ export default [
                 title: "vendors-requests",
                 icon: <CheckSquare size={20}/>,
                 navLink: "/vendor-requests",
-                // permission: PERMISSIONS_NAMES.ROLE_VENDOR_REQUEST_LIST,
+                permission: PERMISSIONS_NAMES.ROLE_VENDOR_LIST,
             },
             {
                 id: "vendors-list",
                 title: "vendors",
                 icon: <User size={20}/>,
                 navLink: "/vendors",
-                // permission: PERMISSIONS_NAMES.ROLE_VENDOR_LIST,
+                permission: PERMISSIONS_NAMES.ROLE_VENDOR_LIST,
             }
         ],
     },
