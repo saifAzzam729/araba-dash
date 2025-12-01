@@ -38,8 +38,17 @@ import {
     Users, Volume,
 } from "react-feather";
 import {PERMISSIONS_NAMES} from "../utility/context/PermissionProvider/PERMISSIONS_NAMES";
+import {
+    WITH_EBAY,
+    WITH_MAINTENANCE,
+    WITH_REPORTS,
+    WITH_AFFILIATE,
+    WITH_SHIPPING
+} from "./featureFlags";
 
-export default [
+// Build navigation items array conditionally based on feature flags
+const buildNavItems = () => {
+    const navItems = [
     {
         header: 'pages'
     },
@@ -188,8 +197,9 @@ export default [
             },
         ],
     },
-    {
-        id: "shippings",
+    ...(WITH_SHIPPING ? [
+        {
+            id: "shippings",
         title: "shippings",
         icon: <Truck size={20}/>,
         children: [
@@ -222,7 +232,8 @@ export default [
                 permission: PERMISSIONS_NAMES.ROLE_SHIPMENT_SHIPPER_LIST,
             },
         ],
-    },
+        }
+    ] : []),
 
     {
         id: "notifications",
@@ -273,13 +284,15 @@ export default [
         title: "marketing",
         icon: <Activity size={20}/>,
         children: [
-            {
-                id: "affiliates",
+            ...(WITH_AFFILIATE ? [
+                {
+                    id: "affiliates",
                 title: "affiliates",
                 icon: <Users size={20}/>,
                 navLink: "/affiliates",
                 permission: PERMISSIONS_NAMES.ROLE_AFFILIATE_LIST,
-            },
+                }
+            ] : []),
             {
                 id: "seo",
                 title: "Seo",
@@ -319,8 +332,9 @@ export default [
         ],
     },
 
-    {
-    id: "reports",
+    ...(WITH_REPORTS ? [
+        {
+            id: "reports",
     title: "Reports",
     icon: <TrendingUp size={20} />,
     children: [
@@ -374,7 +388,8 @@ export default [
         permission: PERMISSIONS_NAMES.ROLE_LATEST_PRODUCT_SALES_REPORT,
       },
     ],
-    },
+        }
+    ] : []),
 
     {
         id: "store-settings",
@@ -491,9 +506,9 @@ export default [
         ]
     },
 
-
-    {
-        id: "maintenance",
+    ...(WITH_MAINTENANCE ? [
+        {
+            id: "maintenance",
         title: "Maintenance",
         icon: <Tool size={20}/>,
         children: [
@@ -505,9 +520,11 @@ export default [
                 permission: PERMISSIONS_NAMES.ROLE_ERROR_LOG_LIST,
             },
         ],
-    },
-    {
-        id: "Ebay",
+        }
+    ] : []),
+    ...(WITH_EBAY ? [
+        {
+            id: "Ebay",
         title: "Ebay",
         icon: <ShoppingCart size={20} />,
         children: [
@@ -548,7 +565,8 @@ export default [
             },
 
         ],
-    },
+        }
+    ] : []),
 //   {
 //     id: "dhl",
 //     title: "dhl",
@@ -590,4 +608,9 @@ export default [
 //     ],
 //   },
 
-];
+    ];
+
+    return navItems;
+};
+
+export default buildNavItems();

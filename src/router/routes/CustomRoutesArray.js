@@ -5,6 +5,13 @@ import SaleOrdersPage from "@src/views/pages/sale-orders/SaleOrdersPage";
 
 import {lazy} from 'react';
 import EbayProductDetailsPage from "@src/views/pages/eBay/listings/products/pages/EbayProductDetailsPage";
+import {
+    WITH_EBAY,
+    WITH_MAINTENANCE,
+    WITH_REPORTS,
+    WITH_AFFILIATE,
+    WITH_SHIPPING
+} from "@src/navigation/featureFlags";
 
 const ProfilePage = lazy(() => import('@src/views/pages/users/ProfilePage'));
 const AddProducts = lazy(() => import('@src/views/pages/products/pages/add/AddPage'));
@@ -157,10 +164,12 @@ const CustomRoutesArray = [
     path: "product-reviews",
     element: <ProductReviewsPage />,
   },
-  {
-    path: "shippings",
-    element: <ShippingsPage />,
-  },
+  ...(WITH_SHIPPING ? [
+    {
+      path: "shippings",
+      element: <ShippingsPage />,
+    }
+  ] : []),
   {
     path: "categories",
     element: <CategoriesPage />,
@@ -311,18 +320,22 @@ const CustomRoutesArray = [
     path: "product-attributes",
     element: <ProductsAttributesPage />,
   },
-  {
-    path: "error-logs",
-    element: <ErrorLogsPage />,
-  },
-  {
-    path: "affiliates",
-    element: <AffiliatesPage />,
-  },
-  {
-    path: "affiliates/view/:id",
-    element: <ViewAffiliatePage />,
-  },
+  ...(WITH_MAINTENANCE ? [
+    {
+      path: "error-logs",
+      element: <ErrorLogsPage />,
+    }
+  ] : []),
+  ...(WITH_AFFILIATE ? [
+    {
+      path: "affiliates",
+      element: <AffiliatesPage />,
+    },
+    {
+      path: "affiliates/view/:id",
+      element: <ViewAffiliatePage />,
+    },
+  ] : []),
   {
     path: "states",
     element: <StatesPage />,
@@ -395,30 +408,34 @@ const CustomRoutesArray = [
     path: "tax",
     element: <TaxPage />,
   },
-  {
-    path: "shipment-products",
-    element: <ShipmentProductsPage />,
-  },
-  {
-    path: "shipment-packages",
-    element: <ShipmentPackagesPage />,
-  },
-  {
-    path: "shipment-shippers",
-    element: <ShipmentShippersPage />,
-  },
+  ...(WITH_SHIPPING ? [
+    {
+      path: "shipment-products",
+      element: <ShipmentProductsPage />,
+    },
+    {
+      path: "shipment-packages",
+      element: <ShipmentPackagesPage />,
+    },
+    {
+      path: "shipment-shippers",
+      element: <ShipmentShippersPage />,
+    },
+  ] : []),
   {
     path: "sale-orders-requests",
     element: <SaleOrdersRequestsPage />,
   },
-  {
-    path: "sale-orders-shipments",
-    element: <SaleOrdersShipmentsPage />,
-  },
-  {
-    path: "sale-orders-shipments/edit/:id",
-    element: <EditSaleOrdersShipmentsPage />,
-  },
+  ...(WITH_EBAY ? [
+    {
+      path: "sale-orders-shipments",
+      element: <SaleOrdersShipmentsPage />,
+    },
+    {
+      path: "sale-orders-shipments/edit/:id",
+      element: <EditSaleOrdersShipmentsPage />,
+    }
+  ] : []),
   {
     path: "deutsche-sale-orders-requests",
     element: <DeutscheSaleOrdersRequestsPage />,
@@ -431,67 +448,68 @@ const CustomRoutesArray = [
     path: "deutsche-sale-orders-shipments/edit/:id",
     element: <DeutscheEditSaleOrdersShipmentsPage />,
   },
-  {
-    path: "ebay",
-    element: <EBayPage />,
-  },
-  {
-    path: "eBay/view/:id",
-    element: <EBayDetailsPage />,
-  },
-  {
-    path: "ebay-policies/add/:id",
-    element: <AddEbayReturnPolicy />,
-  },
-  {
-    path: "ebay-return-policy/:id/view/:policyId",
-    element: <ReturnPolicyDetailsPage />,
-  },
-
-  {
-    path: "ebay-shipping-policy/add/:id",
-    element: <AddEbayShippingPolicyPage />,
-  },
-  {
-    path: "ebay-shipping-policy/:id/view/:policyId",
-    element: <ShippingPolicyDetailsPage />,
-  },
-  {
-    path: "ebay-selling-policy/add/:id",
-    element: <AddSellingPolicyPage />,
-  },
-  {
-    path: "ebay-selling-policy/:id/view/:policyId",
-    element: <SellingDetailsPage />,
-  },
-  {
-    path: "ebay-listing",
-    element: <EBayListingPage />,
-  },
-  {
-    path: "ebay-listing/view/:listId",
-    element: <EbayListingDetailsPage />,
-  },
-  {
-    path: "ebay-sale-orders",
-    element: <EbayOrdersPage />,
-  },
-  {
-    path: "ebay-sale-orders/view/:id",
-    element: <EbayOrdersDetailsTabs />,
-  },
-  {
-    path: "ebay-categories",
-    element: <EbayCategoryPage />,
-  },
-  {
-    path: "ebay-categories/view/:id",
-    element: <EbayCategoryDetails />,
-  },
-  {
-    path: "ebay-product-details/:id",
-    element: <EbayProductDetailsPage />,
-  },
+  ...(WITH_EBAY ? [
+    {
+      path: "ebay",
+      element: <EBayPage />,
+    },
+    {
+      path: "eBay/view/:id",
+      element: <EBayDetailsPage />,
+    },
+    {
+      path: "ebay-policies/add/:id",
+      element: <AddEbayReturnPolicy />,
+    },
+    {
+      path: "ebay-return-policy/:id/view/:policyId",
+      element: <ReturnPolicyDetailsPage />,
+    },
+    {
+      path: "ebay-shipping-policy/add/:id",
+      element: <AddEbayShippingPolicyPage />,
+    },
+    {
+      path: "ebay-shipping-policy/:id/view/:policyId",
+      element: <ShippingPolicyDetailsPage />,
+    },
+    {
+      path: "ebay-selling-policy/add/:id",
+      element: <AddSellingPolicyPage />,
+    },
+    {
+      path: "ebay-selling-policy/:id/view/:policyId",
+      element: <SellingDetailsPage />,
+    },
+    {
+      path: "ebay-listing",
+      element: <EBayListingPage />,
+    },
+    {
+      path: "ebay-listing/view/:listId",
+      element: <EbayListingDetailsPage />,
+    },
+    {
+      path: "ebay-sale-orders",
+      element: <EbayOrdersPage />,
+    },
+    {
+      path: "ebay-sale-orders/view/:id",
+      element: <EbayOrdersDetailsTabs />,
+    },
+    {
+      path: "ebay-categories",
+      element: <EbayCategoryPage />,
+    },
+    {
+      path: "ebay-categories/view/:id",
+      element: <EbayCategoryDetails />,
+    },
+    {
+      path: "ebay-product-details/:id",
+      element: <EbayProductDetailsPage />,
+    },
+  ] : []),
   {
     path: "multi-shipments",
     element: <MultiSaleOrderShipments />,
@@ -500,34 +518,36 @@ const CustomRoutesArray = [
     path: "deutsche-multi-shipments",
     element: <DeutscheSaleOrderMultiShipments />,
   },
-  {
-    path: "reports/user-details",
-    element: <UserDetailsReportsPage />,
-  },
-  {
-    path: "reports/date-wise-sales",
-    element: <DateWiseSalesReportPage />,
-  },
-  {
-    path: "reports/country-wise-sales",
-    element: <CountryWiseSalesReportPage />,
-  },
-  {
-    path: "reports/customer-wise-sales",
-    element: <CustomerWiseSalesReportPage />,
-  },
-  {
-    path: "reports/item-wise-sales",
-    element: <ItemsWiseSalesReportPage />,
-  },
-  {
-    path: "reports/latest-products-sales",
-    element: <LatestProductsSalesReportPage />,
-  },
-  {
-    path: "reports/sales-details",
-    element: <SalesDetailsReportPage />,
-  },
+  ...(WITH_REPORTS ? [
+    {
+      path: "reports/user-details",
+      element: <UserDetailsReportsPage />,
+    },
+    {
+      path: "reports/date-wise-sales",
+      element: <DateWiseSalesReportPage />,
+    },
+    {
+      path: "reports/country-wise-sales",
+      element: <CountryWiseSalesReportPage />,
+    },
+    {
+      path: "reports/customer-wise-sales",
+      element: <CustomerWiseSalesReportPage />,
+    },
+    {
+      path: "reports/item-wise-sales",
+      element: <ItemsWiseSalesReportPage />,
+    },
+    {
+      path: "reports/latest-products-sales",
+      element: <LatestProductsSalesReportPage />,
+    },
+    {
+      path: "reports/sales-details",
+      element: <SalesDetailsReportPage />,
+    },
+  ] : []),
 ];
 
 export default CustomRoutesArray;
