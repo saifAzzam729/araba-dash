@@ -10,7 +10,6 @@ import themeConfig from "@configs/themeConfig";
 
 // ** Utils
 import { DefaultRoute } from "@src/router/routes";
-import { DropdownToggle } from "reactstrap";
 import { useAuth } from "@src/utility/context/AuthProvider";
 import defaultAvatar from "@src/assets/images/logo/default-avatar.jpg";
 import Avatar from "@mui/material/Avatar";
@@ -21,7 +20,6 @@ import ParseImageUrl from "@src/common/helpers/ParseImageUrl";
 
 const VerticalMenuHeader = (props) => {
 	const { storeName, storeLogo } = useGlobalContext();
-	const websiteLink = import.meta.env.VITE_WEBSITE_BASE_URL;
 
 	// ** Props
 	const {
@@ -33,8 +31,7 @@ const VerticalMenuHeader = (props) => {
 	} = props;
 
 	// ** Vars
-	const { user } = useAuth();
-	const userAvatar = (user && user.avatarFileUrl) || defaultAvatar;
+	const { isVendor } = useAuth();
 	const { translate } = useLocaleContext();
 
 	// ** Reset open group
@@ -69,11 +66,38 @@ const VerticalMenuHeader = (props) => {
 		<div className="navbar-header h-auto">
 			<ul className="nav navbar-nav flex-row align-items-center">
 				<li className="nav-item me-auto mb-1">
-					<NavLink to={DefaultRoute} className="navbar-brand mt-1 ms-2">
-						<div className="brand-Logo">
-							<img src={themeConfig.app.appLogoImage} alt="logo" width={35} />
-						</div>
-					</NavLink>
+					{isVendor ? (
+						<NavLink to={DefaultRoute} className="navbar-brand mt-1 ms-2">
+							<div className="d-flex align-items-center gap-2">
+								<Avatar
+									src={
+										storeLogo ? ParseImageUrl(storeLogo.imageFileUrl) : defaultAvatar
+									}
+									sx={{ width: 40, height: 40 }}
+									className={"store-avatar-wrapper bg-white"}
+								/>
+								<div className="d-flex flex-column" style={{ gap: "5px" }}>
+									<span className="user-name fw-bold text-white fs-4">
+										{storeName ? storeName.value : "Araba"}
+									</span>
+									<Button.Ripple className="round" outline size="sm">
+										<Link to="https://google.com" target="_blank" className={"text-white"}>
+											{translate(`sidebar.visit-store`)}
+										</Link>
+									</Button.Ripple>
+								</div>
+							</div>
+						</NavLink>
+					) : (
+						<NavLink to={DefaultRoute} className="navbar-brand mt-1 ms-2">
+							<div className="d-flex align-items-center gap-2">
+								<div className="brand-Logo">
+									<img src={themeConfig.app.appLogoImage} alt="logo" width={35} />
+								</div>
+								<span className="text-white fw-bold fs-4">Araba</span>
+							</div>
+						</NavLink>
+					)}
 				</li>
 				<li className="nav-item nav-toggle">
 					<div className="nav-link modern-nav-toggle cursor-pointer mx-1">
@@ -86,34 +110,6 @@ const VerticalMenuHeader = (props) => {
 					</div>
 				</li>
 			</ul>
-
-			<DropdownToggle
-				tag="a"
-				className={`d-flex nav-link dropdown-user-link justify-content-end flex-row-reverse gap-2 px-2 ${
-					!menuHover && menuCollapsed ? "d-none" : ""
-				}`}
-			>
-				<div
-					className="user-nav d-sm-flex d-flex flex-column"
-					style={{ gap: "5px" }}
-				>
-					<span className="user-name fw-bold text-white fs-4">
-						{storeName ? storeName.value : "Araba"}
-					</span>
-					<Button.Ripple className="round" outline size="sm">
-						<Link to={websiteLink} target="_blank" className={"text-white"}>
-							{translate(`sidebar.visit-store`)}
-						</Link>
-					</Button.Ripple>
-				</div>
-				<Avatar
-					src={
-						storeLogo ? ParseImageUrl(storeLogo.imageFileUrl) : defaultAvatar
-					}
-					sx={{ width: 40, height: 40 }}
-					className={"store-avatar-wrapper bg-white"}
-				/>
-			</DropdownToggle>
 		</div>
 	);
 };

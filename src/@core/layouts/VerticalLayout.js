@@ -172,6 +172,10 @@ const VerticalLayout = (props) => {
 						navbarClasses[navbarType] || "floating-nav"
 					} navbar-shadow`
 				)}
+				style={{
+					marginTop: ".5rem",
+					boxShadow: "0 2px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04)",
+				}}
 			>
 				<div className="navbar-container d-flex content">
 					{navbar ? (

@@ -51,8 +51,8 @@ import { useLocaleContext } from "@src/providers/LocaleProvider";
 import PreferredHomePageLocalService from "@src/common/services/PreferredHomePageLocalService";
 
 const defaultValues = {
-	password: "q1w2e3r4",
-	loginEmail: "admin@admin.com",
+	password: "",
+	loginEmail: "",
 	rememberMe: true,
 };
 
