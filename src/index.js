@@ -10,7 +10,7 @@ import "./configs/i18n";
 // ** Redux Imports
 import {store} from "./redux/store";
 import {Provider} from "react-redux";
-
+console.log("YAAAAH")
 // ** ThemeColors Context
 
 import {ThemeContext} from "./utility/context/ThemeColors";
